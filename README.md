@@ -3,17 +3,38 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 
 ## Possible cover illustrations
 
-![](cover1.jpg)
-![](cover2.jpg)    
-![](cover3.jpg)       |
-![](cover4.jpg)
-![](cover5.jpg)
-![](cover6.jpg)
-![](cover7.jpg)
-![](cover8.jpg)
-![](cover7.jpg)
-![](cover10.jpg)    
-![](cover11.jpg)
-![](cover12.jpg)
-|
+1.
+![1](cover1.jpg)
 
+2.
+![2](cover2.jpg)    
+
+3.
+![3](cover3.jpg)
+
+4.
+![4](cover4.jpg)
+
+5.
+![5](cover5.jpg)
+
+6.
+![6](cover6.jpg)
+
+7.
+![7](cover7.jpg)
+
+8.
+![8](cover8.jpg)
+
+9.
+![9](cover7.jpg)
+
+10.
+![10](cover10.jpg)    
+
+11.
+![11](cover11.jpg)
+
+12.
+![12](cover12.jpg)
