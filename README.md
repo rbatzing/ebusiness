@@ -3,38 +3,39 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 
 ## Possible cover illustrations
 
-1.
-![1](cover1.jpg)
+1. Floating Market, Bangkok.
+![1](cover1.png)
 
-2.
-![2](cover2.jpg)    
+2. Chinese Resturant, Bangkok.
+![2](cover2.png)    
 
-3.
-![3](cover3.jpg)
+3. Floating Market, Phuket.
+![3](cover3.png)
 
-4.
-![4](cover4.jpg)
+4. Fried Snack Production, Chiang Mai.
+![4](cover/cover4.png)
 
-5.
-![5](cover5.jpg)
+5. Bangkok Streets
+![5](cover/cover5.png)
 
-6.
-![6](cover6.jpg)
+6. Jao Payao River, Bangkok.
+![6](cover/cover6.png)
 
-7.
-![7](cover7.jpg)
+7. Wararot Market, Chiang Mai.
+![7](cover/cover7.png)
 
-8.
-![8](cover8.jpg)
+8. Singapore Financial District.
+![8](cover/cover8.png)
 
-9.
-![9](cover7.jpg)
+9. Bangkok Traffic.
+![9](cover/cover7.png)
 
-10.
-![10](cover10.jpg)    
+10. Hong Kong Skyline.
+![10](cover/cover10.png)    
 
-11.
-![11](cover11.jpg)
+11. Singapore Skyline.
+![11](cover/cover11.png)
 
-12.
-![12](cover12.jpg)
+12. Bangkok Traffic.
+![12](cover/cover12.png)
+
