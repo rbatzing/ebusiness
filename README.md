@@ -6,7 +6,7 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 1. Floating Market, Bangkok.
 ![1](cover1.png)
 
-2. Chinese Resturant, Bangkok.
+2. Chinese Resturant Kitchen, Shanghai.
 ![2](cover2.png)    
 
 3. Floating Market, Phuket.
@@ -28,7 +28,7 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 ![8](cover/cover8.png)
 
 9. Bangkok Traffic.
-![9](cover/cover7.png)
+![9](cover/cover9.png)
 
 10. Hong Kong Skyline.
 ![10](cover/cover10.png)    
