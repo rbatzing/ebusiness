@@ -1,5 +1,14 @@
 # e-Business
-A textbook and hands-on guide for an undergraduate course in e-Business
+A project to develop the slides, textbook, activities, and online courseware for an undergraduate course offered to students of computer science (CS), software engineering (SE), and informatics (IT).
+
+## Course goal:
+
+* To introduce CS, SE,and IT students to the principles of business and its associated data requires.
+
+* To help students to explore the nature of key business software applications and identify and extract data assets they generate.
+
+* To help students integrate data resources to create management information systems that provide useful insights and predictions based on the data collected.
+
 
 ## Possible cover illustrations
 
@@ -28,9 +37,7 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 ![8](cover/cover8.png)
 
 9. Bangkok Traffic.
-![9](cover/cover9.png)
-
-    
+![9](cover/cover9.png)   
 
 11. Singapore Skyline.
 ![11](cover/cover11.png)
