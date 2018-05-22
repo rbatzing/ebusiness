@@ -4,13 +4,13 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 ## Possible cover illustrations
 
 1. Floating Market, Bangkok.
-![1](cover1.png)
+![1](cover/cover1.png)
 
 2. Chinese Resturant Kitchen, Shanghai.
-![2](cover2.png)    
+![2](cover/cover2.png)    
 
 3. Floating Market, Phuket.
-![3](cover3.png)
+![3](cover/cover3.png)
 
 4. Fried Snack Production, Chiang Mai.
 ![4](cover/cover4.png)
@@ -30,8 +30,7 @@ A textbook and hands-on guide for an undergraduate course in e-Business
 9. Bangkok Traffic.
 ![9](cover/cover9.png)
 
-10. Hong Kong Skyline.
-![10](cover/cover10.png)    
+    
 
 11. Singapore Skyline.
 ![11](cover/cover11.png)
