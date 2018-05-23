@@ -39,9 +39,12 @@ A project to develop the slides, textbook, activities, and online courseware for
 9. Bangkok Traffic.
 ![9](cover/cover9.png)   
 
+10. Bangkok Traffic.
+![10](cover/cover10.png)
+
 11. Singapore Skyline.
 ![11](cover/cover11.png)
 
-12. Bangkok Traffic.
+12. Singapore Traffic Circle.
 ![12](cover/cover12.png)
 
