@@ -1,13 +1,17 @@
+{:: encoding="utf-8" /}
+{frontmatter}
+
 # Preface
 
 Advances and developments in Computer Science (CS) are driven by the need to create more effective applications to answer real world problems. The most significant advancements have emerged as a result of breakthough in understand the nature of the problem domain. Making end users part of software development teams has been a standard principle in software engineer. As a CS instructor, it is important to recognize and the fact that our CS graduates will go on to develop applications and solutions for clients who did not major in CS. In keeping with the principles of literal arts education, I feel the best way I can prepare my students for their professional careers is by helping them explore and understand the basic issues of their chosen problem domain. 
 
 To this end, our department has launched a course to introduce CS students to e-Business. The course had the following course description and was taught in Thai using English based resources.
 
--> CS340 ธุรกิจอิเล็กทรอนิกส์: หลักการการดำเนินธุรกิจโดยใช้สื่ออิเล็กทรอนิกส์ การวางแผนทรัพยากรขององค์กร การบริหารความสัมพันธ์ลูกค้า และการสื่อสารผ่านโซเชียลมีเดียทั้งภายในและภายนอกองค์กร
--> CS340	E-BUSINESS. Principles of business operations using information technology. This includes a discussion of Enterprise Resource Planning (ERP), Customer Relationship Management (CRM) and the use of social media to communicate both within and outside the organization.
+-> {thaifont}**CS340 ธุรกิจอิเล็กทรอนิกส์:** หลักการการดำเนินธุรกิจโดยใช้สื่ออิเล็กทรอนิกส์ การวางแผนทรัพยากรขององค์กร การบริหารความสัมพันธ์ลูกค้า และการสื่อสารผ่านโซเชียลมีเดียทั้งภายในและภายนอกองค์กร
 
-This book is the product of that course and had its humble beginnings as class slides and notes. The basic design of the course is as follows:
+-> {latinfont} **CS340 E-BUSINESS.** Principles of business operations using information technology. This includes a discussion of Enterprise Resource Planning (ERP), Customer Relationship Management (CRM) and the use of social media to communicate both within and outside the organization.
+
+This book is the product of that course and had its humble beginnings as a collection of class slides, notes and exercises. The basic design of the course is as follows:
 
 -> **Unit 1: General principles.**  A discussion of the key principles that define and characterize business both in the real world and in cyberspace.
 

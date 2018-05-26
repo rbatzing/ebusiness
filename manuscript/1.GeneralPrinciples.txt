@@ -1,13 +1,21 @@
 {mainmatter}
 
-# GENERAL PRINCPLES
+.# GENERAL PRINCPLES
 
-## Essentials of Business
+# Essentials of Business
 
--> Business is a sustainable set of interactions between individuals in which goods and services are provided. Normally a business transaction is an attempt to trade fair compensations for goods or services rendered.
+Business is a network of transactions attempt provide fair compensation for goods or services rendered in the most effective and efficient manner.
 
-### Core Activities
+-> Business is a sustainable set of interactions between individuals in which goods and services are provided and the provider is compensated. 
+ 
+Individual businesses are always centered around a core set of goods and services as a commodity that creates value. The key to business success is to minimize material, production, and distribution costs while increasing the value of the commodity to the customers. This is achieved through a network of contracts and business transactions with suppliers and distributors.
 
+![Key Business Processes](images/businessprocess.png)
+
+# Core Activities of a Business
+
+To achieve efficiency and effective on a large scale, business is conducted as coordinated teamwork of specialists in various departments within the organizational chart. 
+ 
 * **Finance:** mid-term and long-range financial planning 
 * **Accounting:** payment and record of financial commitments and compensations
 * **Marketing:** getting groups interested in products and services. 
@@ -17,12 +25,15 @@
 
 ### Support functions:
 
+As businesses grow in size, various support functions are required to keep the core business running at their optimal levels of production. These functions include the following:
+
 * **Management Information Systems:** collect, analyze and distribute mission critical information to key administrators
 * **Human Resources:** attract, hire, retain and train employees
 * **Legal Department:** ensure compliance with laws and regulations
 * **Investor Relations:** communications to con shareholders to attract investments
 * **Customer Relations:** after sales care of customers
 * **Facilities Management:** maintenance of facilities and equipment  
+
 
 ### Quality Management of Business: (ISO9001)
 
@@ -33,7 +44,31 @@
 
 ### Interactions within a Business
 
-![Business Depts](images/businessdepts.png)
+As the business grows, so does the complexity of the interactions between the departments as shown in the following diagram:
+
+![Interactions between business departments](images/businessdepts.png)
+
+The key concern for IT-related majors is the nature and volumn of information to be analyzed, shared and communicated in a timely fashion.
+
+
+* ERP: ENTERPRISE RESOURCE PLANNING
+  * CMS: CONTENT MANAGEMENT SYSTEM
+  * PIM: PRODUCT INFORMATION MANAGEMENT
+  * AIS: Accounting Information System
+     * Revenue: cash inflow (sales)
+	 * Expenditure: cash outflow (payroll, equipment)
+     * Conversion: work-in-progress transactions (raw material, precursor inventory)
+	 * Administrative: reporting (income statement, balance sheet, cash flows)
+  
+* ERM: Enterprise Resource Management
+  * B2B: Business-to-business software that manages work flow with suppliers and partners
+  * B2C: Business-to-consumer software to serve your customers in terms of order status and billing information
+  * HRM: Human Resources Management - an Intranet system that organizes and transmits performance information and tracks of the training, development and productivity of employees
+* MAP: MARKETING AUTOMATION PLATFORM
+  * CRM: CUSTOMER RELATIONSHIP MANAGEMENT
+  * MCP: Marketing Campaign Planning
+
+
 
 ## Nature of Online Commerce
 
@@ -67,4 +102,5 @@
 
 ## Impact of Social Media on Brand and Product Marketing
 
+Natharin Arphivucharanun Õ.≥—∞À√‘π∑√Ï Õ¿‘«—™√–
 ## Business Development and Financing
