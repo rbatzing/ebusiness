@@ -34,13 +34,31 @@ As businesses grow in size, various support functions are required to keep the c
 * **Customer Relations:** after sales care of customers
 * **Facilities Management:** maintenance of facilities and equipment  
 
+ISO 9000 was first published in 1987 by the International Organization for Standardization (ISO) and was designed as a family of quality management systems standards to help organizations manage the meeting of the needs of customers and while meeting statutory and regulatory requirements related to a product or service.[*ref1]  The standards provide guidance and tools for companies and organizations who want to ensure that their products and services consistently meet customer’s requirements, and that quality is consistently improved.
 
-### Quality Management of Business: (ISO9001)
+[*ref1]: International Organization for Standardization, 2015. ISO 9001:2015(en) Quality management systems. Available online at  https://www.iso.org/obp/ui/#iso:std:iso:9001
 
-* Clear understanding of the customer of the goods or services offered
-* Assure that the system has achieved the intended results
-* Prevent or reduce undesired effects
-* Achieve improvement
+
+### Essentials of Business Quality Management: (ISO9001)
+
+* **Point 1: Clear customer understanding** of the goods or services offered
+* **Point 2: Verification of intended results** 
+* **Point 3: Prevention undesired effects**
+* **Point 4: Improve performance** based on the information gathered
+
+A> ## An example of an ISO9001 compliant transaction
+A>
+A> 1. The customer enters a restuarant and is given a menu with pictures of the food. (P1)
+A> 2. The waiter takes the order and repeats the order back to the customer for confirmation. (P1)
+A> 3. The waiter brings the food and doubles check that the order is complete. (P2)
+A> 4. The waiter comes back to check if everything is okay. (P2)
+A> 5. The cashier checks that all was well when the bill is paid. (P3)
+A> 6. The whole transaction is recorded and the receipt gives a website for feedback. (P3)
+A> 7. The customer's feedback on the website is analyzed for patterns of service that could be improved. (P4)
+
+X> ## ISO9001 and MacDonalds
+X>
+X> Worldwide MacDonald is a successful multinational enterprize run by staff most of which are under the age of 21 and yet it is a certified ISO9001 company. When a customer orders food at any MacDonald outlet in the world, the interaction between the customer and the counter staff is the same. Describe how the conversation illustrates the basic principles of ISO9001 principles for quality management.
 
 ### Interactions within a Business
 
