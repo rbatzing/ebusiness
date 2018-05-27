@@ -58,7 +58,7 @@ A> 7. The customer's feedback on the website is analyzed for patterns of service
 
 X> ## ISO9001 and MacDonalds
 X>
-X> Worldwide MacDonald is a successful multinational enterprize run by staff most of which are under the age of 21 and yet it is a certified ISO9001 company. When a customer orders food at any MacDonald outlet in the world, the interaction between the customer and the counter staff is the same. Describe how the conversation illustrates the basic principles of ISO9001 principles for quality management.
+X> Worldwide MacDonald is a successful multinational enterprize run by staff most of which are under the age of 21 and yet it is a certified ISO9001 company. When a customer orders food at any MacDonald outlet in the world, the interaction between the customer and the counter staff is the same. Create a swim lane workflow diagram to describe the information flow in the conversation between the customer, the counter staff, the kitchen staff, the accounting system and the point of sale computer system. Discuss how this illustrates the basic principles of ISO9001 principles for quality management.
 
 ### Interactions within a Business
 
@@ -67,6 +67,66 @@ As the business grows, so does the complexity of the interactions between the de
 ![Interactions between business departments](images/businessdepts.png)
 
 The key concern for IT-related majors is the nature and volumn of information to be analyzed, shared and communicated in a timely fashion.
+
+### Enterprise Architecture
+
+As IT Departments become more receptive to business strategy and play a transformative role in the nature of the busines, Enterprise Architure will emerge along the following evolutionary steps.[*ref2][*ref2-1]
+
+[*ref2]: Gregor Hohpe, 2017. 37 Things One Architect Knows About IT Transformation: A Chief Architect's Journey. Available online at https://leanpub.com/37things
+
+[*ref2-1]: Gregor Hohpe, 2017. Enterprise Architecture = Architecting the Enterprise? YOW! Conferences and Workshops for Developers by Developers. Keynote presentation at [YOW!2017 Conferences](https://youtu.be/pUYEVJVNSGc) http://yowconference.com.au
+
+1. Understand the business strategy
+2. Translate into an IT strategy
+3. Create transparency
+4. Define IT target picture
+5. Define the roadmap
+6. Harmonize and govern
+7. Obtain feedback and refine
+8. Coach and mentor
+
+{title="Approaches to understanding the business", width="60%"}
+|Architecting the Business | Reverse-Engineering the Organization |
+|:----------------|:-----------|
+|* Growth areas |* Divisions / business lines |
+|* Profitability |* Group level vs divisions |
+|* Geographic/demographic opportunities | * Reportings lines |
+|* Geopolitical aspects | * Matrix organizations |
+|* Acquisitions and divestitures | * Hidden org chart/loyalities |
+|-------|---------|
+
+### Understanding the role of IT in business
+
+{title="Different business views of IT"}
+| | Cost Center | Asset | Partner | Enabler |
+|----:|:----:|:----:|:----:|:----:|
+| Focus: | Cost | Return on investment | Business value | Speed & Innovation |
+|CIO Reports to: | CFO | COO | CDO | CEO |
+|Common stragegy: | Outsource IT | Harmonize/Rationalize | Insource IT | IT = business |
+|Levers: | Cost cutting | Economies of scale | Economies of Efficiency | Economies of Speed |
+
+IT Strategy provides a road map of where IT developments and operations are going. This is derived from an understanding of the nature of the business and is not restricted by current realities. The IT strategy is as much a definition of what IT intends to do as well as what it will not do. Above all, an effective IT Business strategy does not conform to a vendor's product road map. However, successful strategies must recognize the IT Operating Model that the business gives to IT.[*ref3]
+
+[*ref3]: Jeanne W. Ross, Peter Weill and David C. Robertson,2006. Enterprize Architecture as Strategy: Creating a foundation for business execution.  Harvard Business Review Press
+
+{title="IT Operating Models", width="60%"}
+| Integration | Minimal Standards | Highly Standardized |
+|:-----:|:---------------------|:---------------|
+|High | **Coordination**       | **Unification** |
+|     |* Unique business units | * Single business with global standards |
+|     |* Examples: Merrill Lynch, Toyota | * Examples: Delta Airlines, Pepsi |
+|     |* Key IT capability:    |* Key IT capability: |
+|     |   * access to shared data  |   * enterprise systems to reinforce standards |
+|     |   * standard technology interfaces |    * provide access to global data |
+|-----|-----------------------|---------------------| 
+| Low | **Diversification**   | **Replication** |
+|     | * Independent business units | * Independent but similar business units |
+|     | * different customers/expertise |  |
+|     |* Examples: Johnson & Johnson, GE | Example: Marriott, CEMEX |  
+|     |* Key IT capability:    |* Key IT capability: |
+|     |    * provide economies of scale |   * provide standard infrastructure and apps |
+|     |    * do not limit independence |     * maximize global efficiencies |
+|-----|-----------------------|---------------------|
 
 
 * ERP: ENTERPRISE RESOURCE PLANNING
