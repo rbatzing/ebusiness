@@ -1,10 +1,6 @@
-chapter1.md
-chapter2.md0.Preface.md
+0.Preface.md
 1.GeneralPrinciples.md
 2.BusinessSoftwareModels.md
-2.basicprinciples.md
 3.BusinessSoftwareSystems.md
 4.FutureTrends.md
 5.Bibliography.md
-Book.txt
-images/
