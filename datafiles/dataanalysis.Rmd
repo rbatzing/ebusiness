@@ -1,0 +1,49 @@
+---
+title: e-Business: Answers to the exercises
+author: Robert P. Batzinger
+date: 18 June 2018
+output: html_notebook
+---
+
+
+```{r,echo=FALSE}
+###################################################
+#  WARNING!
+#    Adjust the working directory BEFORE running 
+#     these script blocks
+###################################################
+setwd("d:/git/ebusiness/datafiles")
+```
+
+# Predicting resignations at the company
+
+## Dataset
+
+This example comes from the training set of a Kaggle competition.[^kagglecompet]
+
+[^kagglecompet]: Kaggle, 2017.
+
+```{r}
+hr <- read.csv("hr.csv")
+str(hr)
+```
+
+```{r}
+factors = rpart(left ~ satisfaction + lastEval +
+  numProj + avgMonHrs + yrsWCompany + wrkAccident + 
+  promotedLast5yrs+ job +   salary, data=hr)
+rpart.plot(factors)
+```
+```{r}
+lm =lm(left ~ satisfaction + lastEval +
+  numProj + avgMonHrs + yrsWCompany + wrkAccident + 
+  promotedLast5yrs+ job +   salary, data=hr)
+summary(lm)
+anova(lm)
+```
+
+```{r}
+library(klaR)
+x =  sknn(left ~ ., data=hr)
+```
+
