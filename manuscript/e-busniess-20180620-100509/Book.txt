@@ -1,0 +1,7 @@
+0.Preface.md
+1.GeneralPrinciples.md
+2.BusinessSoftwareModels.md
+3.BusinessSoftwareSystems.md
+4.FutureTrends.md
+5.Bibliography.md
+6.Appendix.md
