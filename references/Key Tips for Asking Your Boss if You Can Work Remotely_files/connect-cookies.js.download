@@ -1,0 +1,9 @@
+function CookiebotCallback_OnAccept() {
+	if (Cookiebot.consent.statistics)
+	{
+		var hubspotAccept = document.getElementById('hs-eu-confirmation-button');
+		if (hubspotAccept) {
+			hubspotAccept.click();
+		}
+	}
+}

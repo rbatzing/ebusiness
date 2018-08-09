@@ -1,0 +1,368 @@
+
+/* About Pages Styles */
+
+.page-template-page-templatestemplate-skillcrush-about-php .site-header {
+    background: #fff;
+}
+
+.about-page-wrap {
+    font: 18px/25px 'open sans', sans-serif;
+}
+.about-page-wrap header h1 {
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -0.05em;
+    margin: 10px 0;
+    float: none;
+    font-weight: bold;
+}
+
+.about-page-wrap h2 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.about-page-wrap h4 {
+    font:600 16px 'open sans', sans-serif;
+    margin: 70px 0 15px;
+    text-transform: uppercase;
+}
+
+#hello {
+    margin-top: 70px;
+}
+
+#hello .content{
+    font: 600 22.5px/33.5px 'open sans', sans-serif;
+    max-width: 80%;
+}
+#hello .content p {
+    font: 600 22.5px/33.5px 'open sans', sans-serif;
+}
+
+#hello + #employees {
+    margin-top: 40px;
+    width: 100%;
+}
+
+#employees .employer {
+    white-space: nowrap;
+    border-bottom: 1px dotted #9f9e9e;
+    margin-top: 20px;
+    padding-top: 40px;
+    position: relative;
+    padding-left: 550px;
+    padding-right: 130px;
+    min-height: 410px;
+}
+
+#employees .employer h4 {
+    margin: 10px 0 30px;
+}
+
+#employees .employer .img-wrap {
+    padding: 0 50px;
+    width: 460px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 320px auto;
+    top: 0;
+}
+
+#employees .employer.randle-browning .img-wrap {
+    background-size: 100% auto;
+}
+
+#employees .emily-davis .img-wrap {
+    background-size: 75% auto;
+}
+
+#employees .kelli-orrela .img-wrap, 
+#employees .rachel-papst .img-wrap {
+    background-size: 80% auto;
+}
+
+#employees .caro-griffin .img-wrap {
+    background-size: 100% auto;
+}
+
+#employees .deepina-kapila .img-wrap,
+#employees .rebecca-patrick .img-wrap {
+    background-size: 100% auto;
+    width: 45%;
+}
+
+#employees .angela-wyman .img-wrap {
+    background-size: 395px auto;
+    width: 495px;
+}
+
+#employees .employer.even {
+    padding-left: 140px;
+    padding-right: 545px;
+}
+
+#employees .employer:first-child + .even .img-wrap {
+    background-size: 410px auto;
+}
+
+#employees .employer.even .img-wrap {
+    left: auto;
+    right: 0;
+}
+
+#employees .employer .text-wrap {
+    white-space: normal;
+    padding: 60px 0 40px;
+    position: relative;
+}
+
+#employees .employer img {
+    margin-bottom: -4px;
+}
+
+#employees .employer .bio {
+    font: 18px/25px 'open sans', sans-serif;
+}
+
+#employees .employer .sub-bio {
+    font: 16px 'open sans', sans-serif;
+    margin-top: 26px;
+}
+
+#employees .employer .sharing-btns {
+    margin-top: 30px;
+}
+
+#employees .employer .sharing-btns h4 {
+    margin-bottom: 20px;
+}
+
+.sharing-btns li {
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+.sharing-btns h4 {
+    margin: 0 0 8px;
+}
+
+.sharing-btns a {
+    display: block;
+    width: 26px;
+    height: 25px;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.sharing-btns .fb {
+    background: #fff url(../img/icons/fb.png) no-repeat;
+}
+
+.sharing-btns .insta {
+    background: #fff url(../img/icons/instagram.png) no-repeat;
+}
+
+.sharing-btns .tw {
+    background: #fff url(../img/icons/tw.png) no-repeat;
+}
+
+.sharing-btns .ln {
+    background: #fff url(../img/icons/ln.png) no-repeat;
+}
+
+.sharing-btns .gp {
+    background: #fff url(../img/icons/gp.png) no-repeat;
+}
+
+#featured-video h4,
+#aboutQuotes h4 {
+    margin: 90px 0 10px;
+}
+
+
+#featured-video h2,
+#aboutQuotes h2 {
+    margin-bottom: 40px;
+}
+
+#featured-video .video-link {
+    float: left;
+    width: 57%;
+    margin-right: 3%;
+}
+#featured-video .video-link .hidden-link {
+    display: none;
+}
+
+#featured-video .video-content {
+    margin-left: 60%;
+}
+
+#featured-video  {
+    overflow: hidden;
+}
+
+#featured-video  p {
+    padding-top: 15px;
+    padding-right: 100px;
+}
+
+#aboutQuotes blockquote {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+#aboutQuotes blockquote.quote-2 {
+    margin: 0 4.5%;
+}
+
+#aboutQuotes blockquote img {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+#featured_podcast {
+    border-top: 1px dotted #9F9E9E;
+    border-bottom: 1px dotted #9F9E9E;
+    padding: 40px 100px;
+    margin: 40px auto !important;
+}
+
+#featured_podcast a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+#featured_podcast .featured_podcast_link {
+    background: url(../img/icons/podcast-icon.png) no-repeat;
+    width: 136px;
+    height: 137px;
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#featured_podcast h4 {
+    margin: 5px 0;
+}
+
+#featured_podcast h2 {
+    margin: 0 0 10px;
+}
+
+#featured_podcast .podcast-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: 63.5%;
+}
+
+#featured_podcast .podcast-wrap p {
+    margin-bottom: 0;
+}
+
+.about-page-wrap .main {
+    clear: both;
+}
+.about-page-wrap + .site-footer,
+.about-page-wrap + .sub-footer {
+    background: transparent;
+}
+
+.about-page-wrap + .sub-footer {
+    margin-top: 50px;
+}
+
+.about-page-wrap + .sub-footer p, 
+.about-page-wrap + .sub-footer a {
+    color: #3b3b3b;
+}
+
+.about-page-wrap + .site-footer .footer-copyright {
+    margin-top: 70px;
+}
+
+#testimonials {
+    overflow: hidden;
+}
+
+#testimonials .class-proof {
+    width: 31%;
+    margin-right: 3.5%;
+    float: left;
+    min-width: 0;
+    padding-top: 0;
+}
+
+#testimonials .class-proof:last-child {
+    margin-right: 0;
+}
+
+#testimonials .class-proof img {
+    max-width: 93%;
+    margin: 0 auto 45px;
+}
+
+#testimonials .class-proof article {
+    padding: 5px 0 20px;
+}
+
+#testimonials div.quote {
+    width: 95%;
+    padding: 5px 0 20px 5%;
+    background-size: 25px auto;
+}
+
+#testimonials div.quote p{
+    font: normal 18px/25px 'open sans', sans-serif;
+}
+
+#testimonials div.quote h3 {
+    font: 18px/20px 'montserrat', sans-serif;
+    color: #f89f73;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#testimonials div.quote span {
+    font: italic 18px/20px 'open sans', sans-serif;
+    color: #989898;
+}
+
+
+
+#author.mentor {
+    margin-top: 70px;
+    width: 690px;
+    overflow: hidden;
+}
+#author.mentor .mentor-bio {
+    width: 70%;
+    padding-left: 7%;
+    padding-top: 40px;
+    font-size: 14.5px;
+}
+#author.mentor img {
+    width: 28%;
+}
+#author.mentor p {
+    font-size: 14.5px;
+    margin-bottom: 0;
+}
+#author.mentor .sharing-btns {
+    margin-top: 30px;
+}
+#author.mentor .sharing-btns a {
+    display: inline-block;
+    margin-right: 5px;
+}
+#comments {
+    margin: 0 auto;
+}

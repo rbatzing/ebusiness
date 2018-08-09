@@ -1,0 +1,261 @@
+$(document).ready(function() {
+  $(".popular-posts-list li").each(function() {
+    var element = $(this)
+      .children()
+      .eq(1);
+    var category = $(element)
+      .text()
+      .toLowerCase();
+    category = category.replace(/\ /g, "-");
+    $(element).addClass(category);
+    $(element).addClass("popular-posts-category");
+
+    // add read more link
+    var postLink = $(this)
+      .children()
+      .eq(2)
+      .attr("href");
+    $(this).append(
+      '<a href="' +
+        postLink +
+        '" class="popular-posts-read-more">Read More <span>&rsaquo;</span></a>'
+    );
+  });
+
+  // Validate form
+  $(".blog-header #search, .blog-header #searchform,#mobile-menu #searchform").submit(function() {
+    var isFormValid = true;
+    if (
+      $.trim(
+        $(this)
+          .find("#s")
+          .val()
+      ).length == 0
+    ) {
+      $(this).addClass("highlight");
+      isFormValid = false;
+    } else {
+      $(this).removeClass("highlight");
+    }
+    return isFormValid;
+  });
+
+  if ($(window).width() < 481) {
+    $('.menu li a:contains("Blog")').after($(".blog-categories"));
+
+    $(".post-teaser").each(function() {
+      $(this)
+        .find(".blog-left")
+        .before($(this).find(".entry-title"));
+    });
+  }
+
+  /*================================
+	Blog Slider Javascript
+	================================*/
+  var carousel = new Carousel({
+    elem: "blog-slider", // id of the carousel container
+    autoplay: true, // starts the rotation automatically
+    infinite: true, // enables the infinite mode
+    interval: 8000, // interval between slide changes
+    dots: true, // show navigation dots
+    arrows: false, // show navigation arrows
+    buttons: false, // hide play/stop buttons
+    fullWidth: true // show slider full screen
+  });
+
+  var restartTransitions = function() {
+    carousel.stop();
+    carousel.play();
+  };
+  var $sliderDots = Array.from(document.querySelectorAll(".js-Carousel-dots li"));
+  $sliderDots.forEach(function(dot) {
+    dot.addEventListener("click", restartTransitions);
+  });
+
+  /*================================
+	New Blog Nav / Hero Javascript
+	================================*/
+
+  // Basic functions for manipulating elements
+  var expand = function(el) {
+    return function() {
+      var state = el.getAttribute("aria-expanded") === "false";
+      el.setAttribute("aria-expanded", state);
+    };
+  };
+  var fadeEl = function(el, modifier) {
+    el.style.opacity = 1 - modifier / 100;
+  };
+  var resizeEl = function(el, base, modifier) {
+    el.style.height = base - modifier + "px";
+  };
+  var focusField = function(el, input) {
+    if (!input) {
+      input = el;
+    }
+    return function() {
+      if (el.getAttribute("aria-expanded") === "true") input.focus();
+      return el;
+    };
+  };
+
+  if (document.documentElement.clientWidth > 800) {
+    // Getting all elements needed
+    var $search = document.querySelector(".blog-search");
+    var $searchIcon = document.querySelector(".blog-search__icon");
+    var $searchInput = document.querySelector(".blog-search__form__input");
+    var $nav = document.querySelector(".nav--blog");
+    var $hero = document.querySelector(".nav__hero");
+    var $sliderDots = document.querySelector(".js-Carousel-dots");
+    var $menu = document.querySelector(".menu--blog");
+    var $secondaryNav = document.querySelector(".nav__secondary");
+
+    // Applying the expand and focus function to our search element
+    var expandSearch = expand($search);
+    var focusSearch = focusField($search, $searchInput);
+
+    // Adding click event to the icon to call expand and focus
+    $searchIcon.addEventListener("click", expandSearch);
+    $searchIcon.addEventListener("click", focusSearch);
+
+    // Getting positional variables needed for animations
+    var navPos = $secondaryNav.offsetTop;
+    var heroHeight = $hero.offsetHeight;
+    var secondaryNavHeight = $secondaryNav.offsetHeight;
+    var staticScroll = window.scrollY;
+
+    var fadeBlog = function(pos) {
+      if (pos <= 100) {
+        window.requestAnimationFrame(function() {
+          var $heroContent = Array.from($hero.querySelectorAll(".nav__slider__item__content"));
+          $heroContent.forEach(function(content) {
+            fadeEl(content, pos);
+          });
+          $sliderDots && fadeEl($sliderDots, pos);
+          fadeEl($menu, pos);
+          resizeEl($hero, heroHeight, pos);
+        });
+      } else if (pos <= 426) {
+        window.requestAnimationFrame(function() {
+          var $heroContent = Array.from($hero.querySelectorAll(".nav__slider__item__content"));
+          $heroContent.forEach(function(content) {
+            fadeEl(content, 100);
+          });
+          $sliderDots && fadeEl($sliderDots, 100);
+          fadeEl($menu, 100);
+          resizeEl($hero, heroHeight, pos);
+        });
+      }
+    };
+    var animateNav = function(pos) {
+      if (navPos - (pos + pos) <= 0) {
+        window.requestAnimationFrame(function() {
+          $nav.classList.add("nav--fixed");
+          $nav.classList.remove("nav--fixing");
+          $nav.classList.remove("nav--fix");
+          $secondaryNav.style.height = "80px";
+        });
+      } else if (navPos - (pos + pos) <= 15) {
+        window.requestAnimationFrame(function() {
+          $nav.classList.contains("nav--landing")
+            ? ($secondaryNav.style.height = secondaryNavHeight + (pos - 413) + "px")
+            : ($secondaryNav.style.height = secondaryNavHeight + (pos - 43) + "px");
+          $nav.classList.add("nav--fixing");
+          $nav.classList.remove("nav--fixed");
+          $nav.classList.remove("nav--fix");
+        });
+      } else if (navPos - (pos + pos) <= 80) {
+        window.requestAnimationFrame(function() {
+          $secondaryNav.style.height = secondaryNavHeight;
+          $nav.classList.add("nav--fixing");
+          $nav.classList.remove("nav--fixed");
+          $nav.classList.remove("nav--fix");
+        });
+      } else if (navPos - (pos + pos) < 100) {
+        window.requestAnimationFrame(function() {
+          $nav.classList.add("nav--fix");
+          $nav.classList.remove("nav--fixed");
+          $nav.classList.remove("nav--fixing");
+        });
+      } else {
+        window.requestAnimationFrame(function() {
+          $nav.classList.remove("nav--fixed");
+          $nav.classList.remove("nav--fixing");
+          $nav.classList.remove("nav--fix");
+        });
+      }
+    };
+    fadeBlog(staticScroll);
+    animateNav(staticScroll);
+    window.addEventListener("scroll", function(e) {
+      var scrollPos = window.scrollY;
+      fadeBlog(scrollPos);
+      animateNav(scrollPos);
+    });
+  } else {
+    var $search = document.querySelector(".blog-search");
+    var $hero = document.querySelector(".nav__hero");
+    var $sliderDots = document.querySelector(".js-Carousel-dots");
+    var $nav = document.querySelector(".nav--blog");
+    var $mobileNav = document.querySelector(".nav__main__logo");
+    var $parentCategories = Array.from(document.querySelectorAll(".menu-item--category"));
+
+    var heroHeight = $hero.offsetHeight;
+    var navHeight = $mobileNav.offsetHeight;
+    var staticScroll = window.scrollY;
+
+    function toggleMenu(context) {
+      // return first element with menu-toggle wanted
+      document.querySelector(context).addEventListener("click", function(e) {
+        e.preventDefault();
+        var $nav = document.querySelector(".nav--blog");
+        var $btn = document.querySelector(context);
+        // Run actions
+        $nav.classList.toggle("nav--open");
+        expand($btn)();
+      });
+    }
+
+    var handleMobileBlog = function(pos) {
+      if (pos <= 100) {
+        window.requestAnimationFrame(function() {
+          var $heroContent = Array.from($hero.querySelectorAll(".nav__slider__item__content"));
+          $heroContent.forEach(function(content) {
+            fadeEl(content, pos);
+          });
+          $sliderDots && fadeEl($sliderDots, pos);
+          resizeEl($hero, heroHeight, pos);
+          $nav.classList.remove("nav--fixed");
+        });
+      } else if (document.documentElement.clientHeight - (pos + pos) > navHeight) {
+        window.requestAnimationFrame(function() {
+          var $heroContent = Array.from($hero.querySelectorAll(".nav__slider__item__content"));
+          $heroContent.forEach(function(content) {
+            fadeEl(content, 100);
+          });
+          $sliderDots && fadeEl($sliderDots, 100);
+          resizeEl($hero, heroHeight, pos);
+          $nav.classList.remove("nav--fixed");
+        });
+      } else {
+        window.requestAnimationFrame(function() {
+          $nav.classList.add("nav--fixed");
+        });
+      }
+    };
+
+    handleMobileBlog(staticScroll);
+    expand($search)();
+    toggleMenu(".menu-toggle");
+    $parentCategories.forEach(function(category) {
+      var expandCategory = expand(category);
+      category.setAttribute("aria-expanded", false);
+      category.addEventListener("click", expandCategory);
+    });
+    window.addEventListener("scroll", function(e) {
+      var scrollPos = window.scrollY;
+      handleMobileBlog(scrollPos);
+    });
+  }
+});

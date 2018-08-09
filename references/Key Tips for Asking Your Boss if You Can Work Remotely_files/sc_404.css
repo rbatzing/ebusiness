@@ -1,0 +1,127 @@
+/* 404 Pages */
+#hero-404 {
+  background: #f9c3ce url(../img/backgrounds/404-icecream.jpg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 140px 0 100px;
+  margin-top: -66px;
+  text-align: left;
+}
+.logged-in #hero-404 {
+  margin-top: 0;
+}
+
+#hero-404 h1 {
+  color: #fff;
+  font: 700 5.75em/1.1em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-left: -8px;
+}
+
+#hero-404 h1 span {
+  color: #fd7368;
+}
+
+#hero-404 h2 {
+  color: #626262;
+  font: 700 2.275em/1.2em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+#hero-404 h3 {
+  color: #626262;
+  font: 700 2.5em/1.2em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-top: 175px;
+}
+#hero-404 h3 span {
+  color: #fff;
+  font: 400 1em 'wisdom_scriptregular', sans-serif;
+  text-transform: lowercase;
+}
+
+#hero-404-links a {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font: 300 1.71em/1em 'Open Sans', sans-serif;
+  display: inline-block;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-right: 25px;
+}
+
+#hero-404-links .fa {
+    margin: 0 0 0 9px;
+}
+
+.page-404-content {
+  color: #626262;
+  padding-top: 80px;
+}
+
+.page-404-content .into {
+  font: 400 1em/1.8em 'Open Sans' sans-serif;
+  margin-bottom: 45px;
+}
+
+.page-404-content h2 {
+  color: #f58278;
+  font: 700 2.1875em/1em 'Montserrat', sans-serif;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+
+.page-404-content .errors-codes {
+  float: left;
+  width: 66%;
+}
+
+.page-404-content .fact {
+  float: left;
+  padding: 0 5%;
+  width: 34%;
+}
+
+.page-404-content .fact h2 {
+  background: url(../img/backgrounds/404-cocktail.png) no-repeat;
+  padding-top: 15px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.page-404-content .fact h3 {
+  color: #77cfdb;
+  font: 800 1.718em/1em 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.page-404-content .fact img {
+  display: block;
+  margin: 10px auto 0;
+}
+
+.page-404-content .col {
+  float: left;
+  width: 50%;
+  padding-right: 5%;
+}
+.page-404-content p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+.page-404-content q {
+  display: block;
+  line-height: 1.33em;
+  color: #f58278;
+  font-style: italic;
+  margin: 15px;
+
+}

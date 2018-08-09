@@ -1,0 +1,141 @@
+$(document).ready(function() {
+	/** blueprint sales countdown clock **/
+	function flipClock(deadline) {
+		if (deadline.length > 0) {
+			var offset = new Date().getTimezoneOffset() * 60;
+			deadline = parseInt(deadline) + parseInt(offset);
+			var now = Math.round(new Date().getTime() / 1000);
+			var timeLeft = deadline - now;
+			if (timeLeft > 0) {
+				var clock = new FlipClock($('.flipclock'), timeLeft, {
+					clockFace: 'DailyCounter',
+					countdown: true,
+					callbacks: {
+		                stop: function() {
+		                    $('#countdown').hide();
+		                }
+		            }
+				});
+			} else {
+				$('#countdown').hide();
+			}
+		}
+	}
+
+	// serverTime is set in the PHP files:
+	// template-blueprints-sales-page
+	// single-sc_blueprints
+	if (typeof serverTime !== 'undefined') {
+		flipClock(serverTime);
+	}
+	/** END blueprint sales countdown clock **/
+
+
+	/** Class sales pages **/
+	var myHash = location.hash;
+	if (myHash != '') {
+		if (myHash.toLowerCase() == '#web-developer') {
+			$('#back-to-dev-blueprint').show();
+		}
+		if (myHash.toLowerCase() == '#web-designer') {
+			$('#back-to-des-blueprint').show();
+		}
+	}
+
+	$('.class-breakdown-right').addClass('inactive');
+	$('.right-preview').addClass('inactive');
+	$('.class-breakdown-right img').addClass('inactive');
+
+	$('.class-breakdown-left').click(function() {
+		$('.right-preview').addClass('inactive');
+		$('.class-breakdown-right').addClass('inactive');
+		$('.class-breakdown-right img').addClass('inactive');
+		$('.left-preview').removeClass('inactive');
+		$('.class-breakdown-left').removeClass('inactive');
+		$('.class-breakdown-left img').removeClass('inactive');
+	});
+	$('.class-breakdown-right').click(function() {
+		$('.left-preview').addClass('inactive');
+		$('.class-breakdown-left').addClass('inactive');
+		$('.class-breakdown-left img').addClass('inactive');
+		$('.right-preview').removeClass('inactive');
+		$('.class-breakdown-right').removeClass('inactive');
+		$('.class-breakdown-right img').removeClass('inactive');
+	});
+	/** END Class sales pages **/
+
+	/** Placeholder cross browsers **/
+	$(function() {
+		if(!Modernizr.input.placeholder) {
+
+			$('[placeholder]').focus(function() {
+				var input = $(this).not('[type="password"]');
+				if (input.val() == input.attr('placeholder')) {
+					input.val('');
+					input.removeClass('placeholder');
+				}
+			}).blur(function() {
+				var input = $(this).not('[type="password"]');
+				if (input.val() == '' || input.val() == input.attr('placeholder')) {
+					input.addClass('placeholder');
+					input.val(input.attr('placeholder'));
+				}
+			}).blur();
+			$('[placeholder]').parents('form').submit(function() {
+				$(this).find('[placeholder]').each(function() {
+					var input = $(this).not('[type="password"]');
+					if (input.val() == input.attr('placeholder')) {
+						input.val('');
+					}
+				})
+			});
+			$('[type="password"]').closest('div').find('label').show();
+		}
+	});
+	/** END Placeholder cross browsers **/
+
+
+	/** About page **/
+	$('.page-template-page-templatestemplate-skillcrush-about-php #employees .employer:odd').addClass('even');
+	/** END About page **/
+
+
+	/** 404 page **/
+	if ($('.page-404-content').length > 0) {
+		$('#homepage-page-container').css('margin-top', '0');
+	}
+	/** END 404 page **/
+
+
+	/** Replace event links **/
+		$('.tribe-events-single .tribe-events-cal-links').insertAfter('.tribe-events-event-meta.primary');
+	/** END Replace event links **/
+
+	/* blueprint sales page */
+	$(function() {
+		var numRows = $('.bsp-testimonial_row').length;
+		$('.page-template-template-blueprints-sales-page').find('span#num-testimonials').text(numRows);
+	});
+	/* END blueprint sales page */
+
+	// Check to see if olark is defined on the page
+	if (typeof olark != "undefined") {
+
+		// Show Beacon when chat is not available for Olark
+		olark('api.chat.onOperatorsAway', function() {
+			olark('api.box.hide');
+			$('#hs-beacon').show();
+			HS.beacon.init();
+		});
+
+		// Hide Beacon when chat is available for Olark
+		olark('api.chat.onOperatorsAvailable', function() {
+			olark('api.box.show');
+			HS.beacon.destroy();
+		});
+
+	} else {
+		$('#hs-beacon').show();
+	}
+
+});

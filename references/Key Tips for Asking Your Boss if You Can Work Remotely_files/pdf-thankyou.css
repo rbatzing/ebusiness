@@ -1,0 +1,241 @@
+.page-template-template-pdf-thankyou-landing-php {
+	background: #f8f8f8;
+}
+.pdf-thankyou {
+	background: #fff;
+	width: 1200px;
+	margin: 50px auto auto;
+	box-shadow: 3px 4px 0 #eeeeee;
+}
+
+.pdf-thankyou .main {
+	max-width: 1080px;
+	min-width: 0;
+}
+.pdf-thankyou .red-text {
+	color: #f16059;
+}
+.pdf-thankyou a {
+	color: inherit;
+}
+.pdf-thankyou a:hover,
+.pdf-thankyou a:focus {
+	color: inherit;
+}
+
+.pdf-thxu_gretting-letter {
+	padding: 4.2em 5em 3em;
+	position: relative;
+}
+.pdf-thxu_gl-headline {
+	color: #000;
+	font: 700 1.4em/1.351 'Montserrat', sans-serif;
+	margin-bottom: 1.2em;
+}
+.pdf-thxu_gl-headline span {
+	color: #f16059;
+}
+.pdf-thxu_gl-content {
+	color: #6d6e71;
+	font: 400 1.225em/1.68em 'Open Sans', sans-serif;
+}
+.pdf-thxu_gl-content p {
+	margin-bottom: 0.7em;
+	font: 0.875em/1.625em 'Open Sans', helvetica, arial, sans-serif;
+}
+.pdf-thxu_gretting-letter:after {
+	content: '';
+	position: absolute;
+	bottom: -1.8em;
+	border-left: 3.21em solid transparent;
+	border-right: 3.21em solid transparent;
+	border-top: 1.875em solid #fff;
+	height: 0;
+	width: 0;
+	left: 50%;
+	margin-left: -3.21em;
+	z-index: 1;
+}
+
+.pdf-thxu_testimonials {
+	background: #f16059;
+	padding: 4em 6em 1.5em;	
+	position: relative;
+}
+.pdf-thxu_testimonials-headline {
+	color: #fff;
+	font: italic 400 1.125em/1.6 'Open Sans', sans-serif;
+	margin-bottom: 1.9em;
+	text-align: center;
+}
+.pdf-thxu_testimonial_row {
+	margin: 0 0 2em;  
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 90%;
+	-webkit-flex-align: stretch;
+	-ms-flex-align: stretch;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+}
+.pdf-thxu_testimonial_left {
+	float: left;
+	font: 400 1.5em/1.5 'Open Sans', sans-serif;
+	padding-right: 7.22%;
+	text-align: center;
+	width: 28.8%;
+}
+.pdf-thxu_testimonial_img-wrap {
+	position: relative;
+}
+.pdf-thxu_testimonial_img {
+	margin-left: 50px;
+	max-width: 80%;
+	position: relative;
+	z-index: 1;
+}
+.pdf-thxu_testimonial_img-wrap:after {
+	content: '';
+	position: absolute;
+	right: -46.5%;
+	top: 50%;
+	border-top: 2px solid #fff;
+	width: 80%;
+	z-index: 0;
+}
+.pdf-thxu_testimonial_wrap {
+	background: #fff;
+	box-shadow: 3px 4px 0 #e35e59;
+	color: #7d7d7d;
+	border-radius: 2px;
+	float: left;
+	padding: 1.8125em 3.6%;
+	width: 71.2%;
+}
+.pdf-thxu_testimonial_text {
+	color: #6d6e71;
+	font: 400 0.975em/1.57 'Open Sans', sans-serif;
+}
+.pdf-thxu_testimonials:after {
+	content: '';
+	position: absolute;
+	bottom: -1.8em;
+	border-left: 3.21em solid transparent;
+	border-right: 3.21em solid transparent;
+	border-top: 1.875em solid #f16059;
+	height: 0;
+	width: 0;
+	left: 50%;
+	margin-left: -3.21em;
+	z-index: 1;
+}
+
+.pdf-thxu_intro-text {
+    padding: 5em 5em 2.9em;
+    position: relative;
+}
+.pdf-thxu_it-content {
+    color: #6d6e71;    
+    font: 400 1.225em/1.68em 'Open Sans', sans-serif;
+}
+.pdf-thxu_it-content p {
+	margin-bottom: 2em;
+	font: 0.875em/1.625em 'Open Sans', helvetica, arial, sans-serif;
+}
+
+.pdf-thxu_guides .main {
+	border: solid #dcddde;
+	border-width: 2px 0;
+	padding: 3em 0 1.2em;
+	margin: 0 8em;
+	position: relative;
+	max-width: 1080px;
+}
+.pdf-thxu_guides .main:before {
+	content: '';
+	display: block;
+	background: url(../img/icons/pdf-thxu-icon.png) no-repeat center;
+	background-size: 100% auto;
+	border: 0.8em solid #fff;
+	height: 6.56em;
+	margin: 0 auto;
+	position: absolute;
+	top: -3.38em;
+	left: 0;
+	right: 0;
+	width: 9.46%;
+}
+.pdf-thxu_guides_headline {
+	font: 700 1.5625em/1.68 'Montserrat', sans-serif;
+	margin-bottom: 1.3em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pdf-thxu_guides_content {
+	/*margin: 0 -1.61%;*/
+}
+.pdf-thxu_guide_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 1.61% 2.5em;
+	width: 22.2%;
+}
+.pdf-thxu_guide_link.right {
+	margin-right: 0;
+}
+.pdf-thxu_guide_link.left {
+	margin-left: 0;
+}
+.pdf-thxu_guide_img-wrap {
+	border: 1px solid #d1d4d7;
+	display: block;
+	padding: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.pdf-thxu_guide_img {
+	border: 1px solid #d1d4d7;
+	display: inline-block;
+	max-width: 100%;
+}
+.pdf-thxu_guide_title {
+	color: #6d6e71;
+	display: block;
+	font: 600 1em/1.56 'Open Sans', sans-serif;
+	padding: 0 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pdf-thxu_guide_title:hover {
+	color: #f16059;
+}
+
+.pdf-thxu_letter {
+	padding: 3.6em 6em 5em;
+}
+.pdf-thxu_letter-content {
+	color: #6d6e71;
+    font: italic 400 1.225em/1.68em 'Open Sans', sans-serif;
+    text-align: center;
+}
+.pdf-thxu_letter-content p {
+	margin-bottom: 0;
+	font: italic 0.875em/1.625em 'Open Sans', helvetica, arial, sans-serif;
+}
+.pdf-thxu_letter-content p a {
+	text-decoration: underline;
+}
+.pdf-thxu_letter-content p a:hover {
+	text-decoration: none;
+}
+.pdf-thxu_letter-content .xoxo {
+	margin-top: 3.7em;
+	text-align: right;
+}
+.pdf-thxu_letter-img {
+	float: right;
+	margin-top: 2.5em;
+}

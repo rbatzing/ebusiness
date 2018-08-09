@@ -1,0 +1,17 @@
+$(document).ready(function() {
+  // MemberPress Purchase Step 1 - Button Toggles
+  $("label.btn-radio").click(function() {
+    $(".submit-box").addClass("show");
+    $("a#next").attr("href", $(this).data("link"));
+  });
+
+  $("label#monthly-label").click(function() {
+    $(".mepr-detail .media").addClass("show");
+    $(".mepr-detail .media").removeClass("invisible");
+  });
+
+  $("label#one-time-label").click(function() {
+    $(".mepr-detail .media").removeClass("show");
+    $(".mepr-detail .media").addClass("invisible");
+  });
+});

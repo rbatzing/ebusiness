@@ -1,0 +1,127 @@
+// NEW mobile css
+
+function mobileIssues() {
+	$('#mobile-menu').panel();
+	$('#top-nav-right').panel();
+
+	$("#signed-out-navigation nav h3" ).click(function(){
+		$('#signed-out-navigation nav').toggleClass("show-list");
+	});
+
+	$('form').attr('autocomplete','off');
+
+
+	$('.terms-page').each(function(){
+		$('.hide-m').hide();
+		$('h3').on('click', function(){
+			$(this).toggleClass('open');
+			$(this).next('.hide-m').slideToggle();
+		});
+	});
+	$('#bp-letter h4').each(function(){
+		if($(this).text() == 'Just five years ago, I was where you are.') {
+			$(this).text('Just five years ago');
+		}
+	});
+}
+
+function openPDFonMobile() {
+	$('iframe[src$=".pdf"]').each(function(){
+		$(this).after('<a href="' + $(this).attr('src') + '" class="btn open-pdf-mobile">Open PDF</a>');
+	});
+}
+
+function mobileActiveStates() {
+	$('.choose-program > a').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.choose-program > .sub-menu').toggleClass('show-sub-nav');
+		$('.modal-background').toggleClass('transparent-background');
+	});
+	$('.individual-content .nav-previous').click(function(){
+		$(this).toggleClass('active');
+	});
+	$('.individual-content .nav-next').click(function(){
+		$(this).toggleClass('active');
+	});
+}
+
+function backAfterResize(){
+	$('.open-pdf-mobile').remove();
+
+	$("#signed-out-navigation nav h3").unbind( "click" );
+
+	$('form').attr('autocomplete','on');
+
+	$('.terms-page').each(function(){
+		$('.hide-m').show();
+		$('h3').unbind( "click" );
+	});
+
+	$('#bp-letter h4').each(function(){
+		if($(this).text() == 'Just five years ago') {
+			$(this).text('Just five years ago, I was where you are.');
+		}
+	});
+}
+
+// No resize callbacks
+if ($(window).width() <= 800 ) {
+	mobileIssues();
+}
+if ($(window).width() <= 800 ) {
+	openPDFonMobile();
+}
+if ($(window).width() <= 960) {
+	mobileActiveStates();
+}
+
+// Callback on resize
+$(window).resize(function(){
+	var windowWidth = $(window).width();
+	if ( windowWidth <= 800 ){
+		mobileIssues();
+	}
+	if ( windowWidth <= 800 ) {
+		openPDFonMobile();
+	}
+	if ( windowWidth <= 960 ) {
+		mobileActiveStates();
+	}
+	if ( windowWidth > 800 ) {
+		backAfterResize();
+	}
+	if ( windowWidth > 960 ) {
+		$('.individual-content .nav-next').unbind( "click" );
+		$('.individual-content .nav-previous').unbind( "click" );
+		$('.choose-program > a').unbind( "click" );
+	}
+});
+
+/* scripts for overflow:scroll on IOS */
+function isTouchDevice(){
+    try{
+        document.createEvent("TouchEvent");
+        return true;
+    }catch(e){
+        return false;
+    }
+}
+
+function touchScroll(id){
+    if(isTouchDevice()){
+        var elt=document.getElementsByClassName(id);
+        var scrollStartPos=0;
+
+        elt.addEventListener("touchstart", function(event) {
+            scrollStartPos=this.scrollTop+event.touches[0].pageY;
+            event.preventDefault();
+        },false);
+
+        elt.addEventListener("touchmove", function(event) {
+            this.scrollTop=scrollStartPos-event.touches[0].pageY;
+            event.preventDefault();
+        },false);
+    }
+}
+setTimeout(touchScroll("mobile-menu"), 100);

@@ -1,0 +1,96 @@
+(function() {
+
+    var __hs_cta_json = {"css":"a#cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d {\n  -webkit-font-smoothing:antialiased; \n  cursor:pointer; \n  -moz-user-select:none; \n  -webkit-user-select:none; \n  -o-user-select:none; \n  user-select:none; \n  display:inline-block; \n  font-weight:normal; \n  text-align:center; \n  text-decoration:none; \n  font-family:sans-serif; \n  background:rgb(242,195,49); \n  color:rgb(255, 255, 255); \n  border-radius:4px; \n  border-width:0px; \n  transition:all .4s ease; \n  -moz-transition:all .4s ease; \n  -webkit-transition:all .4s ease; \n  -o-transition:all .4s ease; \n  text-shadow:none; \n  line-height:1.5em; \n  padding:3px 20px; \n}\na#cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d:hover {\nbackground:rgb(255,214,53); \ncolor:rgb(255,255,255); \n}\na#cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d:active, #cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d:active:hover {\nbackground:rgb(193,156,39); \ncolor:rgb(244,244,244); \n}\n\na#cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d  {\n  border-radius:5px;\nfont-style:normal;\n  display:inline-block;\n  height: auto;\n  background-color:#f2c331;\n  color:#ffffff;\n  text-decoration:none;\n  text-transform:uppercase;\n  font-weight:bold;\n  font-family: Montserrat, sans-serif;\n  font-size:18px;\n}\n\na#cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d:hover {\n  background-color:#d4a71a;\n}","image_html":"<a id=\"cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d\" class=\"cta_button\" href=\"https://cta-service-cms2.hubspot.com/ctas/v2/public/cs/c/?cta_guid=3b29e378-c4d7-4240-8f48-fe870adc4d2d&placement_guid=228d1859-c2ae-4197-ad6b-b7423e49fbfd&portal_id=470774&canon=https%3A%2F%2Fskillcrush.com%2F2015%2F11%2F10%2Ffirst-worker-at-your-company-to-work-remote%2F&redirect_url=APefjpHDpGLC5Nc96UF2SOXhHet2UC5JR_kpw2_7a3lNKwTscUaAR38M1E-MwlQ5HWI2JI5alHVSCnRYTn0W4Csb_NWvUrWF720viX2NVlMW-AN2DLL_qD6sPIWPPHHRXs_gO37uiiv9nBoqBQoMxkfIDhlnUsaF7g&click=7374f87c-9e80-41f6-b7ba-2f04ca639ff7&hsutk=c7a000001f431af61bbc01651991f4b0\"  target=\"_blank\"  cta_dest_link=\"https://skillcrush.com/is-tech-right-for-you-quiz\"><img id=\"hs-cta-img-228d1859-c2ae-4197-ad6b-b7423e49fbfd\" class=\"hs-cta-img \" style=\"border-width: 0px; /*hs-extra-styles*/\" mce_noresize=\"1\" alt=\"TAKE THE 3-MINUTE QUIZ\" src=\"https://cdn2.hubspot.net/hubshot/17/05/11/c3ac86ae-f9f0-4462-874c-daf904624baf.png\" /></a>","is_image":false,"placement_element_class":"hs-cta-228d1859-c2ae-4197-ad6b-b7423e49fbfd","raw_html":"<a id=\"cta_button_470774_3b29e378-c4d7-4240-8f48-fe870adc4d2d\" class=\"cta_button \" href=\"https://cta-service-cms2.hubspot.com/ctas/v2/public/cs/c/?cta_guid=3b29e378-c4d7-4240-8f48-fe870adc4d2d&placement_guid=228d1859-c2ae-4197-ad6b-b7423e49fbfd&portal_id=470774&canon=https%3A%2F%2Fskillcrush.com%2F2015%2F11%2F10%2Ffirst-worker-at-your-company-to-work-remote%2F&redirect_url=APefjpHDpGLC5Nc96UF2SOXhHet2UC5JR_kpw2_7a3lNKwTscUaAR38M1E-MwlQ5HWI2JI5alHVSCnRYTn0W4Csb_NWvUrWF720viX2NVlMW-AN2DLL_qD6sPIWPPHHRXs_gO37uiiv9nBoqBQoMxkfIDhlnUsaF7g&click=7374f87c-9e80-41f6-b7ba-2f04ca639ff7&hsutk=c7a000001f431af61bbc01651991f4b0\" target=\"_blank\" style=\"/*hs-extra-styles*/\" cta_dest_link=\"https://skillcrush.com/is-tech-right-for-you-quiz\" title=\"TAKE THE 3-MINUTE QUIZ\"><div style=\"text-align: center;\"><span style=\"font-size: 14px;\">TAKE THE 3-MINUTE QUIZ</span></div></a>"};
+    var __hs_cta = {};
+
+    __hs_cta.drop = function() {
+        var is_legacy = document.getElementById('hs-cta-ie-element') && true || false,
+            html = __hs_cta_json.image_html,
+            tags = __hs_cta.getTags(),
+            is_image = __hs_cta_json.is_image,
+            parent, _style;
+
+        if (!is_legacy && !is_image) {
+            parent = (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);
+
+            _style = document.createElement('style');
+            parent.insertBefore(_style, parent.childNodes[0]);
+            try {
+                default_css = ".hs-cta-wrapper p, .hs-cta-wrapper div { margin: 0; padding: 0; }";
+                cta_css = default_css + " " + __hs_cta_json.css;
+                // http://blog.coderlab.us/2005/09/22/using-the-innertext-property-with-firefox/
+                _style[document.all ? 'innerText' : 'textContent'] = cta_css;
+            } catch (e) {
+                // addressing an ie9 issue
+                _style.styleSheet.cssText = cta_css;
+            }
+
+            html = __hs_cta_json.raw_html;
+        }
+
+        for (var i = 0; i < tags.length; ++i) {
+
+            var tag = tags[i];
+            var images = tag.getElementsByTagName('img');
+            var cssText = "";
+            var align = "";
+            for (var j = 0; j < images.length; j++) {
+                align = images[j].align;
+                images[j].style.border = '';
+                images[j].style.display = '';
+                cssText = images[j].style.cssText;
+            }
+
+            if (align == "right") {
+                tag.style.display = "block";
+                tag.style.textAlign = "right";
+            } else if (align == "middle") {
+                tag.style.display = "block";
+                tag.style.textAlign = "center";
+            }
+
+            tag.innerHTML = html.replace('/*hs-extra-styles*/', cssText);
+            tag.style.visibility = 'visible';
+            tag.setAttribute('data-hs-drop', 'true');
+            window.hbspt && hbspt.cta && hbspt.cta.afterLoad && hbspt.cta.afterLoad('228d1859-c2ae-4197-ad6b-b7423e49fbfd');
+        }
+
+        return tags;
+    };
+
+    __hs_cta.getTags = function() {
+        var allTags, check, i, divTags, spanTags,
+            tags = [];
+            if (document.getElementsByClassName) {
+                allTags = document.getElementsByClassName(__hs_cta_json.placement_element_class);
+                check = function(ele) {
+                    return (ele.nodeName == 'DIV' || ele.nodeName == 'SPAN') && (!ele.getAttribute('data-hs-drop'));
+                };
+            } else {
+                allTags = [];
+                divTags = document.getElementsByTagName("div");
+                spanTags = document.getElementsByTagName("span");
+                for (i = 0; i < spanTags.length; i++) {
+                    allTags.push(spanTags[i]);
+                }
+                for (i = 0; i < divTags.length; i++) {
+                    allTags.push(divTags[i]);
+                }
+
+                check = function(ele) {
+                    return (ele.className.indexOf(__hs_cta_json.placement_element_class) > -1) && (!ele.getAttribute('data-hs-drop'));
+                };
+            }
+            for (i = 0; i < allTags.length; ++i) {
+                if (check(allTags[i])) {
+                    tags.push(allTags[i]);
+                }
+            }
+        return tags;
+    };
+
+    // need to do a slight timeout so IE has time to react
+    setTimeout(__hs_cta.drop, 10);
+    window._hsq = window._hsq || [];
+    window._hsq.push(['trackCtaView', '228d1859-c2ae-4197-ad6b-b7423e49fbfd', '3b29e378-c4d7-4240-8f48-fe870adc4d2d']);
+}());

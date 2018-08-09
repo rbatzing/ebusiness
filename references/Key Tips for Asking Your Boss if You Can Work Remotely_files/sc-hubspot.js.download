@@ -1,0 +1,199 @@
+/** MailChimp signup forms **/
+$(document).ready(function() {
+
+	// blog top
+	$('#single-blog-post-top-form form').submit(function(e) {
+		e.preventDefault();
+
+		$('.blog-top-form-container form .error-container').fadeOut(400);
+		
+		var $form = $(this);
+		
+		var email = $("#single-blog-post-top-form form input[type='email']").val();	
+	  	// _kmq.push(['record', 'Signed up for Email on Single Blog Post Top Form', {'memberState' : 'free lead' }]);
+	  	// _kmq.push(['identify', email]);
+		// _gaq.push(['_trackEvent', 'Email Lead', 'Single Blog Post Top Form', email]);
+
+		$.ajax({
+			url: $form.attr('action'),
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				data: $form.serialize()
+			},
+			success: function(data) {
+				if (data.success == 'true') {
+					$(".blog-top-form-container .form").fadeOut(400, function() {
+						var html = '<h4>' + data.msg + '</h4>';
+						$('.blog-top-form-container .success-container').html(html).fadeIn(400);
+					});
+				} else {
+					var html = '<label>' + data.msg + '</label>';
+					$('.blog-top-form-container form .error-container').html(html).fadeIn(400);
+				}
+			},
+			error: function(data) {
+				var html = '<label>' + data + '</label>';
+				$("#call-to-action").hide();
+				$('.blog-top-form-container form .error-container').html(html).fadeIn(400);
+			}
+		});
+	});
+	
+	
+	// homepage
+	// blog landing
+	// blog single
+	// blog category
+	// class sales
+	// acquisition pages - bootcamp & homepage
+	$('#mc_embed_signup form').submit(function(e) {
+		e.preventDefault();
+
+		$('#mc_embed_signup form .error-container').fadeOut(400);
+
+		var $form = $(this);
+		
+		var email = $("#mc_embed_signup form input[type='email']").val();	
+	  	// _kmq.push(['record', 'Signed up for Email on an email form', {'memberState' : 'free lead' }]);
+	  	// _kmq.push(['identify', email]);
+		// _gaq.push(['_trackEvent', 'Email Lead', 'An email form', email]);
+
+		$.ajax({
+			url: $form.attr('action'),
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				data: $form.serialize()
+			},
+			success: function(data) {
+				if (data.success == 'true') {
+					$("#call-to-action").hide();
+					$("#mc_embed_signup .form").fadeOut(400, function() {
+						$('#mc_embed_signup .success').fadeIn(400);
+					});
+					
+				} else {
+					var html = '<label>' + data.msg + '</label>';
+					$("#call-to-action").hide();
+					$('#mc_embed_signup form .error-container').html(html).fadeIn(400);
+				}
+			},
+			error: function(data) {
+				var html = '<label>' + data + '</label>';
+				$("#call-to-action").hide();
+				$('#mc_embed_signup form .error-container').html(html).fadeIn(400);
+			}
+		});
+	});
+
+	// individual blueprint sales pages
+	var forms = [];
+	if ($('#mc_embed_signup_1 form').length > 0) {
+		forms.push('#mc_embed_signup_1 form');
+	}
+	if ($('#mc_embed_signup_2 form').length > 0) {
+		forms.push('#mc_embed_signup_2 form');
+	}
+	var formsStr = forms.join(', ');
+
+	$(formsStr).submit(function(e) {
+		var elemId = '#' + $(this).closest('.enroll-form').attr('id');
+
+		e.preventDefault();
+
+		$(elemId + ' form .error-container').fadeOut(400);
+
+		var $form = $(this);
+
+		var email = $(elemId + " form input[type='email']").val();	
+	  	// _kmq.push(['record', 'Signed up for Email on an email form', {'memberState' : 'free lead' }]);
+	  	// _kmq.push(['identify', email]);
+		// _gaq.push(['_trackEvent', 'Email Lead', 'An email form', email]);
+
+		$.ajax({
+			url: $form.attr('action'),
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				data: $form.serialize()
+			},
+			success: function(data) {
+				if (data.success == 'true') {
+					$(elemId + ' .form, ' + elemId + ' h2').fadeOut(400, function() {
+						if (data.hasOwnProperty('redirect') && data.redirect.length > 0) {
+							// redirect to bootcamp page
+							window.location = data.redirect;
+						} else {
+							$(elemId + ' .success').fadeIn(400);
+							$(elemId + ' .arrows').fadeOut(400);
+							$(elemId).animate({'background-color': 'transparent'}, 400);
+							if($(elemId).closest('#bp-buy-it').length) {
+								$(elemId).animate({height: 'auto'}, 400);
+							}
+						}
+					});
+					
+				} else {
+					var html = '<p>' + data.msg + '</p>';
+					$(elemId + ' form .error-container').html(html).fadeIn(400);
+				}
+			},
+			error: function(data) {
+				var html = '<p>' + data + '</p>';
+				$(elemId + ' form .error-container').html(html).fadeIn(400);
+			}
+		});
+	});
+
+	// PDF downloads on single blog posts
+	var forms = [];
+	if ($('#pdf-download-1 form').length > 0) {
+		forms.push('#pdf-download-1 form');
+	}
+	if ($('#pdf-download-2 form').length > 0) {
+		forms.push('#pdf-download-2 form');
+	}
+	var formsStr = forms.join(', ');
+
+	$(formsStr).submit(function(e) {
+		var elemId = '#' + $(this).closest('.pdf-downloads').attr('id');
+
+		e.preventDefault();
+
+		$(elemId + ' .alerts .error-container').fadeOut(400);
+
+		var $form = $(this);
+
+		var email = $(elemId + " form input[type='email']").val();	
+	  	// _kmq.push(['record', 'Signed up for Email on an email form', {'memberState' : 'free lead' }]);
+	  	// _kmq.push(['identify', email]);
+		// _gaq.push(['_trackEvent', 'Email Lead', 'An email form', email]);
+
+		$.ajax({
+			url: $form.attr('action'),
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				data: $form.serialize()
+			},
+			success: function(data) {
+				var html = '<p>' + data.msg + '</p>';
+				if (data.success == 'true') {
+					$(elemId + ' .content p, ' + elemId + ' .content form, ' + elemId + ' footer').fadeOut(400, function() {
+						$(elemId + ' .alerts .success').fadeIn(400);
+						$(elemId + ' .alerts .success').html(html).fadeIn(400);
+					});
+					
+				} else {
+					$(elemId + ' .alerts .error-container').html(html).fadeIn(400);
+				}
+			},
+			error: function(data) {
+				var html = '<p>' + data.msg + '</p>';
+				$(elemId + ' .alerts .error-container').html(html).fadeIn(400);
+			}
+		});
+	});
+	
+});

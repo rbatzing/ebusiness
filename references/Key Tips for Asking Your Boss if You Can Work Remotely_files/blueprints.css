@@ -1,0 +1,3482 @@
+/* Individual Blueprints Page Styles
+-------------------------------------------------------------- */
+/* Hero Styles */
+#sales-hero header {
+    padding-top: 3.375em;
+    width: 80%;
+    max-width: 960px;
+    overflow: hidden;
+}
+
+#sales-hero header h1 {
+    /*color: #3b3b3b;*/
+    float: left;
+    font: bold 3.5em/1.1 'Montserrat', sans-serif; /* 56px */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#sales-hero .hero-content {
+    max-width: 895px;
+    padding: 20px 0 10px;
+}
+
+#sales-hero .hero-content p {
+    font: 1.4375em/1.435em 'Open sans', sans-serif; /* 23px */
+}
+
+.single-sc_blueprints #sales-hero {
+    background: #509EA8 url("../img/blueprints/blueprints-hero.png") no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 2400px;
+    padding-top: 30px;
+}
+.postid-45594.single-sc_blueprints #sales-hero {
+  background-image: url("../img/blueprints/wordpress-bp-background.png");
+}
+.single-sc_blueprints.postid-17313 #sales-hero {
+  background-image: url("../img/blueprints/web-design-hero.png");
+}
+
+/* Rails Developer */
+.ruby-on-rails-developer #sales-hero {
+  background-image: url('../img/blueprints/bp_rails_bg.jpg');
+}
+
+.enroll-form {
+  background: rgba(0, 9, 10, 0.5);
+  padding: 55px 0;
+  margin-top: 20px;
+  position: relative;
+  min-height: 229px;
+}
+
+.single-sc_blueprints .enroll-form h2 {
+  color: #fff;
+  font: bold 1.3125em/1.428em 'Open Sans' sans-serif;
+  margin: 0 0 24px 0;
+}
+#bp-buy-it .enroll-form {
+  margin-top: 70px;
+}
+
+.enroll-form .ftk-form .hs_email .hs-input,
+.enroll-form input[type='text'],
+.enroll-form input[type='submit'] {
+  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0;
+  height: 70px;
+  margin-bottom: 0;
+  outline: none;
+}
+.enroll-form input[type='text'] {
+  background: #fff;
+  border: 0;
+  width: 63.75%;
+  margin-right: 1.75%;
+}
+.enroll-form input[type='submit'] {
+  font: bold 21px/34px 'Montserrat', sans-serif;
+  height: 70px;
+  /*width: 34%;*/
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-right: 0;
+  width: 100%;
+}
+.enroll-form .arrows {
+  position: absolute;
+  top: -23px;
+  left: 31%;
+  border-radius: 50%;
+  background: rgba(0, 9, 10, .4) url(../img/blueprints/3-arrows.png) no-repeat center;
+  height: 57px;
+  width: 57px;
+}
+
+.enroll-form#mc_embed_signup_2 .arrows {
+  margin-left: -27px;
+  left: 50%;
+}
+.enroll-form form .error-container {
+  background: #d36250;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px 0;
+  min-height: 0;
+  display: none;
+}
+.enroll-form form .success {
+  background: #50d398;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px 0;
+  min-height: 0;
+}
+.enroll-form form .error-container p,
+.enroll-form form .error-container li,
+#bp-buy-it .enroll-form p,
+.enroll-form form .success p {
+  color: #fff;
+  font: bold 18px 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 1200px;
+  /* padding-left: 35px;*/
+  text-align: left;
+}
+.enroll-form form .error-container p,
+.enroll-form .ftk-form .ftk-white-error label {
+  background: url(../img/blueprints/icon-error-white.png) no-repeat 0 center;
+}
+.enroll-form form .success p {
+  background: url(../img/blueprints/icon-success-white.png) no-repeat 0 center;
+}
+.user-notloggedin .enroll-form  .error-container:before {
+  display: none;
+}
+.enroll-form input[type='text']::-webkit-input-placeholder {
+   color: #aaa;
+   font-style: italic;
+   text-transform: uppercase;
+}
+.enroll-form input[type='text']:-moz-placeholder { /* Firefox 18- */
+   color: #aaa;
+   font-style: italic;
+   text-transform: uppercase;
+}
+.enroll-form input[type='text']::-moz-placeholder {  /* Firefox 19+ */
+   color: #aaa;
+   font-style: italic;
+   text-transform: uppercase;
+}
+.enroll-form input[type='text']:-ms-input-placeholder {
+   color: #aaa;
+   font-style: italic;
+   text-transform: uppercase;
+}
+.enroll-form input[type='text']::input-placeholder {
+   color: #aaa;
+   font-style: italic;
+   text-transform: uppercase;
+}
+
+.single-sc_blueprints #sales-hero footer {
+  clear:both;
+}
+
+.single-sc_blueprints #sales-hero span {
+  display: block;
+  color: #b5d6dc;
+}
+.single-sc_blueprints #sales-hero h1 span:after{
+  content:'.';
+  color: #fff;
+}
+#sales-hero footer .button a {
+    color: #FFFFFF;
+    display: block;
+    font: 400 1.25em 'Montserrat', sans-serif; /* 20px */
+    padding: 4px 2em;
+    text-transform: uppercase;
+}
+
+#sales-hero footer .button a:hover {
+  text-decoration:none;
+}
+
+.single-sc_blueprints .menu > .menu-item > a:visited,
+.single-sc_blueprints .menu > .menu-item > a:link,
+.single-sc_blueprints .menu > .menu-item > a ,
+.single-sc_blueprints .log-out-link a {
+    color: #FFF;
+    font-family: 'Montserrat';
+}
+
+.single-sc_blueprints #header-sign-in .sign-in h2 a {
+    color: #fff;
+}
+
+.single-sc_blueprints .site-logo a{
+    background: url("../img/logo/white-logo.png") no-repeat center;
+}
+.single-sc_blueprints #container {
+    padding: 0;
+}
+.single-sc_blueprints .main-container:after {
+  display: none;
+}
+.single-sc_blueprints .site-footer {
+  position: relative;
+  border-top: 0;
+}
+.single-sc_blueprints .sub-footer p,
+.single-sc_blueprints .sub-footer span,
+.single-sc_blueprints .sub-footer a,
+.single-sc_blueprints .sub-footer a:hover {
+  color: #B5D6DC;
+}
+
+.single-sc_blueprints #sales-hero header h1 {
+    color: white;
+    font: bold 3.375em/1.11em 'Montserrat', sans-serif;
+    margin: 10px 0 3px;
+    text-transform: uppercase;
+}
+
+.single-sc_blueprints h3,
+.single-sc_blueprints h4,
+.single-sc_blueprints h2 {
+  color:#3b4651;
+  font-weight:normal;
+  font-family: 'Montserrat';
+}
+
+#main-blueprints-options-list header h2,
+#other-stuff .blueprints header h2 {
+  text-align:center;
+  color:#1c383c;
+  text-transform:uppercase;
+  font-weight:normal;
+  font-size: 1.875em;
+}
+
+.class-icon {
+    float: left;
+}
+
+.one-class .class-icon {
+    float: left;
+    margin-right: 3%;
+    width: 26%;
+}
+.page-template-page-templatestemplate-dashboard-php .class-icon {
+    width: 100px;
+}
+
+.one-class .class-icon img {
+    width:100%;
+}
+
+.single-sc_blueprints .blueprint-profile h2,
+#numbers-sidebar h2 {
+    text-transform: uppercase;
+}
+.single-sc_blueprints .blueprint-profile h4 {
+  color: #3b4647;
+  font: normal 1.125em/1.277em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#bp-whats-included {
+  padding: 5em 0;
+}
+
+.single-sc_blueprints #bp-whats-included {
+  background: #fff;
+  border-top: 1px solid #c2cbcc;
+  padding: 7.5em 0;
+}
+.single-sc_blueprints #bp-whats-included .main {
+  max-width: 1266px;
+}
+.single-sc_blueprints .bp-included-main-content li.middle {
+  margin: 0 2%;
+}
+.single-sc_blueprints .bp-included-content h4 {
+  color: #3b4647;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.single-sc_blueprints .bp-included-main-content figure {
+  height: 255px;
+}
+.single-sc_blueprints .bp-included-main-content figure img {
+  max-height: 100%;
+}
+
+.single-sc_blueprints #sales-hero header {
+  padding-top: 2.5em;
+}
+.single-sc_blueprints #sales-hero h4 {
+  font: normal 1.125em/1.277em 'Montserrat', sans-serif;
+  color: #cce1e5;
+  text-transform: uppercase;
+}
+
+.single-sc_blueprints #sales-hero footer .button {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    border: 1px solid #FFFFFF;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 42px;
+}
+
+.single-sc_blueprints #sales-hero>.main p {
+  color: #cce1e5;
+  font: 600 1.1875em/1.57em 'Open Sans', sans-serif;
+  max-width:900px;
+}
+
+#bp-buy-it {
+    background: url("../img/blueprints/blue-pattern.png") repeat scroll 0 0 #509EA8;
+    padding: 88px 0 200px;
+}
+
+.diagonal-borders {
+    background: #fff url("../img/blueprints/little-grey-lines.png") repeat 0 0;
+    height: 13px;
+}
+
+.diagonal-bottom-border {
+  margin-bottom:100px;
+}
+
+#bp-class-details .class-details-main {
+    padding: 55px 0 0;
+}
+
+#bp-class-details {
+  overflow: hidden;
+}
+
+#bp-class-details .main {
+  background: #fff;
+  border-right:1px solid #c2cbcc;
+  border-left:1px solid #c2cbcc;
+  max-width: 1266px;
+}
+
+#about-blueprint,
+#bp_classes,
+#bp-class-details {
+  background: transparent url("../img/blueprints/single_bp_bg.png") repeat 0 0;
+}
+#bp_classes .main {
+  background: #fff;
+  border: solid #c2cbcc;
+  border-width: 1px 1px 0;
+  max-width: 1266px;
+
+}
+.single-sc_blueprints #main-blueprints-options-list {
+    border-left: none;
+    float: left;
+    padding: 57px 4% 0 4%;
+    width: 100%;
+}
+
+.class-details-main {
+  float:left;
+  width:68.2%;
+  width: 65%;
+  border: none;
+}
+.postid-17313 .class-details-main {
+  border-right: 1px solid #c2cbcc;
+}
+
+.what-they-do {
+  color: #4b595c;
+  padding: 0 6.7% 60px;
+}
+
+.what-they-do h3 {
+  color: #3b4651;
+  font: 800 1em/2.65em 'Montserrat', sans-serif;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}
+.what-they-do > p {
+  font-size: 1.125em;
+  line-height: 1.55em;
+  margin-bottom: 1.55em;
+}
+.what-they-do> p strong {
+  color: #4b595c;
+  font-size: 1.166em;
+}
+
+.prerequisites {
+  color: #4b595c;
+  font-size: 1.125em;
+  line-height: 1.66em;
+  margin-top: 35px;
+  white-space: nowrap;
+}
+.prerequisites h2 {
+  font: 600 1em 'Open Sans', sans-serif;
+  margin-bottom: 5px;
+}
+.prerequisites:before {
+  content: url(../img/blueprints/prerequisites-small.png);
+  margin-left: -16%;
+  opacity: 0.8;
+  display: inline-block;
+  vertical-align: middle;
+}
+.prerequisites .wrap {
+  width: 80%;
+  padding-left: 2%;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+aside#numbers-sidebar {
+  /*max-width: 419px;*/
+  width: 31.5%;
+  width: 35%;
+  border: none;
+  border-left: 1px solid #c2cbcc;
+  margin-bottom: -500px;
+  padding-bottom: 500px;
+}
+.postid-17314 aside#numbers-sidebar,
+.postid-45594 aside#numbers-sidebar {
+  border-left: 1px solid #c2cbcc;
+}
+
+#numbers-sidebar h2 {
+  font-size: 32px;
+  text-align:center;
+}
+
+#numbers-sidebar header {
+    border-bottom: 1px solid #C2CBCC;
+    padding: 24px 0 21px;
+}
+#numbers-sidebar header h2:after,
+#numbers-sidebar header h2:before {
+  content: '\00b7';
+  color: #c3cbcc;
+  display: inline;
+  padding: 0 5px;
+}
+
+#developer-number {
+  margin-top: 105px;
+  margin-left: 5px;
+}
+#developer-number li {
+    position: relative;
+    margin-bottom: 60px;
+}
+#developer-number p {
+    color: #40858E;
+    font: 63px/26px 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.075em;
+    position:absolute;
+    left: 0;
+    z-index: 1;
+}
+#developer-number img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+#developer-number #avg-salary p {
+  left: 20px;
+  top: 50%;
+  height: 60px;
+  margin-top: -30px;
+}
+#developer-number #total-jobs p {
+    font-size: 110px;
+    height: 110px;
+    letter-spacing: -8px;
+    width: 100%;
+    top: 50%;
+    margin-top: -50px;
+    text-align:center;
+}
+#numbers-sidebar #job-growth p {
+    font-size: 74px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    left: 35px;
+    top: 35%;
+}
+#developer-number #bus-data p {
+  height: 122px;
+  font-size:122px;
+  font-weight:bold;
+  width: 100%;
+  top: 50%;
+  margin-top: -61px;
+  text-align: center;
+}
+.ruby-on-rails-developer #developer-number #bus-data p {
+  top: 75%;
+}
+.freelance-wordpress-developer #numbers-sidebar #total-jobs p {
+  font-size: 90px;
+}
+.ruby-on-rails-developer #developer-number #total-jobs p {
+  margin-top: 25px;
+}
+
+.blueprint-profile {
+    /*  background: url("../img/blueprints/profile-arrow-left.png") no-repeat 50px 220px; */
+    border-top: 1px solid #C2CBCC;
+    padding-top: 65px;
+}
+.blueprint-profile > header:after {
+  content: '';
+  background: url("../img/blueprints/profile-arrow-left.png") no-repeat 0 100%;
+  background-size: auto 100%;
+  position: absolute;
+  top: 80%;
+  left: 2%;
+  width: 8%;
+  height: 85%;
+  display: block;
+}
+
+.blueprint-profile li {
+  margin-bottom: 1.8em;
+  line-height: 1.55em;
+  letter-spacing: -.001em;
+}
+
+#about-blueprint .main {
+    background: #fff;
+    border: 1px solid #C2CBCC;
+    border-top-color: #eff1f1;
+    max-width: 1266px;
+}
+
+#about-blueprint .main-content {
+    padding: 60px 0 56px;
+    max-width: 955px;
+    margin: 0 auto;
+}
+
+#about-blueprint img {
+    float: left;
+    max-width: 13.61%;
+}
+
+.single-sc_blueprints #about-blueprint .main p {
+    color: #4b595c;
+    font-size: 19px;
+    line-height: 32px;
+    padding-left: 18.32%;
+}
+
+.blueprint-profile ul {
+  color: #4b595c;
+  padding: 55px 14% 55px 16%;
+}
+
+.blueprint-profile header {
+    border-bottom: 1px solid #C2CBCC;
+    padding-bottom: 68px;
+    position:relative;
+    padding-left: 40px;
+}
+
+.single-sc_blueprints .main p {
+  color:#4b595c;
+}
+
+.job-perks {
+    color: #4b595c;
+    padding: 33px 10% 9px;
+    border-bottom: 1px solid #C2CBCC;
+    text-align: center;
+}
+
+.job-perks h4 {
+  font-family:'open sans';
+}
+.job-perks ul {
+  display: inline-block;
+}
+
+.job-perks ul li {
+    background: url("../img/blueprints/red-check-big.png") no-repeat 0 0;
+    font-size: 24px;
+    line-height: 22px;
+    padding-left: 55px;
+    text-align: left;
+    margin-bottom: 1.18em;
+}
+
+.single-sc_blueprints .blueprint-profile h2 {
+    font-size: 40px;
+    width: 400px;
+}
+
+.blueprint-profile img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+.blueprint-profile .hgroup {
+  width: 62%;
+  padding-right: 1%;
+}
+.blueprint-profile .img-wrap {
+  width: 37%;
+  position: absolute;
+  right: 1%;
+  bottom: 0;
+  top: -120px;
+}
+#sales-hero .enroll-btn {
+  margin-bottom: 60px;
+}
+
+#bp-buy-it header h2 {
+  color:white;
+  font-size:32px;
+  text-align:center;
+}
+
+#bp-buy-it p {
+    color: #B5D6DC;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 20px auto;
+    max-width: 760px;
+    text-align: center;
+}
+
+#bp-buy-it a.button {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #FFFFFF;
+    box-shadow: none;
+    display: block;
+    float: none;
+    max-width: 600px;
+    margin: 80px auto auto;
+    color: #FFFFFF;
+    display: block;
+    font-family: 'montserrat';
+    font-size: 32px;
+    padding: 22px 0;
+    text-transform: uppercase;
+}
+
+#bp-buy-it a.button:hover {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+  text-decoration:none;
+
+}
+#bp-buy-it .main > h4 {
+    font-family: 'open sans';
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: none;
+    color: #B5D6DC;
+}
+
+#bp-buy-it #payment_options {
+    margin: auto;
+    width: 283px;
+}
+
+#faq_s1 {
+    /*border-bottom: 1px solid #C2CDCE;*/
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
+
+#faq_s1_leftcol,
+#faq_s1_midcol,
+#faq_s1_rightcol {
+    width: 31%;
+    float:left;
+}
+
+#faq_s1 #faq_s1_midcol {
+  padding: 0 3%;
+  width: 38%;
+}
+
+#faq_s2 {
+    border-top: 1px solid #C2CBCC;
+    margin: 0;
+    overflow: auto;
+    padding: 40px 0;
+    clear:both;
+}
+
+#faq_s2 li {
+    background: url("../img/global/red-x.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
+    padding-left: 30px;
+}
+
+#faq_s2 > div {
+    float: left;
+    margin-top: 40px;
+    width: 42%;
+}
+
+#faq_s2_leftcol {
+  margin-left:8%;
+  margin-right:4%;
+}
+#faq_s2_leftcol li {
+    background: url("../img/blueprints/green-check.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
+}
+
+#faq_s2_rightcol {
+
+}
+
+#faq_s3 {
+  border-top: 1px solid #C2CBCC;
+  padding-top: 60px;
+}
+
+#faq_s3_leftcol,
+#faq_s3_rightcol {
+    width: 47.5%;
+    float: left;
+}
+#faq_s3_leftcol {
+    margin-right: 5%;
+}
+
+#other-stuff .blueprints > header {
+  border: 1px solid #C2CBCC;
+  padding:30px 0;
+  margin-bottom:30px;
+}
+
+#main-blueprints-options-list > header {
+  margin: 0 auto 2.25em;
+  padding: 10px 0 31px;
+  border: 1px solid #C2CBCC;
+}
+
+#main-blueprints-options-list > header.original {
+  padding: 39px 0;
+}
+
+#main-blueprints-options-list > header.original h2 {
+  margin: 0;
+}
+
+#main-blueprints-options-list > header h2 {
+  font-size: 32px;
+}
+
+#main-blueprints-options-list > header h3 {
+	font-size:21px;
+	font-weight:normal;
+	text-transform:uppercase;
+	text-align:center;
+	padding:0;
+	margin:0;
+	color:#1c383c;
+}
+
+.single-sc_blueprints #main-blueprints-options-list > header h2:after,
+.single-sc_blueprints #main-blueprints-options-list > header h2:before {
+  content: '\00b7';
+  color: #c3cbcc;
+  display: inline;
+  padding: 0 5px;
+}
+
+.single-sc_blueprints li.sign-up {
+    background: none;
+    border: 1px solid #FFFFFF;
+}
+#all-classes {
+    padding: 60px 84px 0 90px;
+}
+/* Changes just for single blueprint page
+.single-sc_blueprints .one-class .class-icon {
+    margin-right: 55px;
+    width: 350px;
+}*/
+.single-sc_blueprints .one-class .class-details {
+  max-width: 575px;
+  width: 100%;
+}
+.single-sc_blueprints .one-class > h3 {
+  background-position: 100% 13px;
+}
+.single-sc_blueprints .one-class > h3 span {
+  /*background: #fff;*/
+  padding-right: 10px;
+}
+.single-sc_blueprints .one-class .class-details h4 {
+  font: normal 1.125em/1.277em 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  padding: 15px 0 5px;
+}
+.single-sc_blueprints .one-class .class-details h3 {
+  color: #3b4647;
+}
+.single-sc_blueprints .one-class p {
+  line-height: 1.6em;
+}
+.single-sc_blueprints .one-class {
+  margin-bottom: 115px;
+}
+
+.page-template-page-templatestemplate-dashboard-php #classes #all-classes {
+    float: none;
+    padding: 0;
+}
+
+.one-class .class-details h3 {
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+
+.one-class .class-details h4 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.class-details span {
+    padding: 0 10px;
+}
+
+.one-class {
+    float: none;
+    margin-bottom: 60px;
+}
+.one-class h3 {
+    font-size: 24px;
+    font-weight: normal;
+    padding-bottom: 60px;
+}
+
+.one-class > h3 {
+    background: url("../img/blueprints/dotted-header.png") no-repeat scroll 319px 13px transparent;
+}
+
+#bp-options,
+#bp-testimonial-2,
+#bp-how-it-works,
+#enrollment-form-container,
+#bp-whats-included {
+  background: url('../img/blueprints/pattern.png') 0 0 #ECF1F1;
+}
+
+#bp-faqs {
+  background: #fff;
+}
+#bp-faqs header h2 {
+  font: 2em/1.32em 'Montserrat', sans-serif;
+}
+.single-sc_blueprints #bp-faqs header h2 {
+  margin: 63px 0 0;
+}
+.single-sc_blueprints #faq_s1 {
+  margin-top: 78px;
+}
+.single-sc_blueprints #bp-faqs strong {
+  text-transform: uppercase;
+  display: block;
+}
+.single-sc_blueprints #faq_s2 {
+  border-top-width: 2px;
+  padding: 60px 0 47px;
+}
+.single-sc_blueprints #faq_s2 h4 {
+  text-transform: uppercase;
+}
+.single-sc_blueprints #faq_s2 > div {
+  margin-top: 34px;
+}
+.single-sc_blueprints #faq_s2 p {
+  text-transform: uppercase;
+  font-size: 0.85em;
+}
+.single-sc_blueprints #faq_s2 li {
+  font-size: 0.84em;
+  background-position: 0 3px;
+  line-height: 17px;
+  margin-bottom: 17px;
+}
+.single-sc_blueprints #faq_s3 {
+  border-top-width: 2px;
+  padding-top: 68px;
+  overflow: hidden;
+}
+.single-sc_blueprints #bp-buy-it {
+  padding: 88px 0 315px;
+}
+
+/* What you Get */
+.the-goods h2 {
+  color:#1c383c;
+  font-weight:normal;
+  font-size: 2em; /* 32px */
+  text-align:left;
+}
+/* What's Included */
+
+.bp-included-main-content {
+  margin-bottom:100px;
+}
+
+.bp-included-main-content li {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5em;
+  text-align: center;
+  width: 28%;
+  margin: 0 1%;
+}
+.single-sc_blueprints .bp-included-main-content li {
+  width: 30%;
+}
+
+.bp-included-main-content li.middle {
+  margin: 0 5%;
+
+}
+
+.bp-included-content h4 {
+  color: #304448;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top:10px;
+  line-height: 1.625em;
+}
+
+.enrollment-form-container_header {
+  margin: 0 5%;
+}
+
+.bp-included-main-content li img {
+  max-width: 100%;
+}
+
+
+.page-template-page-templatestemplate-dashboard-php #classes .main #blueprint-classes,
+.page-template-page-templatestemplate-dashboard-php #classes .main #old-classes {
+    margin-top: 30px;
+}
+
+/* blueprint sales date boxes */
+#blueprint-classes .class-date,
+#bp_classes .class-date {
+    background: #E5ECEE;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 10px;
+}
+#blueprint-classes .date-box,
+#bp_classes .date-box {
+    box-shadow: 2px 2px 5px 0 #CCC;
+    display: block;
+    float: left;
+    height: 68px;
+    margin-right: 25px;
+    text-align: center;
+    width: 68px;
+}
+#blueprint-classes .date-box .day,
+#bp_classes .date-box .day {
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 3px;
+    font-size: 14px;
+}
+#blueprint-classes .date-box .date,
+#bp_classes .date-box .date {
+    background: #FFF;
+    color: #9c9b9a;
+    font: bold 33.34px/46px 'Montserrat', sans-serif;
+    height: 44px;
+    letter-spacing: -0.005em;
+}
+#blueprint-classes .class-date p,
+#bp_classes .class-date p {
+    color: #3b3b3b;
+    display: block;
+    font-weight: bold;
+    line-height: 68px;
+    margin-bottom: 0;
+    margin-left: 91px;
+}
+
+.one-class .class-details {
+    float: left;
+    width: 60%;
+}
+
+.embed-container {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 51%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NEW Individual Class Sales */
+
+.single-sc_classes_sales .sales-hero-104 {
+  background:#F76565;
+}
+
+.single-sc_classes_sales .sales-hero-104,
+.single.single-sc_classes_sales .purchase-104 .class-purchase-box.purchase-box {
+  background:#F76565;
+}
+
+.single-sc_classes_sales .sales-hero-100,
+.single.single-sc_classes_sales .purchase-100 .class-purchase-box.purchase-box {
+  background:#9ed5cf;
+}
+
+.single.single-sc_classes_sales .purchase-104 .class-purchase-box.purchase-box .button {
+background:#C93535;
+}
+
+.single.single-sc_classes_sales .purchase-100 .class-purchase-box.purchase-box .button {
+    background:#4D887D;
+}
+
+.single-sc_classes_sales .sales-hero-100 h1,
+.single-sc_classes_sales .sales-hero-104 h1,
+.single-sc_classes_sales .sales-hero-100 .sales-hero-main p,
+.single-sc_classes_sales .sales-hero-104 .sales-hero-main p,
+.single-sc_classes_sales .sales-hero-104 .sales-hero-content span,
+.single-sc_classes_sales .sales-hero-104 .sales-hero-content ul,
+.single-sc_classes_sales .sales-hero-100 .sales-hero-content span,
+.single-sc_classes_sales .sales-hero-100 .sales-hero-content ul {
+  color:white;
+}
+
+.single-sc_blueprints .log-out-link a,
+.single-sc_classes_sales .log-out-link a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.single.single-sc_classes_sales .menu>.menu-item>a:visited,
+.single.single-sc_classes_sales .menu>.menu-item>a:link,
+.single.single-sc_classes_sales .menu>.menu-item>a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.single.single-sc_classes_sales .site-header h1 a {
+    background: url("../img/logo/white-logo.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.single-sc_classes_sales  #back-to-dev-blueprint,
+.single-sc_classes_sales  #back-to-des-blueprint {
+    display: none;
+}
+.single-sc_classes_sales .sales-hero-100 #back-to-dev-blueprint a,
+.single-sc_classes_sales .sales-hero-100 #back-to-des-blueprint a {
+    color: #199c8e;
+}
+.single-sc_classes_sales .sales-hero-101 #back-to-dev-blueprint a,
+.single-sc_classes_sales .sales-hero-101 #back-to-des-blueprint a {
+    color: #9381A5;
+}
+.single-sc_classes_sales .sales-hero-102 #back-to-dev-blueprint a,
+.single-sc_classes_sales .sales-hero-102 #back-to-des-blueprint a {
+    color: #D89728;
+}
+.single-sc_classes_sales .sales-hero-104 #back-to-dev-blueprint a,
+.single-sc_classes_sales .sales-hero-104 #back-to-des-blueprint a {
+    color: #a4295a;
+}
+.single-sc_classes_sales .sales-hero-101 {
+    background: #c7bcd6;
+    color: #FFFFFF;
+}
+.single-sc_classes_sales .sales-hero-102 {
+    background: #ffdf7b;
+    color: #454545;
+}
+.single-sc_classes_sales .sales-hero-103,
+.single-sc_classes_sales .sales-hero-203 {
+    color: #FFFFFF;
+}
+.single-sc_classes_sales h1:not(#site-title) {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+#sales-hero.sales-hero-101 h1, #sales-hero.sales-hero-101 h4 {
+    color: #FFFFFF;
+
+}
+.single-sc_classes_sales figure {
+    float: left;
+    margin-right: 60px;
+}
+
+.single-sc_classes_sales  .sales-hero-main p {
+    font-family: 'open sans';
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.single.single-sc_classes_sales #container {
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.single-sc_classes_sales  .sales-hero-content span,
+.single-sc_classes_sales  .sales-hero-content ul {
+    text-transform: uppercase;
+}
+.single-sc_classes_sales  .sales-hero-content ul,
+.single-sc_classes_sales  .sales-hero-content ul li {
+    display: inline;
+}
+.single-sc_classes_sales .sales-hero-content  ul li {
+    font-size: 15px;
+    margin-left: 7px;
+    padding-left: 31px;
+}
+.single-sc_classes_sales .sales-hero-100 ul li {
+    background: url("../img/blueprints/100-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single-sc_classes_sales .sales-hero-101 ul li {
+    background: url("../img/blueprints/101-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single-sc_classes_sales .sales-hero-102 ul li {
+    background: url("../img/blueprints/102-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single-sc_classes_sales .sales-hero-104 ul li {
+    background: url("../img/blueprints/104-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single-sc_classes_sales .sales-hero-103 ul li {
+    background: url("../img/blueprints/103-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single-sc_classes_sales .sales-hero-203 ul li {
+    background: url("../img/blueprints/203-small-check.png") no-repeat scroll 11px 6px rgba(0, 0, 0, 0);
+}
+.single.single-sc_classes_sales #down-arrow img {
+    display: block;
+    margin: auto;
+    margin-top: -65px;
+}
+.single.single-sc_classes_sales #class-breakdown {
+    padding: 50px 0 0 0;
+}
+
+.breakdown {
+  position:relative;
+}
+
+.breakdown img {
+  position:absolute;
+}
+
+.breakdown.class-breakdown-left img,
+.breakdown.class-breakdown-right img {
+    bottom: -38px;
+}
+
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-preview {
+    max-height: 500px;
+    margin: 60px auto 0;
+    max-width: 1005px;
+    overflow: hidden;
+    position: relative;
+}
+.cbp-bg {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+#class-breakdown .preview iframe {
+  width: 100%;
+  height: 100%;
+}
+.single.single-sc_classes_sales #class-breakdown .preview {
+    position: absolute;
+    left: 7% !important;
+    right: 7%;
+    top: 14%;
+    bottom: 0;
+    margin: auto;
+    width: 86%;
+    height: auto;
+    background: #fff;
+	overflow-y:scroll;
+}
+
+.single.single-sc_classes_sales #class-breakdown .preview > img {
+	width:100%;
+	max-width:100%;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .left-preview-text {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .left-preview.preview h1,
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .left-preview.preview p {
+  font-family:times new roman;
+  color:black;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .left-preview.preview h1 {
+  font-size:36px;
+  font-weight:bold;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .left-preview.preview p {
+  font-size:18px;
+  line-height:24px;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .right-preview.preview {
+    background: url("../img/blueprints/kitties.jpg") no-repeat 0 0;
+    padding: 40px;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .right-preview.preview h1,
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .right-preview.preview p {
+  color:white;
+}
+
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .right-preview.preview h1 {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 50px;
+    margin-bottom: 16px;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .right-preview.preview p {
+    font-size: 19px;
+    line-height: 32px;
+}
+.single.single-sc_classes_sales #class-breakdown header {
+    margin: auto;
+    padding-bottom: 60px;
+    text-align: center;
+    width: 700px;
+}
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-left,
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-right {
+    border: 1px solid #d3d1d1;
+    background-color: #FBFBFB;
+}
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-left {
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .class-breakdown-left img {
+    margin-top: 11px;
+    margin-left: 350px;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-102 .class-breakdown-left img {
+    margin-top: 39px;
+    right: 30px;
+}
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-right {
+    float: right;
+    cursor: pointer;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-101 .class-breakdown-right img {
+    margin-top: 39px;
+    margin-left: 65px;
+}
+.single.single-sc_classes_sales #class-breakdown.class-breakdown-102 .class-breakdown-right img {
+    margin-top: 11px;
+    margin-left: 65px;
+}
+.single.single-sc_classes_sales #class-breakdown .breakdown {
+    padding: 30px;
+    width: 470px;
+    border: 1px solid #d3d1d1;
+    float: none;
+    display: inline-block;
+    text-align: left;
+}
+.single.single-sc_classes_sales #class-breakdown .breakdown h3 {
+  margin-bottom: 10px;
+  font-weight:normal;
+}
+.single.single-sc_classes_sales #class-breakdown .breakdown.inactive {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.single.single-sc_classes_sales #class-breakdown .breakdown.inactive,
+.single.single-sc_classes_sales #class-breakdown .breakdown.inactive h3 {
+    color: #aeabab;
+}
+.single.single-sc_classes_sales #class-breakdown .right-preview.inactive,
+.single.single-sc_classes_sales #class-breakdown .left-preview.inactive,
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-left img.inactive,
+.single.single-sc_classes_sales #class-breakdown .class-breakdown-right img.inactive{
+    display: none;
+}
+.single.single-sc_classes_sales #testimonial {
+    background: #f9f7f7;
+    padding: 80px 0 80px 0;
+}
+
+.single.single-sc_classes_sales .testimonial-holder {
+    margin: auto;
+    max-width: 980px;
+    width: 100%;
+}
+
+.single.single-sc_classes_sales #testimonial figure {
+    float: right;
+    margin-right: 0;
+    width: 37.1%;
+}
+.single.single-sc_classes_sales #testimonial figure img {
+  max-width: 100%;
+}
+.single.single-sc_classes_sales #testimonial .testimonial-content {
+    float: left;
+    margin-left: 0;
+    padding-left: 44px;
+    width: 57.1%;
+}
+.single.single-sc_classes_sales #week-breakdown {
+    padding: 80px 0 80px 0;
+}
+.single.single-sc_classes_sales #mentors h2 {
+    background: url("../img/blueprints/dotted-header.png") no-repeat scroll 340px 19px rgba(0, 0, 0, 0);
+    font-size: 33px;
+    margin-bottom: 80px;
+}
+
+.single.single-sc_classes_sales #mentors.mentors-101-old .mentor.mentor-1 img {
+      margin-left: -60px;
+}
+
+#mentors {
+  white-space: nowrap;
+}
+.mentor {
+  width: 50%;
+  display: inline-block;
+  vertical-align: bottom;
+  white-space: normal;
+  position: relative;
+}
+.mentor img {
+  border: 0;
+  max-width: 65%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+.mentor-bio {
+  background: rgba(255, 255, 255, 0.7);
+  height: 380px;
+  padding: 30px;
+  width: 58.33%;
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+
+.mentor-bio h4 {
+  margin-bottom:10px;
+}
+
+.single.single-sc_classes_sales .mentors-100 .mentor-1 img {
+    margin-left: -110px;
+}
+
+.mentors-101 .mentor-1 img,
+.mentors-102 .mentor-1 img {
+  margin-left: -30px;
+  max-width: 56%;
+}
+.mentors-103 .mentor-2 img,
+.mentors-203 .mentor-2 img {
+  max-width: 47%;
+}
+
+.single.single-sc_classes_sales #week-breakdown .classes {
+    margin: auto;
+    max-width: 780px;
+    min-width: 780px;
+}
+.single.single-sc_classes_sales #week-breakdown .class {
+    overflow: auto;
+    padding: 40px 0;
+}
+
+.single.single-sc_classes_sales #week-breakdown .details {
+    float: left;
+    margin-left: 0;
+    width: 71%;
+}
+
+.single.single-sc_classes_sales #week-breakdown .class-date {
+    background: none repeat scroll 0 0 #E5ECEE;
+    margin-top: 40px;
+    overflow: auto;
+    padding: 10px;
+}
+.single.single-sc_classes_sales #week-breakdown .date-box {
+    box-shadow: 2px 2px 10px -3px #CCCCCC;
+    display: block;
+    float: left;
+    height: 145px;
+    margin-right: 60px;
+    text-align: center;
+    width: 140px;
+    border: 1px solid #ececec;
+    font-family: 'Montserrat';
+}
+.single.single-sc_classes_sales #week-breakdown .date-box .day {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0 0 3px;
+    padding: 9px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.single.single-sc_classes_sales #week-breakdown .date-box .date {
+    background-color: #FFFFFF;
+    color: #9C9B9A;
+    font-size: 65px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 70px;
+    padding: 7px;
+}
+
+.single.single-sc_classes_sales .class .details h4 {
+  text-transform:uppercase;
+  color:#3b3b3b;
+  font-size:24px;
+     margin-bottom: 14px;
+}
+
+.single.single-sc_classes_sales .week-2 {
+    border-top: 2px dotted #DEDDDD;
+    border-bottom: 2px dotted #DEDDDD;
+}
+.single.single-sc_classes_sales #faq {
+    padding: 80px 0 80px 0;
+}
+
+/* Single Class Sales Pages */
+.single.single-sc_classes_sales #sales-hero {
+  padding: 140px 0;
+  margin-top: 0px;
+}
+.single.single-sc_classes_sales .user-notloggedin #sales-hero {
+  padding: 140px 0;
+  margin-top: -76px;
+}
+
+.single-sc_classes_sales .diagonal-borders {
+    margin-top: -7px;
+}
+
+.single.single-sc_classes_sales #class-breakdown h2 {
+    color: #3B3B3B;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.single.single-sc_classes_sales #class-breakdown p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.single-sc_classes_sales h2 {
+    font-size: 33px;
+    font-weight: normal;
+}
+
+.single-sc_classes_sales #week-breakdown h2 {
+margin-bottom:40px;
+color:#3b4647;
+}
+
+.single-sc_classes_sales #faq {
+  font-family:'open sans';
+}
+
+.single.single-sc_classes_sales .breakdown-holder {
+    margin: auto;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.single-sc_classes_sales #purchase {
+    background-color: #f9f7f7;
+}
+
+.single-sc_classes_sales #purchase h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.single-sc_classes_sales #purchase .main > p {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 20px auto 60px;
+    text-align: center;
+    max-width: 730px;
+}
+
+.single.single-sc_classes_sales .purchase-box {
+    background: none repeat scroll 0 0 #509EA8;
+    color: #FFFFFF;
+    float: left;
+    height: 505px;
+    padding: 45px 65px;
+    text-align: center;
+    max-width: 570px;
+    width: 100%;
+    overflow: hidden;
+}
+.single.single-sc_classes_sales .purchase-103 .purchase-box {
+  padding: 45px 55px;
+}
+
+.single-sc_classes_sales .purchase-box.class-purchase-box header,
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box header {
+  min-height: 110px;
+}
+.single-sc_classes_sales .purchase-box.class-purchase-box h2 {
+  margin-top: 13px;
+  line-height: 36px;
+}
+
+.single.single-sc_classes_sales .blueprint-purchase-box {
+  padding-top: 45px;
+}
+
+.single.single-sc_classes_sales .blueprint-purchase-box figure img {
+  width: 65px;
+  max-width: 100%;
+  display: block;
+}
+
+.single.single-sc_classes_sales .purchase-101 .class-purchase-box {
+  background:#c7bcd6;
+}
+.single.single-sc_classes_sales .purchase-102 .class-purchase-box {
+    background: #ffdf7b;
+}
+
+.single-sc_classes_sales .purchase-box h2,
+.single-sc_classes_sales .purchase-box h3,
+.single-sc_classes_sales .purchase-box p {
+  color:white;
+}
+.single-sc_classes_sales .purchase-102 .purchase-box.class-purchase-box h2,
+.single-sc_classes_sales .purchase-102 .purchase-box.class-purchase-box h3,
+.single-sc_classes_sales .purchase-102 .purchase-box.class-purchase-box p {
+  color: #454545;
+}
+.single-sc_classes_sales .purchase-103 .purchase-box.class-purchase-box h3,
+.single-sc_classes_sales .purchase-203 .purchase-box.class-purchase-box h3 {
+  font-size: 30px;
+}
+.single-sc_classes_sales .purchase-100 .purchase-box h4 {
+    color: #4D887D;
+}
+.single-sc_classes_sales .purchase-101 .purchase-box h4 {
+    color: #9381A5;
+}
+.single-sc_classes_sales .purchase-102 .purchase-box h4 {
+    color: #D89728;
+}
+.single-sc_classes_sales .purchase-104 .purchase-box h4 {
+    color: #C93535;
+}
+.single-sc_classes_sales .purchase-103 .purchase-box h4 {
+    color: #2A90AC;
+}
+.single-sc_classes_sales .purchase-203 .purchase-box h4 {
+    color: #007097;
+}
+.single-sc_classes_sales .purchase-box.class-purchase-box h4 {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box h4 {
+    color: #D4F4F7;
+}
+.single-sc_classes_sales .purchase-102 .purchase-box.class-purchase-box h5 {
+  color: #454545;
+}
+.single-sc_classes_sales .purchase-box h5 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 45px;
+    text-transform: uppercase;
+}
+
+.single-sc_classes_sales .purchase-101 .purchase-box .button {
+    background-color: #9381A5;
+}
+.single-sc_classes_sales .purchase-102 .purchase-box .button {
+    background-color: #D89728;
+}
+.single-sc_classes_sales .purchase-103 .purchase-box .button {
+    background-color: #2A90AC;
+}
+.single-sc_classes_sales .purchase-203 .purchase-box .button {
+    background-color: #007097;
+}
+
+.single-sc_classes_sales .purchase-box .button {
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: none;
+    font: 400 15px/40px 'Montserrat', sans-serif;
+    margin: 0.5rem auto 0;
+    padding: 15px;
+    position: static;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 300ms ease-out 0s;
+    height: 72px;
+    max-width: 440px;
+    width: auto;
+}
+.single-sc_classes_sales .a-btn span {
+  line-height: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box .button {
+    background-color: #7CB6BE;
+    border: 1px solid #FFFFFF;
+}
+
+.single-sc_classes_sales .class-purchase-box.purchase-box {
+  margin-right:1px;
+  width: 570px;
+}
+
+.single-sc_classes_sales .purchase-box a:hover {
+  text-decoration:none;
+}
+
+.single-sc_classes_sales .purchase-box .class-cost {
+    font-family: 'montserrat';
+    font-size: 63px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 18px 0 0;
+    text-align: center;
+}
+.single-sc_classes_sales .purchase-box .class-cost span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box header {
+    float: none;
+    position: relative;
+}
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box header:after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #86C3CB;
+    width: 800px;
+    left: -200px;
+    bottom: 0;
+}
+.single-sc_classes_sales .blueprint-purchase-box h5 span {
+    font-weight: bold;
+}
+
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box .hgroup {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 80%;
+}
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box .hgroup h2,
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box .hgroup h4 {
+    float: none;
+    margin: 0;
+}
+
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box .hgroup h2 {
+  line-height: 0.9em;
+  margin-top: 5px;
+}
+
+.single.single-sc_classes_sales .blueprint-purchase-box.purchase-box figure {
+    float: left;
+}
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box h4,
+.single-sc_classes_sales .purchase-box.blueprint-purchase-box h2 {
+    text-align: left;
+    padding-left: 20px;
+    float: left;
+}
+
+.single.single-sc_classes_sales .class-purchase-holder {
+    margin: 0 auto 50px;
+    max-width: 1141px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.single.single-sc_classes_sales .class-purchase-holder p#or {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 120px;
+    color: #969595;
+    font: 32px/115px 'montserrat', sans-serif;
+    height: 115px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 115px;
+    z-index: 1;
+}
+
+.single-sc_classes_sales #purchase figure {
+    text-align:center;
+    clear: both;
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+    max-width: 83%;
+}
+
+.single-sc_classes_sales #purchase .class-purchase-holder + figure {
+  text-align:center;
+  display: block;
+  margin: auto;
+}
+
+
+.single-sc_classes_sales .sub-footer p,
+.single-sc_classes_sales .sub-footer a,
+.single-sc_classes_sales .sub-footer a:link,
+.single-sc_classes_sales .sub-footer a:visited {
+  color: #3B3B3B;
+}
+
+.single.single-sc_classes_sales p.class-payments {
+  color:#c0bebe;
+  font-size:19px;
+  text-align:center;
+}
+
+.single.single-sc_classes_sales img.payment-icons {
+    display: block;
+    margin: auto;
+}
+
+.single-sc_classes_sales #purchase .main {
+  padding: 80px 0;
+}
+
+.single-sc_classes_sales #sales-hero .sales-hero-main {
+    float: left;
+    width: 63%;
+}
+
+/* Testimonials */
+#bp-testimonial-2 .testimonial-content {
+    background: none repeat scroll 0 0 #F0F4F5;
+    border: 2px dotted #C2CBCC;
+    float: none;
+    margin: 0 auto auto;
+    padding: 2.5em;
+    width: auto;
+}
+
+#bp-testimonial-2 {
+    padding-top: 2.5em;
+}
+
+#bp-testimonial-2 .testimonial-content h4 {
+    color: #F89F73;
+    margin-top: 10px;
+    text-align: right;
+}
+
+#bp-testimonial-2 .testimonial-content p {
+    color: #3B3B3B;
+    font: 400 1.8125em/1.241em 'Montserrat', sans-serif; /* 29px */
+}
+
+#bp-testimonial-1 {
+    border-top: 2px dotted #D8D7D7;
+    padding: 0 0 3.125em;
+}
+
+#bp-testimonial-1 figure {
+    float: right;
+    margin-top: -20px;
+    width: 31%;
+}
+#bp-testimonial-1 figure img {
+  max-width: 100%;
+}
+
+.testimonial-content {
+    background: url("../img/blueprints/quote-back.png") no-repeat 0 22px;
+    float: left;
+    margin: 5em 0 0;
+    padding: 2.5em 40px 40px 46px;
+    width: 50%;
+}
+.blueprint-sales-page-section .testimonial-content {
+    margin-left: 9.5%;
+}
+
+.bp-testimonial-content figure {
+  margin-top: -20px;
+}
+
+.testimonial-content h4 {
+  color: #f89f73;
+  margin-top: 10px;
+}
+
+.testimonial-content h5 {
+  color:white;
+  font-size:22px;
+  font-weight:normal;
+  font-style:normal;
+}
+
+.testimonial-content p {
+    font-size: 1.375em; /* 22px */
+    font-style: italic;
+    line-height: 1.63em;
+}
+
+/* countdown clock */
+#countdown {
+  width: 620px;
+  padding: 80px 0 40px 0;
+  margin: auto;
+}
+#countdown .flip-clock-wrapper {
+  margin: 0;
+}
+#countdown h5 {
+  font-family: 'Homemade Apple', 'cursive';
+  text-align: center;
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 28px;
+}
+#countdown h5 span {
+  border-bottom: 1px solid #3A3939;
+  display: inline-block;
+}
+.post-template-single-sc_blueprints-php .flip .inn {
+  color: #49919B;
+}
+.single-sc_classes_sales #other-stuff {
+  padding: 60px 0;
+}
+
+.single-sc_classes_sales #other-stuff .other-blueprints h2 {
+  margin-top: 60px;
+}
+.single-sc_classes_sales #other-stuff .single-classes-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+.single-sc_classes_sales #other-stuff h2 {
+  text-align: center;
+  line-height: 1.3125em;
+  margin-bottom: 1.875em;
+  font-size: 2em; /* 32px */
+}
+
+.single-sc_classes_sales #other-stuff .one-class {
+  padding: 30px 100px;
+  border: 1px solid #F0EAEC;
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.single-sc_classes_sales #other-stuff .class-details h3 {
+  margin: 0 0 20px 0;
+}
+
+.single-sc_classes_sales #other-stuff .class-details .what-youll-learn {
+  margin-top: 20px;
+}
+
+
+/* Dream Job */
+#bp-dream {
+  border-top: 2px dotted #D8D7D7;
+  padding: 4.375em 0;
+}
+#bp-dream .main {
+  max-width: 1020px;
+}
+
+#bp-dream-image {
+  float: left;
+  margin-right: 120px;
+  width: 200px;
+}
+
+.bp-dream-content {
+  float: left;
+  padding-top: 3.125em;
+  width: 700px;
+}
+
+#bp-dream .bp-dream-content h3 {
+  font-size: 2em; /* 32px */
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.bp-dream-content p {
+  font: 1.1875em/1.474em 'Open Sans',helvetica,arial,sans-serif; /* 19px */
+  margin: 20px 0;
+}
+
+/* BP Options */
+#bp-options {
+    padding: 3.125em 0;
+}
+
+#bp-options .main {
+    background: url("../img/blueprints/stripe.png");
+    border-top:1px solid #c2cbcc;
+    border-bottom:1px solid #c2cbcc;
+    max-width: 100%;
+    width:100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+#other-stuff .blueprints {
+  width: 900px;
+  margin: auto;
+}
+
+#main-blueprints-options-list article,
+#other-stuff .blueprints {
+  background:url("../img/blueprints/dark-pattern.png") repeat scroll 0 0 #509EA8;
+  color: #fff;
+  margin-bottom: 34px;
+  padding: 10px;
+}
+
+#main-blueprints-options-list article .options-internal,
+#other-stuff .blueprints .options-internal {
+  border:1px solid white;
+    position: relative;
+}
+
+
+#main-blueprints-options-list article .options-internal a,
+#other-stuff .blueprints .options-internal a {
+  color:white;
+}
+
+#main-blueprints-options-list article .options-internal h3 span,
+#other-stuff .blueprints .options-internal h3 span,
+.enrollment-form article h3 span {
+  color:#d4f4f7;
+  text-transform:uppercase;
+  display:block;
+  font-size:16px;
+}
+
+#main-blueprints-options-list article header,
+#other-stuff .blueprints header {
+    border-bottom: 1px solid #C2CBCC;
+    padding-top: 23px;
+}
+
+#main-blueprints-options-list article .options-internal h3,
+#other-stuff .blueprints .options-internal h3, .enrollment-form header h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    width: 71%;
+    /**/
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+/*#enrollment-form header h3*/
+
+#main-blueprints-options-list article .left,
+#other-stuff .blueprints .left {
+    float: left;
+    width: 42%;
+    border-right:1px solid #fff;
+}
+
+#main-blueprints-options-list article .right,
+#other-stuff .blueprints .right {
+    float: left;
+    width: 57.8%;
+    /*padding-bottom: 140px;*/
+    border-left: 1px solid #FFF;
+    margin: 0 -1px;
+}
+
+#main-blueprints-options-list article aside,
+#other-stuff .blueprints aside {
+    float: none;
+    padding: 30px;
+    width: 100%;
+}
+
+.options-internal aside ul,
+#other-stuff .blueprints .options-internal aside ul {
+    overflow: auto;
+}
+
+.options-internal aside ul li,
+.bottom-options-internal aside ul li,
+#other-stuff .blueprints .options-internal aside ul li,
+#other-stuff .blueprints .bottom-options-internal aside ul li {
+    background: url("../img/blueprints/blue-check.png") no-repeat scroll 0 7px rgba(0, 0, 0, 0);
+    font-family: 'montserrat';
+    font-size: 15px;
+    padding-left: 28px;
+    float:left;
+    margin: 10px 0 0;
+}
+
+#other-stuff .blueprints .bottom-options-internal aside {
+    float: none;
+    padding: 30px;
+}
+
+#main-blueprints-options-list article aside h4,
+.bottom-options-internal aside h4,
+#other-stuff .blueprints aside h4,
+#other-stuff .blueprints .bottom-options-internal aside h4 {
+    color:#d4f4f7;
+}
+
+.bp-option-content,
+#other-stuff .blueprints .bp-option-content {
+    padding: 23px;
+    font: 16px/24.5px 'open sans', sans-serif;
+}
+
+.options-internal footer,
+#other-stuff .blueprints .options-internal footer {
+  border-top: 1px solid #fff;
+  text-align: center;
+  padding: 15px;
+  position: static;
+  bottom: 0;
+  right: 0;
+  left: 42%;
+}
+.bottom-options-internal footer a.learn-more,
+#other-stuff .blueprints .bottom-options-internal footer a.learn-more,
+#main-blueprints-options-list article .options-internal footer a.learn-more {
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  /*margin: 0 0 0 15px;*/
+  padding: 0 0 .5em 0;
+  font-size: .9em;
+}
+.bottom-options-internal footer a.learn-more:hover,
+#other-stuff .blueprints .bottom-options-internal footer a.learn-more:hover,
+#main-blueprints-options-list article .options-internal footer a.learn-more:hover {
+  text-decoration: underline;
+}
+
+#main-blueprints-options-list article .options-internal footer a,
+#other-stuff .blueprints .options-internal footer a,
+#other-stuff .blueprints .options-internal footer input.button {
+    color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#other-stuff .blueprints .options-internal footer a {
+    margin-bottom: 2%;
+}
+
+#main-blueprints-options-list article .options-internal footer .button,
+#other-stuff .blueprints .options-internal footer .button {
+    background: #7AB1B8;
+    border: 1px solid #FFFFFF;
+    /*margin: 0 0 0 30px;*/
+    padding: 16px 18px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#main-blueprints-options-list article header .bp-icon-image,
+#other-stuff .blueprints header .bp-icon-image,
+#other-stuff .blueprints header figure {
+  float:left;
+  margin-left: 7%;
+  margin-right: 3%;
+  max-width: 19%;
+}
+
+#main-blueprints-options-list article header .bp-icon-image img,
+.enrollment-form article header figure img,
+#other-stuff .blueprints header .bp-icon-image img,
+#other-stuff .blueprints header figure img {
+  display: block;
+  max-width: 100%;
+}
+
+.bp-salary {
+    border-top: 1px solid #C2CBCC;
+    color: #2B4B4E;
+    font-family: 'montserrat';
+    font-weight: bold;
+    margin: 23px 0 0;
+    padding: 17px 0 13px 33px;
+    text-transform: uppercase;
+    clear:both;
+    line-height: normal;
+}
+
+.bp-option-content p {
+    font-size: 17px;
+    line-height: 29px;
+}
+
+
+/* How it Works */
+#bp-how-it-works {
+    clear: both;
+    padding-top: 4.375em;
+}
+
+#bp-howitworks-content {
+  max-width:1000px;
+  margin:auto;
+}
+
+#bp-howitworks-content ul {
+    padding: 4.375em 0 8.125em;
+    margin-bottom: 0;
+}
+
+#bp-howitworks-content ul li {
+  clear:both;
+  overflow: hidden;
+}
+
+#bp-howitworks-content figure {
+  float:left;
+  width: 36%;;
+  margin-right: 3%;
+}
+#bp-howitworks-content figure img {
+  max-width: 100%;
+}
+
+#bp-howitworks-content .even figure {
+  float:right;
+  margin-left:3%;
+  margin-right:0;
+}
+
+#bp-howitworks-content .bp-works-content {
+  float:left;
+  width: 60%;
+}
+
+#bp-howitworks-content .bp-works-content p {
+    line-height: 1.5em;
+    color: #537278;
+}
+
+#bp-howitworks-content .bp-works-content h3 {
+  font-size: 1.5em;
+  line-height: 1.29;
+  margin-bottom: 0.9em;
+  font-weight:normal;
+  text-transform:uppercase;
+}
+
+#how-it-works-1 .bp-works-content {
+    margin-bottom: 50px;
+    padding-top: 14px;
+    max-width: 610px;
+}
+
+#how-it-works-2 .bp-works-content {
+    margin-bottom: 80px;
+    padding-top: 30px;
+    max-width: 590px;
+}
+
+#how-it-works-3 .bp-works-content {
+    margin-top: 20px;
+    max-width: 510px;
+}
+
+#bp-howitworks-content ul li#how-it-works-3 figure {
+    max-width: 450px;
+}
+
+#bp-whats-included p {
+    color: #537278;
+    font-size: 1.1875em; /* 19px */
+    line-height: 1.579em;
+    margin-bottom: 0;
+    margin-top: 1.05em;
+    width: 710px;
+}
+
+#enrollment-form-container {
+  padding:100px 0;
+  background:white;
+}
+
+#download-boss-link {
+    border: 2px dotted #A2B1B4;
+    clear: both;
+    margin: 100px auto auto;
+    padding: 2.5em 2.5em 1.875em;
+    width: 85%;
+}
+
+
+/* CSS Fixes */
+
+#download-boss-link .download-link-content {
+    float: left;
+    width: 70.2%;
+}
+
+#download-boss-link .download-link-content p {
+    color: #537278;
+    font-size: 1.1875em; /* 19px */
+    line-height: 1.474em;
+    margin-top: 0.632em;
+    width: 95%;
+}
+
+#download-boss-link .download-link-content h3 {
+  font-size: 1.9375em;
+  font-weight: normal;
+  color: #1c383c;
+}
+
+#download-boss-link figure {
+    float: left;
+    margin-left: 11.4%;
+    width: 18.4%;
+}
+
+#unemployed-content {
+  padding: 5em 0;
+  text-align:center;
+}
+
+#bp-whats-included #unemployed-content p {
+    color: #456268;
+    font-size: 1.0625em; /* 17px */
+    line-height: 1.765em;
+    margin: 20px auto;
+    width: 730px;
+}
+
+#bp-whats-included #unemployed-content p a {
+    border-bottom: 2px dotted #A2B1B4;
+    color: #456268;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Enrollment Form*/
+.enrollment-form header h3 {
+    line-height: normal;
+}
+.enrollment-form header h3,
+.enrollment-form article header figure {
+  display: inline-block;
+  vertical-align: middle;
+}
+.enrollment-form article header figure {
+  margin-left: 23px;
+  margin-right: 10px;
+}
+.enrollment-form article h3 span {
+  font: 15px 'Montserrat', sans-serif;
+  margin: 1px 0 2px;
+}
+
+.enrollment-form header {
+    padding-top: 20px;
+}
+
+#enrollment-form-container h2 {
+    font-size: 2em; /* 32px */
+    font-weight: normal;
+}
+
+#enrollment-form-container p {
+    color: #3B3B3B;
+    font-size: 1.1875em; /* 19px */
+    line-height: 1.685em;
+    margin-top: 20px;
+    width: 780px;
+}
+.enrollment-form {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding: 0;
+}
+
+.enrollment-form article {
+    background: url("../img/blueprints/dark-pattern.png") repeat scroll 0 0 #509EA8;
+   color: #ffffff;
+    float: left;
+    margin: 0 10px 40px;
+    padding: 10px;
+    width: 31.46%;
+}
+
+.enrollment-form.length-4 article {
+  width: 40%;
+  margin: 0 0 40px 5%;
+}
+
+.enrollment-form article .bottom-options-internal {
+  border:1px solid white;
+  height: 520px;
+  position: relative;
+  padding-bottom: 160px;
+}
+
+.enrollment-form article footer {
+  position: static;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+#enrollment-form-container p.bp-salary {
+    border-top: 1px solid #C2CBCC;
+    color: #2B4B4E;
+    font-family: 'montserrat';
+    font-size: 19px;
+    line-height: 32px;
+    margin: 10px 0 10px;
+    padding-left: 30px;
+    padding-top: 11px;
+    text-transform: uppercase;
+    width: auto;
+}
+
+.enrollment-form header {
+    border-bottom: 1px solid;
+    padding: 0;
+    margin-bottom: 20px;
+    height: 121px;
+    line-height: 121px;
+}
+
+.enrollment-form header h3 a {
+  color:white;
+  display: block;
+}
+#enrollment-form-container .main > h4 {
+    font: 1.25em 'open sans', sans-serif; /* 20px */
+    margin: 3.5em 0 1em 0;
+    text-align: center;
+    text-transform: none;
+}
+
+#enrollment-form-container #visa {
+  width:283px;
+  margin:auto;
+}
+.bottom-options-internal ul {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#main-blueprints-options-list article aside {
+    float: none;
+    padding: 26px 30px 30px;
+    width: 100%;
+}
+
+.bottom-options-internal aside ul li {
+    background: url("../img/blueprints/blue-check.png") no-repeat scroll 0 5px transparent;
+    font: 400 16px/23px 'Montserrat', sans-serif;
+    margin: 0 0 13px;
+    padding-left: 24px;
+    float: none;
+}
+
+.bottom-options-internal aside {
+    float: none;
+    padding: 8px 7.5%;
+    min-height: 185px;
+}
+.bottom-options-internal aside h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.bottom-options-internal footer a.button,
+.bottom-options-internal footer input.button {
+    background: none repeat scroll 0 0 #7AB1B8;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px auto 23px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    width: 89%;
+}
+
+.bottom-options-internal aside {
+    width: 100%;
+}
+
+.bottom-options-internal footer a.learn-more {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+}
+
+.single-sc_classes_sales .main-container a {
+    text-decoration: none;
+}
+
+.single-sc_classes_sales .one-class .what-youll-learn {
+  /*white-space: nowrap;*/
+}
+
+.one-class-100 .what-youll-learn span {
+    background: url("../img/blueprints/100-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.one-class-101 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/101-small-check.png") no-repeat scroll 11px 6px;
+}
+.one-class-102 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/102-small-check.png") no-repeat scroll 11px 6px;
+}
+.one-class-104 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/104-small-check.png") no-repeat scroll 11px 6px;
+}
+.one-class-103 .what-youll-learn span {
+    background: url("../img/blueprints/103-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.one-class-203 .what-youll-learn span {
+    background: url("../img/blueprints/203-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.one-class-Apprenticeship .what-youll-learn span {
+    background: url("../img/blueprints/apprenticeship-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+
+/* Bootcamp Page */
+.class-sales-page-section header h1 {
+    float: none;
+    font-family: 'Montserrat';
+    font-size: 41px;
+    font-weight: bold;
+}
+
+body[class*=template-bootcamp-sales-php] .mepr_price {
+  display: none;
+}
+
+#skillcrush-bootcamp-sales-hero header h2 {
+    color: #999999;
+    font-family: 'open sans';
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+    text-transform: none;
+}
+
+#skillcrush-bootcamp-sales-hero h3 {
+    color: #3b3b3b;
+    font: 18px/16px 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#skillcrush-bootcamp-sales-hero {
+  background: url(../img/backgrounds/Bootcamp_Image_Skillcrush.jpg) no-repeat center 0;
+  margin-top: -66px;
+  padding-top: 75px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#skillcrush-bootcamp-sales-hero .bootcamp-subscribe {
+  background: #fff;
+  border: 0;
+  width: 585px;
+  padding: 35px 25px;
+  min-height: 0;
+  position: relative;
+}
+/* Hero Section */
+
+
+.class-sales-page-section {
+  padding: 60px 0;
+  /*overflow: auto;*/
+}
+
+.class-sales-page-section h1,
+.class-sales-page-section h2 {
+  text-align:center;
+}
+
+
+.class-sales-page-section h1 {
+  margin-bottom:20px;
+}
+
+.class-sales-page-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.class-sales-page-section h3 {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about-bootcamp {
+    position: relative;
+    margin-top: 80px;
+    padding: 60px 0;
+    background: #f9f9f9
+}
+
+#more-about-bootcamp {
+  padding: 85px 0;
+}
+
+#more-about-bootcamp .main {
+  background: url(../img/blueprints/emily-bootcamp.png) no-repeat 0 0;
+  padding-left: 329px;
+  min-height: 354px;
+}
+
+#more-about-bootcamp h3 {
+  font: 32px/36.5px 'Montserrat', sans-serif;
+  margin: 0 0 15px;
+}
+
+#more-about-bootcamp p {
+    font-family: open sans;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 62px;
+}
+
+#more-about-bootcamp ul {
+  margin-top: 40px;
+  margin-left: 4px;
+}
+
+#more-about-bootcamp li {
+  padding-left: 30px;
+  font: 600 19px/32.5px 'open sans', sans-serif;
+  margin-bottom: 20px;
+  background: url("../img/blueprints/light-red-check.png") no-repeat 0 9px;
+}
+
+#more-about-bootcamp h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.bootcamp-subscribe #login-page-header {
+  display:none;
+}
+
+.page .bootcamp-subscribe h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#about-bootcamp .main {
+  min-width: 0;
+  max-width: 850px;
+}
+
+#about-bootcamp h3 {
+    font: 32px/42.5px 'Montserrat', sans-serif;
+    margin: 0 0 70px;
+}
+
+.abt-wrap {
+  margin-bottom: 50px;
+}
+
+.abt-wrap img {
+  max-width: 328px;
+  float: left;
+}
+
+.abt-wrap-right img {
+  float: right;
+}
+
+.abt-wrap h4 {
+    font: 24px/31px 'Montserrat', sans-serif;
+    margin: 30px 0 20px;
+    text-transform: uppercase;
+}
+
+.abt-wrap p {
+  font: 16px/27px 'open sans', sans-serif;
+}
+
+.abt-wrap h4,
+.abt-wrap p {
+  margin-left: 395px;
+  max-width: 425px;
+}
+
+.abt-wrap-right h4,
+.abt-wrap-right p {
+  margin-right: 395px;
+  margin-left: 0;
+}
+
+#about-bootcamp ul li {
+    background: url("../img/icons/icon-green-arrow.png") no-repeat scroll 0 3px rgba(0, 0, 0, 0);
+    color: #FFFFFF;
+    font-family: 'open sans';
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+#bootcamp-signup-text {
+  color:#6C6C6C;
+}
+
+#bootcamp-signup-wrapper {
+display:none;
+}
+
+a.tutorial-link,
+a.tutorial-link:link,
+a.tutorial-link:visited {
+    background: none repeat scroll 0 0 #DAD8D9;
+    border-radius: 4px;
+    color: #726F6F;
+    display: block;
+    float: right;
+    margin-top: 4px;
+    padding: 10px 5px;
+    text-align: center;
+    width: 200px;
+}
+
+a.tutorial-link:hover {
+  color:white;
+  text-decoration:none;
+}
+
+.bootcamp-subscribe .tml-action-links {
+  display:none;
+}
+
+.bootcamp-image {
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.bootcamp-subscribe {
+    background: url(../img/blueprints/Bootcamp_laptop.jpg) no-repeat 0 0;
+    margin: 80px auto 0;
+    padding: 50px 0 70px 680px;
+    min-height: 541px;
+}
+.bootcamp-subscribe .main {
+  max-width: 805px;
+  min-width: 0;
+}
+
+.bootcamp-subscribe form + p {
+  display: none;
+}
+
+#registerform2 .message {
+    display: none;
+}
+
+
+.awesome-subscribe {
+  background: url("../img/global/big-cta-nails.png") no-repeat scroll right -1px #F4F3F3;
+}
+.awesome-subscribe .main {
+  padding: 20px 20%;
+}
+
+#bottom-subscribe h3 {
+    font: 32px/44px 'Montserrat', sans-serif;
+    margin: 0 0 10px;
+}
+
+#skillcrush-testimonials h2 {
+  text-align:center;
+  font-size:28px;
+  color:#999999;
+  text-transform:none;
+  margin-bottom: 30px;
+}
+
+#skillcrush-testimonials {
+  padding:90px 0px;
+  overflow:auto;
+}
+
+#skillcrush-testimonials .sc-testimonials li {
+    border-top: 1px solid #D4D4D4;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 30px 0;
+}
+
+#skillcrush-testimonials li p {
+    background: url("../img/sales-page/red-quotes.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #3A3939;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 32px;
+    padding-top: 20px;
+}
+
+.sc-testimonials {
+  width:822px;
+  margin: 40px auto 100px;
+}
+
+.sc-testimonials .testimonial-copy h5 a {
+ font-size: 18px;
+    font-style: italic;
+  color: #3A3939;
+
+    font-weight: normal;
+}
+
+.testimonial-image {
+    float: left;
+    height: 180px;
+    overflow: hidden;
+    width: 180px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  border-radius:300px;
+}
+
+.testimonial-copy {
+    float: left;
+    padding: 20px 30px 0;
+    width: 560px;
+}
+
+.bootcamp-subscribe .form {
+  overflow:auto;
+}
+
+.bootcamp-subscribe .error-container {
+    clear: left;
+    font-family: 'montserrat';
+    margin-top: 20px;
+    width: 390px;
+}
+
+.bootcamp-subscribe .success {
+    display: none;
+    font-family: 'montserrat';
+    margin-top: 20px;
+}
+
+.bootcamp-subscribe .success p {
+  font-family: 'montserrat';
+}
+
+.bootcamp-subscribe .success #custom-tweet-button .tweet-copy {
+  background: none repeat scroll 0 0 #E7F1FF;
+  border-radius: 3px 3px 3px 3px;
+  padding: 12px;
+  margin-bottom:10px;
+}
+
+.bootcamp-subscribe .success #custom-tweet-button .tweet-copy a {
+  color:#3A3939;
+}
+
+.bootcamp-subscribe .success h4 {
+  margin-top: 30px;
+}
+
+#skillcrush-bootcamp-mobile {
+  display:none;
+}
+
+.page-template-page-templatestemplate-bootcamp-sales-php {
+  color: #3B3B3B;
+}
+
+.page-template-page-templatestemplate-bootcamp-sales-php #testimonials {
+    margin-top: 70px;
+}
+.page-template-page-templatestemplate-bootcamp-sales-php #testimonials h4 {
+    font-size: 16px;
+}
+.page-template-page-templatestemplate-bootcamp-sales-php #testimonials h3 {
+    font: 32px/29.5px 'Montserrat', sans-serif;
+    margin-bottom: 60px;
+}
+
+
+/* Bootcamp Page */
+
+#skillcrush-bootcamp-sales-hero header h1 {
+  font: 50px/60px 'Montserrat', sans-serif;
+  width: 70%;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+ .awesome-subscribe form + p {
+    display: none;
+ }
+
+.page-template-page-templatestemplate-bootcamp-sales-php .user-notloggedin {
+    padding: 0;
+}
+
+#bootcamp-about p {
+    font-family: 'Montserrat',serif;
+    font-size: 31px;
+    line-height: 41px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    color:#3b3b3b;
+}
+
+#bootcamp-about ul {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+#bootcamp-about ul li {
+  padding-left: 30px;
+  font: 19px/30px 'open sans', sans-serif;
+  margin-bottom: 30px;
+  background: url("../img/blueprints/light-red-check.png") no-repeat 0 9px;
+}
+
+#hero-about ul, #imagine-list ul {
+    border-top: 1px solid #D4D4D4;
+    margin: 0 7% 20px;
+    width: 86%;
+}
+
+#hero-about ul li,
+#imagine-list ul li,
+#class-prerequisites ul li {
+    background: url("../img/sales-page/icon-checkmark.png") no-repeat scroll 20px 40px transparent;
+    border-bottom: 1px solid #D4D4D4;
+    font-family: 'open sans';
+    font-size: 22px;
+    line-height: 34px;
+    padding: 30px 0 30px 100px;
+  color:#6C6C6C;
+  margin-bottom: 0;
+}
+
+
+.post-template-single-sc_blueprints-php .site-header,
+.single-sc_blueprints .site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+#main-blueprints-options-list {
+  border-right: 1px solid #C2CBCC;
+  border-left: 1px solid #C2CBCC;
+  background: url('../img/blueprints/pattern.png') 0 0 #ECF1F1;
+  margin: auto;
+  padding: 2.5em 3.23% 1em;
+  width: auto;
+  max-width: 960px;
+}
+
+.single-sc_blueprints #main-blueprints-options-list {
+  max-width: initial;
+}
+
+.post-template-page-templates\/template-blueprintpurchasestep1-php {
+    background: none;
+}
+
+/* BP Letter */
+#bp-letter {
+    height: 1700px;
+    margin: 5em 0 0;
+    overflow: hidden;
+    padding-bottom: 5em;
+}
+
+#bp-letter .main {
+  position:relative;
+}
+
+#bp-letter-image {
+  float:left;
+  width: 720px;
+  position:relative;
+  left: -180px;
+  z-index: 1;
+  bottom: -80px;
+}
+
+.bp-letter-content {
+    left: 510px;
+    position: absolute;
+    top: 60px;
+    width: 690px;
+}
+
+.bp-letter-content p.featured {
+    font-size: 1.1875em; /* 19px */
+    line-height: 1.684em;
+}
+
+.bp-letter-content h4 {
+    color: #3B3B3B;
+    font: bold 1.4375em 'open sans', sans-serif; /* 23px */
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+.bp-letter-content .list {
+    background: #F8F7F6;
+    margin: 1.75em 0;
+    padding: 1.875em;
+}
+
+.bp-letter-content .list h5 {
+    font-family: 'open sans';
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.bp-letter-content .list li {
+    background: url("../img/blueprints/light-red-check.png") no-repeat scroll 0 9px;
+    padding-left: 28px;
+}
+
+.bp-letter-content .guarantee {
+    border-bottom: 2px dotted #DEDDDD;
+    border-top: 2px dotted #DEDDDD;
+    margin: 3em 0 1.875em;
+    padding: 1.25em;
+}
+
+.bp-letter-content .guarantee h3 {
+    color: #70C9AB;
+    font: italic 400 1.625em 'open sans'; /* 26px */
+    margin-bottom: 20px;
+}
+
+
+/* The Program Styles */
+#bp-program {
+    margin:3.75em 0 3.125em;
+    max-width: 1400px;
+    overflow: hidden;
+}
+#bp-program .main {
+  position: relative;
+}
+.bp-program-bg {
+    background: url('../img/blueprints/computer.jpg') no-repeat 0 0;
+    position: absolute;
+    width: 1016px;
+    height: 630px;
+    top: 0;
+    right: 59.25%;
+    z-index: 0;
+}
+.bp-program-content {
+    background: #FFFFFF;
+    color: #3B3B3B;
+    margin-left: 41%;
+    min-width: 500px;
+    padding: 1.25em;
+    width: 59.25%;
+    position: relative;
+}
+
+.bp-program-content h2 {
+  font: 400 2em/1.1875em 'Montserrat', sans-serif; /* 32px */
+  margin-bottom: 0.625em;
+}
+
+.bp-program-content h2 span {
+  font-size: 0.5625em;
+  text-transform: uppercase;
+}
+
+.bp-program-content p.featured {
+  color: #3b3b3b;
+  font-size: 1.1875em; /* 19px */
+  line-height: 1.474em;
+}
+
+.bp-program-content blockquote {
+  border-left: 4px solid #d7dada;
+  color: #3b3b3b;
+  font-style: italic;
+  font-size: 1.1875em;
+  margin-bottom: 1.25em;
+  padding-left: 1.25em;
+}
+
+/* Abilities Interstitials */
+#bp-abilities {
+  background:#f16059;
+  padding: 3.75em 0;
+  color: #fff;
+}
+
+#bp-abilities h2 {
+  color: #AA2A24;
+  font-size: 2em; /* 32px */
+  text-align: center;
+  font-weight:normal;
+  margin-top: 0;
+}
+
+#bp-abilities h2 strong {
+  font-weight: bold;
+}
+
+#bp-abilities h2 span {
+  font-size: 0.5625em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#bp-abilities ul {
+  margin-left: 0;
+  margin-top: 1.25em;
+}
+
+#bp-abilities ul li {
+    background: transparent url("../img/blueprints/icon-red-check.png") no-repeat scroll 9px 6px;
+    color: #FFFFFF;
+    float: left;
+    font-size: 1.03125em; /* 16.5px */
+    font-weight: 600;
+    margin-right: 0;
+    padding-left: 29px;
+    text-transform: uppercase;
+}
+
+/* Class Specific Colors */
+.single-sc_classes_sales .sales-hero-104,
+.single.single-sc_classes_sales .purchase-104 .class-purchase-box.purchase-box {
+  background: #f76565;
+}
+
+.single-sc_classes_sales .sales-hero-103,
+.single.single-sc_classes_sales .purchase-103 .class-purchase-box.purchase-box {
+  background: #72c5dc;
+}
+
+.single-sc_classes_sales .sales-hero-203,
+.single.single-sc_classes_sales .purchase-203 .class-purchase-box.purchase-box {
+  background: #31a6c8;
+}
+
+.single.single-sc_classes_sales .purchase-103 .class-purchase-box {
+  background: #72c5dc;
+}
+
+.single.single-sc_classes_sales .purchase-203 .class-purchase-box {
+  background: #31a6c8;
+}
+
+.completed-classes {
+  padding-bottom: 60px;
+}
+.completed-classes .cd-title span {
+  padding-left: 0;
+}
+.completed-classes .skills-tags strong {
+  text-transform: uppercase;
+}
+.completed-classes .cd-title {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.completed-classes p {
+  font-size: 17px;
+}
+.completed-classes .one-class {
+  max-width: 960px;
+  margin: 80px auto 0;
+  overflow: hidden;
+}
+.completed-classes .class-icon {
+  max-width: 320px;
+}
+.completed-classes .class-details h4 {
+  text-transform: uppercase;
+  padding: 10px 0 5px;
+  font-weight: normal;
+  font-size: 1.125em;
+}
+
+.page-template-template-blueprints-sales-page-OLD #sales-hero {
+  background: transparent url("../img/bp-sales-page/moms-img.jpg") no-repeat center 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 2400px;
+  padding-top: 80px;
+}
+.page-template-template-blueprints-sales-page-OLD .flip .inn {
+  color: #FFFFFF;
+}
+.page-template-template-blueprints-sales-page-NEW #single-classes {
+  padding: 100px 0 0 0;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .single-classes-wrap,
+.page-template-template-blueprints-sales-page-NEW #single-classes .single-classes-wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes h2,
+.page-template-template-blueprints-sales-page-NEW #single-classes h2 {
+  text-align: center;
+  line-height: 1.3125em;
+  margin-bottom: 1.875em;
+  font-size: 2em; /* 32px */
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class {
+  padding: 30px 100px;
+  border: 1px solid #F0EAEC;
+  float: left;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .class-details h3,
+.page-template-template-blueprints-sales-page-NEW #single-classes .class-details h3 {
+  margin: 0 0 20px 0;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .class-details .what-youll-learn,
+.page-template-template-blueprints-sales-page-NEW #single-classes .class-details .what-youll-learn {
+  margin-top: 20px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-100 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-100 .what-youll-learn span {
+    background: url("../img/blueprints/100-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-101 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-101 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/101-small-check.png") no-repeat scroll 11px 6px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-102 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-102 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/102-small-check.png") no-repeat scroll 11px 6px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-104 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-104 .what-youll-learn span {
+    padding-left: 31px;
+    background: url("../img/blueprints/104-small-check.png") no-repeat scroll 11px 6px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-103 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-103 .what-youll-learn span {
+    background: url("../img/blueprints/103-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-203 .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-203 .what-youll-learn span {
+    background: url("../img/blueprints/203-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.page-template-template-blueprints-sales-page-OLD #single-classes .one-class-Apprenticeship .what-youll-learn span,
+.page-template-template-blueprints-sales-page-NEW #single-classes .one-class-Apprenticeship .what-youll-learn span {
+    background: url("../img/blueprints/apprenticeship-small-check.png") no-repeat scroll 11px 6px;
+    padding-left: 31px;
+}
+.page-template-template-blueprints-sales-page-OLD .site-header {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+/* Hubspot First to Know Form */
+
+.ftk-form{
+    text-align: center;
+    display: flex;
+}
+
+.ftk-form .hs_email .hs-input{
+    color: #666666;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 0 0 0 0;
+    padding: 0 5px;
+    box-shadow: none;
+    border: 1px solid #d6d6d6;
+    width: 94%;
+    margin-bottom: 2%;
+}
+
+.enrollment-form article .ftk-form .hs_email .hs-input{
+    width: 89%;
+}
+
+div.other-blueprints article .ftk-form .hs_email .hs-input,
+#main-blueprints-options-list article .ftk-form .hs_email .hs-input{
+    margin-bottom: 3%;
+}
+
+section#bp-options article .hs_email .hs-input{
+    width: 100%;
+}
+
+.hbspt-form .submitted-message {
+    background: #50d398;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 7px 5px;
+    margin-top: 2%;
+    min-height: 0;
+    color: #fff;
+    font: bold 18px 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.ftk-form .hs_email > label{
+    display: none;
+}
+
+.ftk-form:not(.ftk-embbed-form) ul.error-container{
+    text-align: center;
+    position: static;
+}
+
+.ftk-white-error label{
+    color: #fff;
+}
+
+.bottom-options-internal .ftk-form ul{
+    margin-top: 0;
+}
+
+.ftk-form .user-notloggedin .error{
+    margin: 0;
+}
+
+.enroll-form .ftk-form .hs_email .input{
+    text-align: left;
+}
+
+.enroll-form .ftk-form .hs_email input[type="email"]{
+    width: 100%;
+}
+
+.enroll-form .ftk-form .hs_email {
+    margin-right: 24px;
+}
+
+.enroll-form .ftk-form .hs_email,
+.enroll-form .ftk-form .hs_submit {
+    flex: 1;
+}
+
+.enroll-form .hbspt-form .submitted-message{
+    padding: 2%;
+}
+
+#enrollment-form article {
+    min-height: 473px;
+}
+
+.user-notloggedin .error.hs-input {
+    margin: 0;
+}
+
+/* End Hubspot First to Know Form styling */
+
+/* New All-Access Tile Styles */
+article#all-access-tile {
+	padding: 0% 5% 4%;
+  text-align: center;
+}
+
+#all-access-tile header {
+    border-bottom: 0px;
+    padding: 60px 40px 0px 14px;
+    overflow:auto;
+}
+
+#all-access-tile-new {
+	margin:0 auto 30px;
+  display: inline-block;
+	color:white;
+	text-transform:uppercase;
+	padding:12px 44px;
+	text-align:center;
+	background:#2d7780;
+}
+
+#main-blueprints-options-list #all-access-tile header figure {
+	float:left;
+	width:auto;
+	margin: 0 30px 80px 10px;
+}
+
+#all-access-tile header h3 {
+	line-height:1.2;
+	margin-top:0;
+	font-size:31px;
+	font-weight:bold;
+	margin-bottom:6px;
+  text-align: left;
+}
+
+#all-access-tile header h3 a,
+#all-access-tile header h4 a {
+	color:white;
+}
+
+#all-access-tile header h4 {
+	text-transform:uppercase;
+	font-size:16px;
+  line-height: 1.2;
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+#all-access-tile header p {
+  text-align: left;
+}
+
+#main-blueprints-options-list article#all-access-tile header {
+	border-bottom:0px;
+}
+
+#all-access-tile footer a {
+	background: #7AB1B8;
+	    border: 1px solid #FFFFFF;
+	    margin: 10px 0 0 0px;
+	    text-transform: uppercase;
+	    width: 100%;
+		padding: 20px 0;
+		    font-size: 21px;
+}
+
+#main-blueprints-options-list .not-active {
+  display: none;
+}

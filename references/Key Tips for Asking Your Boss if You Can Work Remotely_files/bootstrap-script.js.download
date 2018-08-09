@@ -1,0 +1,21 @@
+/*
+$('.dropdown-toggle').dropdown();
+$('.top-nav-popover').popover();
+*/
+$(".dropdown.top-nav-item").click(function(){
+    $(this).toggleClass("open");
+});
+$(".dropdown.top-nav-item").mouseleave(function(){
+	$(this).removeClass('open');
+});
+$('#top-nav-classes-link > a, #top-nav-settings-link > a').click(function(e) {
+	e.preventDefault();
+});
+
+$('.choose-program > a').click(function(e) {
+	e.preventDefault();
+});
+
+$('.modal-background').click(function(){
+	$('.modal-background').removeClass('transparent-background');
+});

@@ -1,0 +1,20 @@
+$(document).ready(function() {
+	if ($('.blog-alert').length > 0) {
+		var cookieVal = '';
+		$('.blog-alert .main p.active').each(function() {
+			cookieVal = cookieVal + $(this).text();
+		});
+		cookieVal = cookieVal.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+		
+		if (jQuery.cookie('sc_blog_alert') != cookieVal) {
+			$('.blog-alert').delay(3000).slideDown(500);
+			jQuery.removeCookie('sc_blog_alert', {path: '/'});
+		}
+		$('.blog-alert.alert .close').click(function() {
+			$(this).closest('.alert').slideUp(500);
+			if (!jQuery.cookie('sc_blog_alert')) {
+				jQuery.cookie('sc_blog_alert', cookieVal, {expires: 14, path: '/'});
+			}
+		});
+	}
+});

@@ -1,0 +1,118 @@
+.home .main-container {
+    background: url("../img/homepage/homepage-back-a.jpg") no-repeat 70% 0 #DDDDDD;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: -5em;
+}
+.main-container:after {
+    height: 5em;
+}
+
+.homepage-container {
+    text-align:center;
+}
+
+.homepage-container h1 {
+    font: 700 4.1875em/60px "Montserrat",Arial,sans-serif; /* 67px */
+    letter-spacing: -1px;
+    margin: 0.358em 0  0.448em;
+    text-transform: uppercase;
+}
+
+.homepage-container h1 span {
+    background: url("../img/homepage/grey-stroke.png") no-repeat 0 105%;
+    font: 400 0.85em 'wisdom_scriptregular'; /* 57px */
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.homepage-container h5, 
+.homepage-container h2 {
+    color: #3B3B3B;
+    font: 600 1.875em 'open sans', sans-serif; /* 30px */
+    margin: 1.76em 0 0.9em;
+}
+
+.homepage-container h3 {
+    color: #3B3B3B;
+    font: 400 1.5em 'open sans', sans-serif; /* 24px */
+    margin-top: 1.875em;
+}
+
+#homepage-form {
+    padding: 30px 6% 0;
+    min-height: 390px;
+}
+#homepage-form form {
+    padding-bottom: 60px;
+    position: relative;
+}
+#homepage-form #mc_embed_signup .success {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 25px;
+}
+#homepage-hero-cta .error-container {
+  margin-bottom: 25px;
+}
+
+#homepage-hero-cta {
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+#homepage-hero-cta h4 {
+    font-size: 1.5em; /* 24px */
+    font-weight: bold;
+    margin: 0 0 0.833em;
+}
+
+.homepage-container #mc-embedded-subscribe { /* 16px */
+    background: #F16059;
+    height: 4.1875em; 
+    margin: 0;
+    width: 203px;
+    padding: 15px 5%;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    outline: none
+}
+
+.homepage-container .mc-field-group {
+    display: inline-block;
+    word-spacing: -0.3em;
+    white-space: nowrap;
+}
+
+.homepage-container #mce-EMAIL {
+    background: #FFFFFF;
+    border: 2px solid #F16059;
+    box-shadow: none;
+    font-size: 1.125em; /* 18px */
+    height: 3.72em; /* 67px */
+    line-height: 3em;
+    max-width: 380px;
+    min-width: 380px;
+    padding: 0.3em 3%;
+    width: 62%;
+    display: inline-block;
+    vertical-align: top;
+    outline: 0;
+}
+
+.homepage-form-programs a {
+    color: #B7B4B4;
+    font-family: 'montserrat';
+    text-transform: uppercase;
+}
+
+.home .site-footer {
+    border-top: 0;
+    height: 5em;
+}
+.home .sub-footer {
+    color: inherit;
+}
