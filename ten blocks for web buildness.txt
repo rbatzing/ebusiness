@@ -1,0 +1,69 @@
+10 Web building blocks
+
+
+Essential services
+Do work that matter with people you want to work with 
+Work on your own schedule whenever and however you want
+Business make money when they help people
+Setup the right way the first time
+
+Myth of online business
+- Must have technical skills to develop a good business
+- You have understand web design to be successful
+- If you build, they will come
+
+Essential web services
+- Domain name
+- Website hosting
+- Email
+
+Avoid
+- Any tool or service that you do not own or control yourself (Must be downloadable)
+- Bundling essential web services together
+- Any web hosting companies owned by EIG, Go Daddy 
+
+Layout design - 
+
+Template
+
+Template Monster Browse through Template Monster's impressive collection of WordPress themes.
+Theme Forest WordPress themes, and themes for other web design platforms.
+Thesis Theme A very popular and easy to customize WordPress theme by DIY Themes.
+Studio Press Powering over 86,000 sites, Studio Press offers up industry standard premium themes.
+My Theme Shop SEO-friendly and responsive themes for your WordPress site.
+WPZoom Professional, easy to use themes with lifetime support.
+
+Google Analytics Free and easy to set up, Google Analytics gives you a massive amount of information about who's visiting your site, what pages are most popular, what pages visitors exit from most often, browsers, screen resolutions, and a whole lot more.
+Screenfly Stick a URL into Screenfly, a completely free service, and then choose a mobile, tablet, or other device from the menu, and you'll get a preview of what your business website looks like on the selected device. This is huge for DIY business owners who want to build responsive layouts that function across multiple devices.
+Web Developer Toolbar Get your hands on a huge set of web design-related tools with this free plugin for Firefox.
+Firebug Another fantastic plugin for Firefox, Firebug is essential for diagnosing page structures and CSS. A must-have.
+Browsershots.org A decent cross-browser, cross-platform testing tool for your small business.
+
+
+GraphicRiver.net Find loads of icons, fonts, web elements, and a whole lot more. A resource you'll definitely want to bookmark!
+Pikwizard.com Find over 100,000 completely free images for use in your projects. New images are added daily -- many that are exclusive to Pikwizard!
+PhotoDune.net High quality, royalty free stock photography.
+IconDemon.com Stock icons and imagery that are perfect for your web projects.
+CodeCanyon.net Find tons of scripts, polls, forms, WordPress plugins, CSS elements, and more.
+MyFonts.com The right font can really bring a layout to life. Find some great fonts for your next web project at MyFonts.com.
+
+
+tentononline.com
+
+
+Ten building blocks
+Foundation
+- domain name
+- web hosting
+- business email
+
+Tool box
+- website builder
+- graphics editor
+- payment gateway
+
+Magnifiers (Strategies)
+- web traffic attractors
+- mail list of customers
+- product promotion
+- uniqueness
