@@ -1,0 +1,16 @@
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\newenvironment{rmdexercise}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/checklist.png}}\vss}\end{minipage}\quad
+   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
+\newenvironment{rmdextra}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/study.png}}\vss}\end{minipage}\quad
+   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
+\newenvironment{rmddiscussion}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/discuss.png}}\vss}\end{minipage}\quad
+   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
