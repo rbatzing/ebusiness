@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560841727436.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1771889032",
+    "id" : "88BB006E",
+    "lastKnownWriteTime" : 1560943877,
+    "last_content_update" : 1560943877349,
+    "path" : "D:/git/ebusiness/bdmanuscript/10-GeneralPrinciples.Rmd",
+    "project_path" : "10-GeneralPrinciples.Rmd",
+    "properties" : {
+        "cursorPosition" : "429,0",
+        "docOutlineVisible" : "1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560955453826.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "858990850",
+    "id" : "3A142418",
+    "lastKnownWriteTime" : 1560440604,
+    "last_content_update" : 1560440604,
+    "path" : "D:/git/ebusiness/bookdown/_build.sh",
+    "project_path" : "_build.sh",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sh"
+}

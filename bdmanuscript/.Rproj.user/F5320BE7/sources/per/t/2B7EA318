@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560884133704.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "846661194",
+    "id" : "2B7EA318",
+    "lastKnownWriteTime" : 1560943322,
+    "last_content_update" : 1560943322429,
+    "path" : "D:/git/ebusiness/bdmanuscript/60-Software.Rmd",
+    "project_path" : "60-Software.Rmd",
+    "properties" : {
+        "cursorPosition" : "19,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 8,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

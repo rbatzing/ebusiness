@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560884146291.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4014866450",
+    "id" : "8AB1E4F9",
+    "lastKnownWriteTime" : 1560950177,
+    "last_content_update" : 1560950177645,
+    "path" : "D:/git/ebusiness/bdmanuscript/50-Appendix.Rmd",
+    "project_path" : "50-Appendix.Rmd",
+    "properties" : {
+        "cursorPosition" : "1,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

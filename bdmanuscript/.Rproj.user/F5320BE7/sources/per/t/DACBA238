@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560924715180.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1582123545",
+    "id" : "DACBA238",
+    "lastKnownWriteTime" : 1560833166,
+    "last_content_update" : 1560833166,
+    "path" : "D:/git/ebusiness/bdmanuscript/00-Preface.Rmd",
+    "project_path" : "00-Preface.Rmd",
+    "properties" : {
+        "cursorPosition" : "9,69",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

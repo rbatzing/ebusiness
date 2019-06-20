@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560943193785.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1818754824",
+    "id" : "9BA15A9D",
+    "lastKnownWriteTime" : 1560968735,
+    "last_content_update" : 1560968735,
+    "path" : "D:/git/ebusiness/bdmanuscript/20-BusinessSoftwareModels.Rmd",
+    "project_path" : "20-BusinessSoftwareModels.Rmd",
+    "properties" : {
+        "cursorPosition" : "18,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 12,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

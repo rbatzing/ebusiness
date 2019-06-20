@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560487286486.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "11972614",
+    "id" : "6DE50F6D",
+    "lastKnownWriteTime" : 1560487329,
+    "last_content_update" : 1560487329366,
+    "path" : "D:/git/ebusiness/bookdown/06-references.Rmd",
+    "project_path" : "06-references.Rmd",
+    "properties" : {
+        "cursorPosition" : "8,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

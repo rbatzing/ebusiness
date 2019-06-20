@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1560844362914.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3626408157",
+    "id" : "B9F5FC32",
+    "lastKnownWriteTime" : 1560849255,
+    "last_content_update" : 1560849256006,
+    "path" : "D:/git/ebusiness/bdmanuscript/style.css",
+    "project_path" : "style.css",
+    "properties" : {
+        "cursorPosition" : "21,30",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "css"
+}
