@@ -1,7 +1,5 @@
 # Emerging Technologies
 
-This is a test
-
 ## Business Intelligence and Data Analytics
 
 * Data dashboarding

@@ -1,16 +1,44 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage[margin=.75in, paperwidth=8.25in, paperheight=11in]{geometry}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
-
-\newenvironment{rmdexercise}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/checklist.png}}\vss}\end{minipage}\quad
-   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
-\newenvironment{rmdextra}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/study.png}}\vss}\end{minipage}\quad
-   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
-\newenvironment{rmddiscussion}{$$\begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\hbox{\includegraphics[width=1cm]{images/discuss.png}}\vss}\end{minipage}\quad
-   \begin{minipage}[t]{4.25in}\hrule\smallskip\small}{\smallskip\hrule\end{minipage}$$}
+%%%%%%%%
+\floatstyle{ruled}
+\newfloat{exercise}{bthp}{loe}[chapter]
+\floatname{exercise}{Exercise}
+\floatstyle{boxed}
+\newfloat{extrastudy}{bthp}{los}[chapter]
+\floatname{extrastudy}{Reading}
+\newfloat{discussion}{tbhp}{lot}[chapter]
+\floatname{discussion}{Discussion}
+\newenvironment{rmdexercise}{\begin{exercise}\hbox to \textwidth\bgroup\hss
+      \begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\relax
+         \hbox{\includegraphics[width=1cm]{images/checklist.png}}\vss}\end{minipage}\quad
+      \begin{minipage}[t]{4.25in}\smallskip\small}%
+   {\end{minipage}\hss\egroup\end{exercise}}%
+%%%%%%%%
+\newenvironment{rmdextra}{\begin{extrastudy}\hbox to \textwidth\bgroup\hss
+      \begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\relax
+         \hbox{\includegraphics[width=1cm]{images/study.png}}\vss}\end{minipage}\quad
+      \begin{minipage}[t]{4.25in}\smallskip\small}%
+   {\end{minipage}\hss\egroup\end{extrastudy}}%
+%%%%%%%%
+\newenvironment{rmddiscussion}{\begin{discussion}\hbox to \textwidth\bgroup\hss
+      \begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\relax
+         \hbox{\includegraphics[width=1cm]{images/discuss.png}}\vss}\end{minipage}\quad
+      \begin{minipage}[t]{4.25in}\smallskip\small}%
+   {\end{minipage}\hss\egroup\end{discussion}}%
+%%%%%%%%%%%%%%%%
+\let\oldmaketitle\maketitle
+\AtBeginDocument{\let\maketitle\relax}
+\newcommand{\taibf}{\fontspec[Scale=1.3]{[THSarabunNew Bold.ttf:script=thai]}}
+\newcommand{\tai}{\fontspec[Scale=1.3]{[THSarabunNew.ttf:script=thai]}}
+\XeTeXlinebreaklocale �th_TH�
+%%%%%%%%%%%%%%%%

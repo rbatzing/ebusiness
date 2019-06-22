@@ -1,5 +1,9 @@
-book_filename: "bookdown-demo"
+book_filename: "bookdown_ebusiness"
 language:
   ui:
     chapter_name: "Chapter "
 delete_merged_file: true
+repo: https://github.com/rbatzing/ebusiness
+output_dir: docs
+clean: [packages.bib, book.bbl]
+new_session: yes

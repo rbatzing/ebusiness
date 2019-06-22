@@ -1,0 +1,27 @@
+# Front Matter {-}
+
+<img src="images/door.jpg" width="90%" />
+
+
+## Dedication {-}
+
+>
+> Now to him who is able to do far more abundantly<br>\newline than all that we ask or think, according  <br>\newline to the power at work within us. <br>\newline -- Eph 3:20 (ESV)
+>
+>
+>
+> \tai ขอให้พระเกียรติมีแด่พระองค์ผู้ทรงสามารถทำทุกสิ่งได้ <br>\newline มากยิ่งกว่าที่เราทูลขอหรือคิด โดยฤทธานุภาพ <br>\newline ที่ทำกิจอยู่ภายในเรา <br>\newline -- เอเฟซัส 3:20 (THSV11)
+>
+
+## Acknowledgements {-}
+
+The development of this book would not have been possible without the feedback and suggestions of colleagues and students. While I acknowledge that I am responsible for any remaining errors in this book, my students, referees, and readers have contributed immensely to the development of this book. I would like to acknowledge the impact of Ms. Phatnaree Srisomphan in helping to shape both the curriculum of this course and the nature of this book. I am also grateful for the support and encouragement of my wife Khajohn, especially in those long critical sessions when I was struggling to forge and edit the text of this manuscript. 
+
+## Colophon {-}
+
+The cover is a photograph of the Financial District from the Marina Bay in Singapore. The amazing metamorphsis of this central business district from swamp land into a thriving financial center of the Region is representative of the current sea-changes in business driven by technological and social developments. Similarly, today's developers of business systems are sowing seeds that will change the future, much like Sir Raffles' vision for a seaport has grown into today's Singapore. 
+
+While early drafts of this book were written in Leanpub Flavored Markdown, this book was developed in RStudio using the **bookdown** package [@R-bookdown] (which was built on top of R Markdown and **knitr** [@Xie2015]. It was edited in RStudio and later compiled and published online simultaneously as an HTML website, a printable document in PDF and electronic book EPUB format with only 3 clicks of the mouse.  
+
+The cover and front matter photos were downloaded from [Pixabay](https://pixabay.com/images/search/singapore).
+The extra reading, discussion and exercise sidebar icons were created by [Freepik](https://www.freepik.com) and used as per [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0).

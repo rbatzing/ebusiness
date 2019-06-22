@@ -8,17 +8,11 @@ knitr::include_graphics("images/door.jpg")
 ## Dedication {-}
 
 >
-> Now to him who is able to do far more abundantly
-> than all that we ask or think, according
-> to the power at work within us.
-> -- Eph 3:20 (ESV)
+> Now to him who is able to do far more abundantly<br>\newline than all that we ask or think, according  <br>\newline to the power at work within us. <br>\newline -- Eph 3:20 (ESV)
 >
 >
 >
-> ขอให้พระเกียรติมีแด่พระองค์ผู้ทรงสามารถทำทุกสิ่งได้
-> มากยิ่งกว่าที่เราทูลขอหรือคิด โดยฤทธานุภาพ
-> ที่ทำกิจอยู่ภายในเรา
-> -- เอเฟซัส 3:20 (THSV11)
+> \tai ขอให้พระเกียรติมีแด่พระองค์ผู้ทรงสามารถทำทุกสิ่งได้ <br>\newline มากยิ่งกว่าที่เราทูลขอหรือคิด โดยฤทธานุภาพ <br>\newline ที่ทำกิจอยู่ภายในเรา <br>\newline -- เอเฟซัส 3:20 (THSV11)
 >
 
 ## Acknowledgements {-}
@@ -29,7 +23,7 @@ The development of this book would not have been possible without the feedback a
 
 The cover is a photograph of the Financial District from the Marina Bay in Singapore. The amazing metamorphsis of this central business district from swamp land into a thriving financial center of the Region is representative of the current sea-changes in business driven by technological and social developments. Similarly, today's developers of business systems are sowing seeds that will change the future, much like Sir Raffles' vision for a seaport has grown into today's Singapore. 
 
-While early drafts of this book were written in Leanpub Flavored Markdown, this book was developed in RStudio using the **bookdown** package [@R-bookdown] (which was built on top of R Markdown and **knitr** [@xie2015]. It was edited in RStudio and later compiled and published online simultaneously as an HTML website, a printable document in PDF and electronic book EPUB format with only 3 clicks of the mouse.  
+While early drafts of this book were written in Leanpub Flavored Markdown, this book was developed in RStudio using the **bookdown** package [@R-bookdown] (which was built on top of R Markdown and **knitr** [@Xie2015]. It was edited in RStudio and later compiled and published online simultaneously as an HTML website, a printable document in PDF and electronic book EPUB format with only 3 clicks of the mouse.  
 
 The cover and front matter photos were downloaded from [Pixabay](https://pixabay.com/images/search/singapore).
 The extra reading, discussion and exercise sidebar icons were created by [Freepik](https://www.freepik.com) and used as per [Creative Commons 3.0 License](https://creativecommons.org/licenses/by/3.0).

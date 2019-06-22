@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 BUSINESS SOFTWARE MODELS | e-Business</title>
+  <meta name="description" content="This is a minimal example of the book I am trying to write. The output format for this example is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.11 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 BUSINESS SOFTWARE MODELS | e-Business" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://github.com/rbatzing/ebusiness/" />
+  <meta property="og:image" content="http://github.com/rbatzing/ebusiness/images/cover11.png" />
+  <meta property="og:description" content="This is a minimal example of the book I am trying to write. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rbatzing/ebusiness" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 BUSINESS SOFTWARE MODELS | e-Business" />
+  
+  <meta name="twitter:description" content="This is a minimal example of the book I am trying to write. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:image" content="http://github.com/rbatzing/ebusiness/images/cover11.png" />
+
+<meta name="author" content="Robert Batzinger" />
+
+
+<meta name="date" content="2019-06-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="general-principles.html">
+<link rel="next" href="business-software-systems.html">
+<script src="book_assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="book_assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="book_assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Book Jacket</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#abstract"><i class="fa fa-check"></i>Abstract</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="front-matter.html"><a href="front-matter.html"><i class="fa fa-check"></i>Front Matter</a><ul>
+<li class="chapter" data-level="" data-path="front-matter.html"><a href="front-matter.html#dedication"><i class="fa fa-check"></i>Dedication</a></li>
+<li class="chapter" data-level="" data-path="front-matter.html"><a href="front-matter.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="front-matter.html"><a href="front-matter.html#colophon"><i class="fa fa-check"></i>Colophon</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="general-principles.html"><a href="general-principles.html"><i class="fa fa-check"></i><b>1</b> GENERAL PRINCIPLES</a><ul>
+<li class="chapter" data-level="1.1" data-path="general-principles.html"><a href="general-principles.html#essentials-of-business"><i class="fa fa-check"></i><b>1.1</b> Essentials of Business</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="general-principles.html"><a href="general-principles.html#business-processes"><i class="fa fa-check"></i><b>1.1.1</b> Business processes</a></li>
+<li class="chapter" data-level="1.1.2" data-path="general-principles.html"><a href="general-principles.html#core-activities-of-a-business"><i class="fa fa-check"></i><b>1.1.2</b> Core Activities of a Business</a></li>
+<li class="chapter" data-level="1.1.3" data-path="general-principles.html"><a href="general-principles.html#support-functions"><i class="fa fa-check"></i><b>1.1.3</b> Support functions</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="general-principles.html"><a href="general-principles.html#understanding-the-role-of-it-in-business"><i class="fa fa-check"></i><b>1.2</b> Understanding the role of IT in business</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="general-principles.html"><a href="general-principles.html#the-establishment-of-an-it-department"><i class="fa fa-check"></i><b>1.2.1</b> The Establishment of an IT Department</a></li>
+<li class="chapter" data-level="1.2.2" data-path="general-principles.html"><a href="general-principles.html#business-views-of-the-role-of-it"><i class="fa fa-check"></i><b>1.2.2</b> Business views of the role of IT</a></li>
+<li class="chapter" data-level="1.2.3" data-path="general-principles.html"><a href="general-principles.html#software-to-facilitate-business-interactions"><i class="fa fa-check"></i><b>1.2.3</b> Software to facilitate business interactions</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="general-principles.html"><a href="general-principles.html#essentials-of-business-quality-management"><i class="fa fa-check"></i><b>1.3</b> Essentials of Business Quality Management</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="general-principles.html"><a href="general-principles.html#iso9000iso9001"><i class="fa fa-check"></i><b>1.3.1</b> ISO9000/ISO9001</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="general-principles.html"><a href="general-principles.html#changes-to-business"><i class="fa fa-check"></i><b>1.4</b> Changes to Business</a><ul>
+<li class="chapter" data-level="1.4.1" data-path="general-principles.html"><a href="general-principles.html#open-organization"><i class="fa fa-check"></i><b>1.4.1</b> Open Organization</a></li>
+<li class="chapter" data-level="1.4.2" data-path="general-principles.html"><a href="general-principles.html#the-changing-nature-of-customers"><i class="fa fa-check"></i><b>1.4.2</b> The changing nature of customers</a></li>
+<li class="chapter" data-level="1.4.3" data-path="general-principles.html"><a href="general-principles.html#changing-nature-of-business"><i class="fa fa-check"></i><b>1.4.3</b> Changing nature of business</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="general-principles.html"><a href="general-principles.html#online-commerce"><i class="fa fa-check"></i><b>1.5</b> Online Commerce</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="general-principles.html"><a href="general-principles.html#growth-of-the-internet-and-e-commerce"><i class="fa fa-check"></i><b>1.5.1</b> Growth of the Internet and e-commerce</a></li>
+<li class="chapter" data-level="1.5.2" data-path="general-principles.html"><a href="general-principles.html#the-e-shopping-customer-experience"><i class="fa fa-check"></i><b>1.5.2</b> The e-shopping customer experience</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="business-software-models.html"><a href="business-software-models.html"><i class="fa fa-check"></i><b>2</b> BUSINESS SOFTWARE MODELS</a><ul>
+<li class="chapter" data-level="2.1" data-path="business-software-models.html"><a href="business-software-models.html#business-process-model-bpm"><i class="fa fa-check"></i><b>2.1</b> Business Process Model (BPM)</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="business-software-models.html"><a href="business-software-models.html#a-simple-example"><i class="fa fa-check"></i><b>2.1.1</b> A simple example</a></li>
+<li class="chapter" data-level="2.1.2" data-path="business-software-models.html"><a href="business-software-models.html#notation"><i class="fa fa-check"></i><b>2.1.2</b> Notation</a></li>
+<li class="chapter" data-level="2.1.3" data-path="business-software-models.html"><a href="business-software-models.html#symbols"><i class="fa fa-check"></i><b>2.1.3</b> Symbols</a></li>
+<li class="chapter" data-level="2.1.4" data-path="business-software-models.html"><a href="business-software-models.html#sample-business-process-models"><i class="fa fa-check"></i><b>2.1.4</b> Sample Business Process Models</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="business-software-models.html"><a href="business-software-models.html#bpmn-model-simulation"><i class="fa fa-check"></i><b>2.2</b> BPMN Model Simulation</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="business-software-models.html"><a href="business-software-models.html#bp-simulator-model-components"><i class="fa fa-check"></i><b>2.2.1</b> BP Simulator Model Components</a></li>
+<li class="chapter" data-level="2.2.2" data-path="business-software-models.html"><a href="business-software-models.html#linking-objects-together"><i class="fa fa-check"></i><b>2.2.2</b> Linking objects together</a></li>
+<li class="chapter" data-level="2.2.3" data-path="business-software-models.html"><a href="business-software-models.html#an-example-a-petrol-station"><i class="fa fa-check"></i><b>2.2.3</b> An example: A Petrol Station**</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="business-software-models.html"><a href="business-software-models.html#enterprise-resource-erp"><i class="fa fa-check"></i><b>2.3</b> Enterprise Resource (ERP)</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="business-software-models.html"><a href="business-software-models.html#building-blocks"><i class="fa fa-check"></i><b>2.3.1</b> Building Blocks</a></li>
+<li class="chapter" data-level="2.3.2" data-path="business-software-models.html"><a href="business-software-models.html#projectfedena.com-an-example-of-an-erp"><i class="fa fa-check"></i><b>2.3.2</b> ProjectFedena.com: an example of an ERP</a></li>
+<li class="chapter" data-level="2.3.3" data-path="business-software-models.html"><a href="business-software-models.html#the-mvc-framework"><i class="fa fa-check"></i><b>2.3.3</b> The MVC Framework</a></li>
+<li class="chapter" data-level="2.3.4" data-path="business-software-models.html"><a href="business-software-models.html#unit-testing"><i class="fa fa-check"></i><b>2.3.4</b> Unit testing</a></li>
+<li class="chapter" data-level="2.3.5" data-path="business-software-models.html"><a href="business-software-models.html#available-assertions"><i class="fa fa-check"></i><b>2.3.5</b> Available assertions:</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="business-software-models.html"><a href="business-software-models.html#behavior-driven-development"><i class="fa fa-check"></i><b>2.4</b> Behavior driven Development</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="business-software-models.html"><a href="business-software-models.html#a-working-example-of-specs-in-cucumber"><i class="fa fa-check"></i><b>2.4.1</b> A working example of specs in Cucumber</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="business-software-systems.html"><a href="business-software-systems.html"><i class="fa fa-check"></i><b>3</b> BUSINESS SOFTWARE SYSTEMS</a><ul>
+<li class="chapter" data-level="3.1" data-path="business-software-systems.html"><a href="business-software-systems.html#online-store"><i class="fa fa-check"></i><b>3.1</b> Online Store</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="business-software-systems.html"><a href="business-software-systems.html#stages-in-customer-purchasing-decisions"><i class="fa fa-check"></i><b>3.1.1</b> Stages in Customer Purchasing Decisions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="business-software-systems.html"><a href="business-software-systems.html#business-processes-to-support-shoppers"><i class="fa fa-check"></i><b>3.1.2</b> Business Processes to Support Shoppers</a></li>
+<li class="chapter" data-level="3.1.3" data-path="business-software-systems.html"><a href="business-software-systems.html#steps-of-check-out-and-order-fulfillment"><i class="fa fa-check"></i><b>3.1.3</b> Steps of check out and order fulfillment</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="business-software-systems.html"><a href="business-software-systems.html#customer-relations-management"><i class="fa fa-check"></i><b>3.2</b> Customer Relations Management</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="business-software-systems.html"><a href="business-software-systems.html#post-sales-service"><i class="fa fa-check"></i><b>3.2.1</b> Post sales service</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="business-software-systems.html"><a href="business-software-systems.html#measuring-the-effectiveness-of-websites"><i class="fa fa-check"></i><b>3.3</b> Measuring the effectiveness of websites</a></li>
+<li class="chapter" data-level="3.4" data-path="business-software-systems.html"><a href="business-software-systems.html#human-resources-management"><i class="fa fa-check"></i><b>3.4</b> Human Resources Management</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="business-software-systems.html"><a href="business-software-systems.html#assessing-personal-temperment"><i class="fa fa-check"></i><b>3.4.1</b> Assessing Personal Temperment</a></li>
+<li class="chapter" data-level="3.4.2" data-path="business-software-systems.html"><a href="business-software-systems.html#performance-appraisal"><i class="fa fa-check"></i><b>3.4.2</b> Performance appraisal</a></li>
+<li class="chapter" data-level="3.4.3" data-path="business-software-systems.html"><a href="business-software-systems.html#objectives-of-performance-appraisal"><i class="fa fa-check"></i><b>3.4.3</b> Objectives of Performance Appraisal</a></li>
+<li class="chapter" data-level="3.4.4" data-path="business-software-systems.html"><a href="business-software-systems.html#hr-system-software"><i class="fa fa-check"></i><b>3.4.4</b> HR System software</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="business-software-systems.html"><a href="business-software-systems.html#operations-management"><i class="fa fa-check"></i><b>3.5</b> Operations Management</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="business-software-systems.html"><a href="business-software-systems.html#measures-of-association-rules"><i class="fa fa-check"></i><b>3.5.1</b> Measures of Association Rules</a></li>
+<li class="chapter" data-level="3.5.2" data-path="business-software-systems.html"><a href="business-software-systems.html#logistics"><i class="fa fa-check"></i><b>3.5.2</b> Logistics</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="emerging-technologies.html"><a href="emerging-technologies.html"><i class="fa fa-check"></i><b>4</b> EMERGING TECHNOLOGIES</a><ul>
+<li class="chapter" data-level="4.1" data-path="emerging-technologies.html"><a href="emerging-technologies.html#business-intelligence-and-data-analytics"><i class="fa fa-check"></i><b>4.1</b> Business Intelligence and Data Analytics</a></li>
+<li class="chapter" data-level="4.2" data-path="emerging-technologies.html"><a href="emerging-technologies.html#blockchain"><i class="fa fa-check"></i><b>4.2</b> Blockchain</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="emerging-technologies.html"><a href="emerging-technologies.html#cyptocurrencies"><i class="fa fa-check"></i><b>4.2.1</b> Cyptocurrencies</a></li>
+<li class="chapter" data-level="4.2.2" data-path="emerging-technologies.html"><a href="emerging-technologies.html#other-applications-of-block-chains"><i class="fa fa-check"></i><b>4.2.2</b> Other applications of block chains</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="emerging-technologies.html"><a href="emerging-technologies.html#open-source-solutions"><i class="fa fa-check"></i><b>4.3</b> Open Source Solutions</a></li>
+<li class="chapter" data-level="4.4" data-path="emerging-technologies.html"><a href="emerging-technologies.html#thailand-4.0"><i class="fa fa-check"></i><b>4.4</b> Thailand 4.0</a></li>
+<li class="chapter" data-level="4.5" data-path="emerging-technologies.html"><a href="emerging-technologies.html#working-remotely"><i class="fa fa-check"></i><b>4.5</b> Working remotely</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="emerging-technologies.html"><a href="emerging-technologies.html#reasons-for-working-remotely"><i class="fa fa-check"></i><b>4.5.1</b> Reasons for working remotely</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="emerging-technologies.html"><a href="emerging-technologies.html#digital-intelligence-quotient"><i class="fa fa-check"></i><b>4.6</b> Digital Intelligence Quotient</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="emerging-technologies.html"><a href="emerging-technologies.html#digital-intelligence-skills-"><i class="fa fa-check"></i><b>4.6.1</b> Digital intelligence skills / ทักษะความฉลาดทางดิจิทัล</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html"><i class="fa fa-check"></i><b>A</b> Appendix A. Software used in this course</a><ul>
+<li class="chapter" data-level="A.1" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#orange-hr"><i class="fa fa-check"></i><b>A.1</b> Orange HR</a></li>
+<li class="chapter" data-level="A.2" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#sugar-crm"><i class="fa fa-check"></i><b>A.2</b> Sugar CRM</a></li>
+<li class="chapter" data-level="A.3" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#power-bi"><i class="fa fa-check"></i><b>A.3</b> Power BI</a></li>
+<li class="chapter" data-level="A.4" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#bonita-bpm"><i class="fa fa-check"></i><b>A.4</b> Bonita BPM</a></li>
+<li class="chapter" data-level="A.5" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#online-store-1"><i class="fa fa-check"></i><b>A.5</b> Online Store</a></li>
+<li class="chapter" data-level="A.6" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#erp---odoo"><i class="fa fa-check"></i><b>A.6</b> ERP - Odoo</a></li>
+<li class="chapter" data-level="A.7" data-path="appendix-a-software-used-in-this-course.html"><a href="appendix-a-software-used-in-this-course.html#logistics-1"><i class="fa fa-check"></i><b>A.7</b> Logistics</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown">
+Proudly published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">e-Business</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="business-software-models" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> BUSINESS SOFTWARE MODELS</h1>
+<p>This chapter will explore some common approaches to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.</p>
+<div id="business-process-model-bpm" class="section level2">
+<h2><span class="header-section-number">2.1</span> Business Process Model (BPM)</h2>
+<p>There are many good reasons for using BPMN to model business processes. <span class="citation">(Camunda Corporation <a href="#ref-Camunda2018a">2018</a><a href="#ref-Camunda2018a">b</a>)</span></p>
+<ul>
+<li><strong>Recognized Standard:</strong> BPMN is owned by an institution and is supported by many software products. Third party BPMN editors are available in the form of desktop apps like yEd <span class="citation">(yWorks <a href="#ref-YED2018">2018</a>)</span> or online services like Camunda. <span class="citation">(Camunda Corporation <a href="#ref-Camunda2018b">2018</a><a href="#ref-Camunda2018b">a</a>)</span></li>
+<li><strong>Simplicity:</strong> BPMN is based on a system of graphic symbols that easy to learn.</li>
+<li><strong>Power of expression:</strong> BPMN reduces descriptions of complex process work flows to a graphic model that is easy to grasp.</li>
+<li><strong>Implementation in IT:</strong> BPMN was developed to support technical implementation of processes (“Process Automation”). The more important IT becomes in a company, the more helpful BPMN can be, especially when process changes can be accomplished by a simple change of line.</li>
+</ul>
+<div id="a-simple-example" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> A simple example</h3>
+<p>A BPMN model described a process from the beginning (a light or green circle) to the end (a dark red circle). Blocks of tasks leading to key events are specified in sequential order.</p>
+<p><img src="images/simpleBPM.png" width="100%" /></p>
+</div>
+<div id="notation" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Notation</h3>
+<p>Naming conventions help to improve the readability of the process:</p>
+<ul>
+<li><p><strong>Tasks:</strong></p>
+<ul>
+<li>shown as a rounded rectangle</li>
+<li>described as a <code>[verb] + [object]</code></li>
+<li><em>Acquire groceries</em> is better than <em>first take care of shopping for groceries</em></li>
+</ul></li>
+<li><p><strong>Events:</strong></p>
+<ul>
+<li>description of milestones and achievements</li>
+<li>described as something that has already happened</li>
+<li><em>hunger noticed</em> is better <em>when I begin to feel hungry</em></li>
+</ul></li>
+</ul>
+</div>
+<div id="symbols" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> Symbols</h3>
+<p>BMP Software provide a pallette of objects to describe various aspects of a process.</p>
+<div class="figure">
+<img src="images/yedpalette.png" alt="yEd BPMN Symbol Palette" />
+<p class="caption">yEd BPMN Symbol Palette</p>
+</div>
+<div class="figure">
+<img src="images/cawemopalette.png" alt="Cawemo BPMN Symbol Palette" />
+<p class="caption">Cawemo BPMN Symbol Palette</p>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Symbol</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><img src="images/start-event.png" /><!-- --></td>
+<td>Start Event: Start of the process chain</td>
+</tr>
+<tr class="even">
+<td align="center"><img src="images/end-event.png" /><!-- --></td>
+<td>End Event: The end of the process chain</td>
+</tr>
+<tr class="odd">
+<td align="center"><img src="images/event-message-catch.png" /><!-- --></td>
+<td>Event Message Catch: wait for a message event</td>
+</tr>
+<tr class="even">
+<td align="center"><img src="images/event-message-throw.png" /><!-- --></td>
+<td>Event Message Throw: sending a message event</td>
+</tr>
+<tr class="odd">
+<td align="center"><img src="images/task.png" /><!-- --></td>
+<td>Task: Work to be done</td>
+</tr>
+<tr class="even">
+<td align="center"><img src="images/xor-gateway.png" /><!-- --></td>
+<td>XOR Gateway: choice of a action stream</td>
+</tr>
+<tr class="odd">
+<td align="center"><img src="images/parallel-gateway.png" /><!-- --></td>
+<td>Parallel Gateway: initiate simulataneous action stream</td>
+</tr>
+<tr class="even">
+<td align="center"><img src="images/swimlanes.png" /><!-- --></td>
+<td>Swim lanes: separate the process by roles or actors</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="sample-business-process-models" class="section level3">
+<h3><span class="header-section-number">2.1.4</span> Sample Business Process Models</h3>
+<div class="figure">
+<img src="images/orderfulfillment.png" alt="Order Fulfillment Processing" />
+<p class="caption">Order Fulfillment Processing</p>
+</div>
+<div class="figure">
+<img src="images/bookckout.png" alt="Book Checkout at the Library" />
+<p class="caption">Book Checkout at the Library</p>
+</div>
+<div class="figure">
+<img src="images/pizza.png" alt="Pizza ordering" />
+<p class="caption">Pizza ordering</p>
+</div>
+<div class="figure">
+<img src="images/pizza2.png" alt="Pizza shop" />
+<p class="caption">Pizza shop</p>
+</div>
+
+<div class="rmdexercise">
+<p><strong>Correcting a bug in process flow</strong></p>
+<p>Identify and correct the flaw in this process so that
+the grass can be weeded, cut and watered in that order but only as required.</p>
+</div>
+
+<div class="figure">
+<img src="images/cutgrass.png" alt="Cutting the grass" />
+<p class="caption">Cutting the grass</p>
+</div>
+</div>
+</div>
+<div id="bpmn-model-simulation" class="section level2">
+<h2><span class="header-section-number">2.2</span> BPMN Model Simulation</h2>
+<p>BP Model sumulators allow process designers to test their model. The general approach is to use a task generator that creates and processes tasks at rates equal to the measured performance in the work place. Data is collected to measure the rate of utilization and work flow at all stages of the model in order to identify issues like bottlenecks and irregularities in the work loads of individual employees. Simulation test are usually conducted in 3 phases:</p>
+<table>
+<colgroup>
+<col width="24%" />
+<col width="44%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Description</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Modeling</td>
+<td>Simple visual model of the business process</td>
+<td>Specify the individual roles and the business logic of the process</td>
+</tr>
+<tr class="even">
+<td>Simulation</td>
+<td>Run task generation and execution according to measured performance</td>
+<td>Test the model based on work place rates of service</td>
+</tr>
+<tr class="odd">
+<td>Analysis</td>
+<td>Creates a dashboard of performance indicators</td>
+<td>Verifies process design; Identifies opportunities for process improvement; Helps to maximize employee utilization; Provides for performance-based estimates of cost</td>
+</tr>
+</tbody>
+</table>
+<p>Online services such as <a href="http://www.bpsimulator.com" class="uri">http://www.bpsimulator.com</a> provide a useful means for testing a process design through the display of the model, test results dashboard and performance indicators for each stage of the process. The design is actually a translation of a BPMN model into a Event-driven Process Chain (EPC). However, additional key details are required to quantify the capacity and number of resources available. These details are saved in the attributes for each node as shown in the next section.</p>
+<div id="bp-simulator-model-components" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> BP Simulator Model Components</h3>
+<p>The following table is adapted from the online help of BPSimulation. <span class="citation">(Business Process Simulator <a href="#ref-BPSSimulator2018">2018</a>)</span></p>
+<table>
+<colgroup>
+<col width="48%" />
+<col width="51%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Object Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Function:</strong> Set of targeted actions to be performed by one or more executors in one role</td>
+<td><img src="images/function.png" /><!-- --><br>Repair of water supply; Acceptance payment; Sending a message</td>
+</tr>
+<tr class="even">
+<td><strong>Execute:</strong> Position or role of those responsible for the execution of the function</td>
+<td>Motorman; Board member</td>
+</tr>
+<tr class="odd">
+<td><strong>Resource:</strong> Service or tools needed to perform the function</td>
+<td><img src="images/resource.png" /><!-- --><br>Machine; tool; Software</td>
+</tr>
+<tr class="even">
+<td><strong>Tasks Generator:</strong> Generator global tasks of the business process of a certain type with a certain interval for the simulation purposes</td>
+<td><img src="images/generator.png" /><!-- --><br>Client request for a loan; Received customer complaint</td>
+</tr>
+<tr class="odd">
+<td><strong>Checkpoint:</strong> Auxiliary element for monitoring the process parameters at different stages its execution and control of tasks flow</td>
+<td><img src="images/checkpoint.png" /><!-- --><br>Completing the approval stage; Completion of the process because of inconsistencies detected</td>
+</tr>
+<tr class="even">
+<td><strong>Event:</strong> Cause or an intangible result of a function</td>
+<td><img src="images/event.png" /><!-- --> <br>Client’s visit; An error was detected</td>
+</tr>
+<tr class="odd">
+<td><strong>Regulate:</strong> Regulate document directly related to the order, conditions or results of the function</td>
+<td><img src="images/regulate.png" /><!-- --><br>Manuals; Federal Law</td>
+</tr>
+<tr class="even">
+<td><strong>Input:</strong> Material or information necessary to perform the function</td>
+<td><img src="images/input.png" /><!-- --> <br>Form; Statement</td>
+</tr>
+<tr class="odd">
+<td><strong>Output:</strong> Material or information generated or acquired additional properties as a result of the function</td>
+<td><img src="images/output.png" /><!-- --> <br>Part; Conclusion</td>
+</tr>
+<tr class="even">
+<td><strong>Procedure:</strong> Set of performance features for a particular purpose</td>
+<td><img src="images/procedure.png" /><!-- --> <br>Applications processing; Approval of documentation</td>
+</tr>
+<tr class="odd">
+<td><strong>Comment:</strong> Auxiliary element model for clarifications or comments</td>
+<td><img src="images/comment.png" /><!-- --> <br>Temporary condition; Proposed improvements</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="linking-objects-together" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Linking objects together</h3>
+<p>All objects in the model should be at least one link to another object. To create a link between objects, you must first double-click on the object - the source of links, and then click on the object - the recipient, link will be created with an arrow on the side of the second object. Link means a direct impact or relationship of one object from another. Not all objects can be linked to each other. The group of objects: Tasks Generator, Function, Events, Procedure and Check Point can be suppliers (predecessors) or consumers (followers) of each other. Other objects only as the impact on function, as shown below the diagram:</p>
+<div class="figure">
+<img src="images/exmodeling5.png" alt="Linking of Objects" />
+<p class="caption">Linking of Objects</p>
+</div>
+<p>With this extra data it is possible to simulate a day at work. The statistics collected help to pinpoint bottlenecks and limiting resources. The system provides a dashboard to summarize the results.</p>
+<div class="figure">
+<img src="images/bpsim2.png" alt="Dashboard of Test Results" />
+<p class="caption">Dashboard of Test Results</p>
+</div>
+<p>The model uses generators to simulate the volume of the demand for needs. Data comes from the functions and key check points of the model that monitor the workflow that passes these nodes. The executor nodes determine the capacity of the system. Performance is varied by changing the number of individuals in the role of executors.</p>
+<div class="figure">
+<img src="images/bpsim3.png" alt="Performance indicators" />
+<p class="caption">Performance indicators</p>
+</div>
+</div>
+<div id="an-example-a-petrol-station" class="section level3">
+<h3><span class="header-section-number">2.2.3</span> An example: A Petrol Station**</h3>
+<p>Starting with the BPMN of a simple model of the processes behind getting gas at the petrol station.</p>
+<div class="figure">
+<img src="images/gaspump.png" alt="The Gas Station" />
+<p class="caption">The Gas Station</p>
+</div>
+<p>results in a simulated model within the BPSimulator.</p>
+<div class="figure">
+<img src="images/gaspumpsim.png" alt="Getting Fuel Simulatation" />
+<p class="caption">Getting Fuel Simulatation</p>
+</div>
+<p>The simulation was run in the scenario of only have one cashier, one attendant, one gasohol pump, one diesel pump and 290 customers who arrive.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Starting</th>
+<th>Ending</th>
+<th>Number</th>
+<th>Hourly Rate</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6:00</td>
+<td>8:59</td>
+<td>90</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>9:00</td>
+<td>14:59</td>
+<td>90</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>15:00</td>
+<td>18:59</td>
+<td>90</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>19:00</td>
+<td>20:00</td>
+<td>20</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>As shown in the dashboard, the average queue is 16 min.</p>
+<div class="figure">
+<img src="images/gaspumpdash.png" alt="Dashboard for Getting Fuel" />
+<p class="caption">Dashboard for Getting Fuel</p>
+</div>
+
+<div class="rmdexercise">
+<p><strong>Exercise: Improving performance of a petrol station</strong></p>
+Using the sample model of a petrol station, determine a proper mix of men and machines that will reduce the queue time to less than 2 mins at the minimum cost.
+</div>
+
+</div>
+</div>
+<div id="enterprise-resource-erp" class="section level2">
+<h2><span class="header-section-number">2.3</span> Enterprise Resource (ERP)</h2>
+<p>The purpose of Enterprise Resource Planning (ERP) is to harness business data in a way that allows integrated management of core business processes. This business-management software is typically designed as a suite of integrated applications which collect, store, manage, and interpret data from a wide range of business activities. By managing the critical information of all business processes, ERP provides opportunities to support data-driven management decisions is such areas as cash flow, resources usage, inventory of raw materials, and the status of business commitments such as project milestones, orders fulfilment, purchase order payments, and staff compensation. The system facilitates the sharing of data across divisions of the business, such as manufacturing, purchasing, sales, accounting, and human resources.</p>
+<div id="building-blocks" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Building Blocks</h3>
+<div class="figure">
+<img src="images/odooerp.png" alt="ODOO ERP Modules" />
+<p class="caption">ODOO ERP Modules</p>
+</div>
+</div>
+<div id="projectfedena.com-an-example-of-an-erp" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> ProjectFedena.com: an example of an ERP</h3>
+<p>Project Fedena was conceived as a project to easily manage all campus records of schools and campuses and was implemented as a ERP system written in Ruby on Rails. The project was originally developed at Foradian Technologies but is now maintained by the open source community.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<div class="figure">
+<img src="images/softwaresystems.png" alt="Business System Software Development" />
+<p class="caption">Business System Software Development</p>
+</div>
+</div>
+<div id="the-mvc-framework" class="section level3">
+<h3><span class="header-section-number">2.3.3</span> The MVC Framework</h3>
+<ul>
+<li><strong>Model:</strong> Defines the structure and nature of data used by the system includes permissions, validation and list of field attributes.</li>
+<li><strong>View:</strong> Renders outputs according to the limitations of the media such as web, email, sms, mobile, graphic image, json and xml.</li>
+<li><strong>Controller:</strong> Parses the user request into data queries and passes the response to the appropriate view. User requests are generally variants of the standard types of database functions: create, show, edit, update and delete.</li>
+<li><strong>Helpers:</strong> calculates basic conversions including support for foreign languages.</li>
+</ul>
+<div class="figure">
+<img src="images/mvc.png" alt="MVC Communications" />
+<p class="caption">MVC Communications</p>
+</div>
+<p>The Model implements the ERD. This is example comes from the Subject Model class definition.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">belongs_to <span class="st">:batch</span>
+belongs_to <span class="st">:elective_group</span>
+has_many <span class="st">:timetable_entries</span>,<span class="st">:foreign_key=</span>&gt;<span class="st">&#39;subject_id&#39;</span>
+has_many <span class="st">:employees_subjects</span>
+has_many <span class="st">:employees</span> ,<span class="st">:through</span> =&gt; <span class="st">:employees_subjects</span>
+has_many <span class="st">:students_subjects</span>
+has_many <span class="st">:students</span>, <span class="st">:through</span> =&gt; <span class="st">:students_subjects</span>
+has_many <span class="st">:grouped_exam_reports</span>
+has_and_belongs_to_many_with_deferred_save <span class="st">:fa_groups</span>
+validates_presence_of <span class="st">:name</span>, <span class="st">:max_weekly_classes</span>, <span class="st">:code</span>,<span class="st">:batch_id</span>
+validates_presence_of <span class="st">:credit_hours</span>,
+   <span class="st">:if=</span>&gt;<span class="st">:check_grade_type</span>
+validates_numericality_of <span class="st">:max_weekly_classes</span>
+validates_numericality_of <span class="st">:amount</span>,<span class="st">:allow_nil</span> =&gt; <span class="dv">true</span>
+validates_uniqueness_of <span class="st">:code</span>, <span class="st">:case_sensitive</span> =&gt; <span class="dv">false</span></code></pre>
+</div>
+<div id="unit-testing" class="section level3">
+<h3><span class="header-section-number">2.3.4</span> Unit testing</h3>
+<p>This is done through a series of Assertions that tried against the functions of a class:</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="kw">class</span> <span class="dt">SimpleNumber</span>
+
+   <span class="kw">def</span> initialize(num)
+       raise <span class="kw">unless</span> num.is_a?(<span class="dt">Numeric</span>)
+       <span class="ot">@x</span> = num
+   <span class="kw">end</span>
+
+   <span class="kw">def</span> add(y)
+      <span class="ot">@x</span> + y
+   <span class="kw">end</span>
+
+   <span class="kw">def</span> multiply(y)
+       <span class="ot">@x</span> * y
+   <span class="kw">end</span>
+<span class="kw">end</span></code></pre>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">require_relative <span class="st">&quot;simple_number&quot;</span>
+require <span class="st">&quot;test/unit&quot;</span>
+     
+<span class="kw">class</span> <span class="dt">TestSimpleNumber</span> &lt; <span class="dt">Test</span>::<span class="dt">Unit</span>::<span class="dt">TestCase</span>
+     
+  <span class="kw">def</span> test_simple
+    assert_equal(<span class="dv">4</span>, <span class="dt">SimpleNumber</span>.new(<span class="dv">2</span>).add(<span class="dv">2</span>) )
+    assert_equal(<span class="dv">6</span>, <span class="dt">SimpleNumber</span>.new(<span class="dv">2</span>).multiply(<span class="dv">3</span>) )
+  <span class="kw">end</span>    
+<span class="kw">end</span></code></pre>
+</div>
+<div id="available-assertions" class="section level3">
+<h3><span class="header-section-number">2.3.5</span> Available assertions:</h3>
+<table>
+<colgroup>
+<col width="45%" />
+<col width="54%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assertion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>assert( boolean, [message] )</code></td>
+<td>True if boolean</td>
+</tr>
+<tr class="even">
+<td><code>assert_equal( expected, actual, [message] )</code></td>
+<td>True if expected == actual</td>
+</tr>
+<tr class="odd">
+<td><code>assert_not_equal( expected, actual, [message] )</code></td>
+<td>True if expected != actual</td>
+</tr>
+<tr class="even">
+<td><code>assert_match( pattern, string, [message] )</code></td>
+<td>True if string =~ pattern</td>
+</tr>
+<tr class="odd">
+<td><code>assert_no_match( pattern, string, [message] )</code></td>
+<td>True if string !~ pattern</td>
+</tr>
+<tr class="even">
+<td><code>assert_nil( object, [message] )</code></td>
+<td>True if object == nil</td>
+</tr>
+<tr class="odd">
+<td><code>assert_not_nil( object, [message] )</code></td>
+<td>True if object != nil</td>
+</tr>
+<tr class="even">
+<td><code>assert_in_delta( expected_float, actual_float, delta, [message] )</code></td>
+<td>True if (actual_float - expected_float).abs &lt;= delta</td>
+</tr>
+<tr class="odd">
+<td><code>assert_instance_of( class, object, [message] )</code></td>
+<td>True if object.class == class</td>
+</tr>
+<tr class="even">
+<td><code>assert_kind_of( class, object, [message] )</code></td>
+<td>True if object.kind_of?(class)</td>
+</tr>
+<tr class="odd">
+<td><code>assert_same( expected, actual, [message])</code></td>
+<td>True if actual.equal?( expected ).</td>
+</tr>
+<tr class="even">
+<td><code>assert_not_same( expected, actual, [message] )</code></td>
+<td>True if not actual.equal?( expected ).</td>
+</tr>
+<tr class="odd">
+<td><code>assert_raise( Exception,... ) {block}</code></td>
+<td>True if the block raises one of the listed exceptions.</td>
+</tr>
+<tr class="even">
+<td><code>assert_nothing_raised( Exception,...) {block}</code></td>
+<td>True if the block does not raise one of the listed exceptions.</td>
+</tr>
+<tr class="odd">
+<td><code>assert_throws( expected_symbol, [message] ) {block}</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>assert_nothing_thrown( [message] ) {block}</code></td>
+<td>True if the block throws (or doesn’t) the expected_symbol.</td>
+</tr>
+<tr class="odd">
+<td><code>assert_respond_to( object, method, [message] )</code></td>
+<td>True if the object can respond to the given method.</td>
+</tr>
+<tr class="even">
+<td><code>assert_send( send_array, [message] )</code></td>
+<td>True if the method sent to the object with the given arguments return true.</td>
+</tr>
+<tr class="odd">
+<td><code>assert_operator( object1, operator, object2, [message] )</code></td>
+<td>Compares the two objects with the given operator, passes if true</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="behavior-driven-development" class="section level2">
+<h2><span class="header-section-number">2.4</span> Behavior driven Development</h2>
+<p>Advantages:</p>
+<ul>
+<li><strong>Single source of truth:</strong> Specifications, tests and documentation are in the same document.</li>
+<li><strong>Living documentation:</strong> Because they’re automatically tested by Cucumber, your specifications are always bang up-to-date.</li>
+<li><strong>Customer focus:</strong> Cucumber helps business and IT collaborate to build a shared understanding of the business goals</li>
+</ul>
+<p><span class="citation">(Cucumber <a href="#ref-Cucumber2019a">2019</a><a href="#ref-Cucumber2019a">a</a>)</span> supports Behaviour-Driven Development(BDD) by reading executable specifications written in plain text and validating that the software does what those specifications say. The specifications consists of multiple examples, or scenarios written in Gherkin. <span class="citation">(Cucumber <a href="#ref-Cucumber2019b">2019</a><a href="#ref-Cucumber2019b">b</a>)</span></p>
+<p>The primary keywords are:</p>
+<ul>
+<li><code>Feature</code></li>
+<li><code>Example</code> (<code>Scenario</code> and <code>Scenario Outline</code> are synonyms)</li>
+<li>Steps: <code>Given</code>, <code>When</code>, <code>Then</code>, <code>And</code>, <code>But</code></li>
+<li><code>Background</code></li>
+<li><p><code>Combinations</code> (Examples is a synonum)</p></li>
+<li><code>"..."</code> (Doc Strings)</li>
+<li><code>|</code> (Data Tables)</li>
+<li><code>@</code> (Tags)</li>
+<li><p><code>#</code> (Comments)</p></li>
+</ul>
+<p>Examples follow this same pattern:</p>
+<ul>
+<li>Describe an initial context (Given steps)</li>
+<li>Describe an event (When steps)</li>
+<li>Describe an expected outcome (Then steps)</li>
+</ul>
+<div id="a-working-example-of-specs-in-cucumber" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> A working example of specs in Cucumber</h3>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="dt">Feature</span>: A simple banking program
+        
+<span class="dt">Background</span>:
+   <span class="dt">Given</span> a customer named <span class="st">&quot;DrBob&quot;</span>          
+   <span class="dt">And</span> I have logged <span class="kw">in</span> as <span class="st">&quot;DrBob&quot;</span>    
+
+   <span class="dt">Scenario</span>: <span class="dt">Balance</span> checking   
+   <span class="dt">Given</span> my account has a balance of <span class="dt">$430</span>   
+   <span class="dt">Then</span> my account should show a balance of <span class="dt">$430</span>   
+           
+   <span class="dt">Scenario</span>: <span class="dt">Account</span> deposit   
+   <span class="dt">Given</span> my account has a balance of <span class="dt">$400</span>   
+   <span class="dt">When</span> I deposit <span class="dt">$30</span>   
+   <span class="dt">Then</span> my account should show a balance of <span class="dt">$430</span>   
+         
+   <span class="dt">Scenario</span>: <span class="dt">Account</span> withdraw   
+   <span class="dt">Given</span> my account has a balance of <span class="dt">$500</span>
+   <span class="dt">When</span> I withdraw <span class="dt">$70</span>
+   <span class="dt">Then</span> my account should show a balance of <span class="dt">$430</span>     
+         
+   <span class="dt">Scenario</span> <span class="dt">Outline</span>: deposits   
+   <span class="dt">Given</span> there are &lt;start&gt; dollars <span class="kw">in</span> the account   
+   <span class="dt">When</span> I deposit &lt;added&gt; dollars   
+   <span class="dt">Then</span> I should have &lt;left&gt; dollars   
+     
+   <span class="dt">Examples</span>:    
+     | start | added | left |   
+     |    <span class="dv">12</span> |   <span class="dv">5</span>   |    <span class="dv">7</span> |   
+     |    <span class="dv">20</span> |   <span class="dv">5</span>   |   <span class="dv">15</span> |   </code></pre>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-BPSSimulator2018">
+<p>Business Process Simulator. 2018. “Reference Guide.” <a href="https://www.bpsimulator.com/en/help">https://www.bpsimulator.com/en/help</a>.</p>
+</div>
+<div id="ref-Camunda2018b">
+<p>Camunda Corporation. 2018a. “BPMN Editor.” <a href="https://camunda.com">https://camunda.com</a>.</p>
+</div>
+<div id="ref-Camunda2018a">
+<p>Camunda Corporation. 2018b. “BPMN Tutorial.” <a href="https://camunda.com/bpmn">https://camunda.com/bpmn</a>.</p>
+</div>
+<div id="ref-Cucumber2019a">
+<p>Cucumber. 2019a. “The Cucumber Reference.” <a href="https://cucumber.io/docs/cucumber/">https://cucumber.io/docs/cucumber/</a>.</p>
+</div>
+<div id="ref-Cucumber2019b">
+<p>Cucumber. 2019b. “The Gherkin Reference.” <a href="https://cucumber.io/docs/gherkin/">https://cucumber.io/docs/gherkin/</a>.</p>
+</div>
+<div id="ref-YED2018">
+<p>yWorks. 2018. “YEd Graph Editor.” <a href="https://www.yworks.com/products/yed">https://www.yworks.com/products/yed</a>.</p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>The Fedena source code can be found online at <a href="https://github.com/projectfedena/fedena" class="uri">https://github.com/projectfedena/fedena</a><a href="business-software-models.html#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="general-principles.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="business-software-systems.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="book_assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="book_assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": ["bookdown_ebusiness.pdf", "bookdown_ebusiness.epub"],
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
