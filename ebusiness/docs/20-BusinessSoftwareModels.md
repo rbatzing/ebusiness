@@ -1,6 +1,13 @@
 # BUSINESS SOFTWARE MODELS
 
-This chapter will explore some common approaches to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/jogetprocess} \caption{Leave approval using Joget}(\#fig:unnamed-chunk-1)
+\end{figure}
+
+
+This chapter will explore some common approaches used to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+
+\newpage
 
 ## Business Process Model (BPM)
 
@@ -19,7 +26,8 @@ There are many good reasons for using BPMN to model business processes. [@Camund
 A BPMN model described a process from the beginning (a light or green circle) to the end (a dark red circle). Blocks of tasks leading to key events are specified in sequential order. 
 
 
-<img src="images/simpleBPM.png" width="100%" />
+
+\includegraphics[width=1\linewidth]{images/simpleBPM} 
 
 
 ### Notation
@@ -48,14 +56,14 @@ BMP Software provide a pallette of objects to describe various aspects of a proc
 
 | Symbol| Description|
 |:-----------:|-------------|
-|![](images/start-event.png)<!-- --> | Start Event: Start of the process chain |
-|![](images/end-event.png)<!-- --> | End Event: The end of the process chain |
-|![](images/event-message-catch.png)<!-- --> | Event Message Catch: wait for a message event |
-|![](images/event-message-throw.png)<!-- --> | Event Message Throw: sending a message event |
-|![](images/task.png)<!-- --> | Task: Work to be done |
-|![](images/xor-gateway.png)<!-- --> | XOR Gateway: choice of a action stream |
-|![](images/parallel-gateway.png)<!-- --> | Parallel Gateway: initiate simulataneous action stream |
-|![](images/swimlanes.png)<!-- --> | Swim lanes: separate the process by roles or actors |
+|![](images/start-event.png)<!-- -->  | Start Event: Start of the process chain |
+|![](images/end-event.png)<!-- -->  | End Event: The end of the process chain |
+|![](images/event-message-catch.png)<!-- -->  | Event Message Catch: wait for a message event |
+|![](images/event-message-throw.png)<!-- -->  | Event Message Throw: sending a message event |
+|![](images/task.png)<!-- -->  | Task: Work to be done |
+|![](images/xor-gateway.png)<!-- -->  | XOR Gateway: choice of a action stream |
+|![](images/parallel-gateway.png)<!-- -->  | Parallel Gateway: initiate simulataneous action stream |
+|![](images/swimlanes.png)<!-- -->  | Swim lanes: separate the process by roles or actors |
 
 
 ### Sample Business Process Models
@@ -99,17 +107,17 @@ The following table is adapted from the online help of BPSimulation. [@BPSSimula
 
 | Object Description	|Example	|
 |---------------------|----------------------|
-| **Function:** Set of targeted actions to be performed by one or more executors in one role| ![](images/function.png)<!-- --><br>\newline 	 Repair of water supply; Acceptance payment; Sending a message |
-| **Execute:**	Position or role of those responsible for the execution of the function	| Motorman; Board member |  ![](images/execute.png)<!-- --><br>\newline Name; Number of employees; Cost of using of the resource; Operating periods |
-| **Resource:** Service or tools needed to perform the function	| ![](images/resource.png)<!-- --><br>\newline Machine; tool; Software | Name; Cost of using of the resource |
-| **Tasks Generator:** Generator global tasks of the business process of a certain type with a certain interval for the simulation purposes | ![](images/generator.png)<!-- --><br>\newline Client request for a loan; Received customer complaint | Name; Operating periods; Tasks count |
-| **Checkpoint:** Auxiliary element for monitoring the process parameters at different stages its execution and control of tasks flow | ![](images/checkpoint.png)<!-- --><br>\newline Completing the approval stage; Completion of the process because of inconsistencies detected | Name; Filter tasks; EPC Elements |
-| **Event:** Cause or an intangible result of a function |  ![](images/event.png)<!-- --> <br>\newline  Client's visit; An error was detected |
-| **Regulate:** Regulate document directly related to the order, conditions or results of the function |  ![](images/regulate.png)<!-- --><br>\newline  Manuals; Federal Law |
-|	**Input:** Material or information necessary to perform the function |  ![](images/input.png)<!-- --> <br>\newline Form; Statement |
-| **Output:** Material or information generated or acquired additional properties as a result of the function | ![](images/output.png)<!-- --> <br>\newline  Part; Conclusion |
-| **Procedure:**	Set of performance features for a particular purpose | ![](images/procedure.png)<!-- --> <br>\newline Applications processing; Approval of documentation |
-| **Comment:** Auxiliary element model for clarifications or comments| ![](images/comment.png)<!-- --> <br>\newline	 Temporary condition; Proposed improvements |
+| **Function:** Set of targeted actions to be performed by one or more executors in one role| ![](images/function.png)<!-- --> <br>\newline 	 Repair of water supply; Acceptance payment; Sending a message |
+| **Execute:**	Position or role of those responsible for the execution of the function	| Motorman; Board member |  ![](images/execute.png)<!-- --> <br>\newline Name; Number of employees; Cost of using of the resource; Operating periods |
+| **Resource:** Service or tools needed to perform the function	| ![](images/resource.png)<!-- --> <br>\newline Machine; tool; Software | Name; Cost of using of the resource |
+| **Tasks Generator:** Generator global tasks of the business process of a certain type with a certain interval for the simulation purposes | ![](images/generator.png)<!-- --> <br>\newline Client request for a loan; Received customer complaint | Name; Operating periods; Tasks count |
+| **Checkpoint:** Auxiliary element for monitoring the process parameters at different stages its execution and control of tasks flow | ![](images/checkpoint.png)<!-- --> <br>\newline Completing the approval stage; Completion of the process because of inconsistencies detected | Name; Filter tasks; EPC Elements |
+| **Event:** Cause or an intangible result of a function |  ![](images/event.png)<!-- -->  <br>\newline  Client's visit; An error was detected |
+| **Regulate:** Regulate document directly related to the order, conditions or results of the function |  ![](images/regulate.png)<!-- --> <br>\newline  Manuals; Federal Law |
+|	**Input:** Material or information necessary to perform the function |  ![](images/input.png)<!-- -->  <br>\newline Form; Statement |
+| **Output:** Material or information generated or acquired additional properties as a result of the function | ![](images/output.png)<!-- -->  <br>\newline  Part; Conclusion |
+| **Procedure:**	Set of performance features for a particular purpose | ![](images/procedure.png)<!-- -->  <br>\newline Applications processing; Approval of documentation |
+| **Comment:** Auxiliary element model for clarifications or comments| ![](images/comment.png)<!-- -->  <br>\newline	 Temporary condition; Proposed improvements |
 
 ### Linking objects together
 

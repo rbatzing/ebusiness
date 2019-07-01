@@ -1,7 +1,7 @@
 --- 
 title: "e-Business"
 author: "Robert Batzinger"
-date: "2019-06-22"
+date: "2019-06-25"
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -31,8 +31,8 @@ cover-image: 'images/cover11.png'
 
 # Book Jacket {-}
 
-<img src="images/cover11.png" width="50%" />
 
+\includegraphics[width=0.25\linewidth]{images/cover11} 
 
 ## Abstract {-}
 

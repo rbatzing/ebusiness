@@ -1,6 +1,13 @@
 # BUSINESS SOFTWARE SYSTEMS
 
-![Objectives of ERP Components](images/ebusiness.png)
+```{r, out.width='90%',echo=FALSE,fig.align='center'}
+
+knitr::include_graphics("images/ebusiness.png")
+```
+
+This chapter will explore the network of frameworks, systems and applications that comprize the fabric of e-Business. In this study, each software component will be introduced by its context, requirements and examples of current open-source solutions.
+
+\newpage   
 
 ## Online Store 
 
@@ -199,6 +206,8 @@ Myers Briggs Test has been administered to a large number of people helping to v
 
 ##### Explorers:
 
+This is a test
+
 * **ISTP** (5.4%) - The Craftsman / The Mechanic - Quiet and reserved, interested in how and why things work. Straightforward and honest people who prefer action to conversation, ISTPs perform well in utilitarian roles that require them to make use of tools. Common careers: Civil engineer, Economist, Pilot, Data communications analysis, Emergency room physician
 
 * **ISFP** (8.8%)- The Composer/The Artist – Quiet, serious, sensitive and kind, avoids conflict. Warm and sensitive types who like to help people in tangible ways, ISFPs do well in roles that require them to be sympathetic and attentive. Common careers: Fashion designer, Physical therapist, Massage therapist, Landscape architect, Storekeeper
@@ -319,21 +328,43 @@ Data fields
 
 ## Operations Management 
 
-### Measures of Association Rules
+### General rules
 
-$$Productivity = \frac{Output}{Input} $$
+$$Productivity = \frac{Output}{Input}$$
 
 $$Efficiency = \frac{100 \times ActualOutput}{StandardOutput}$$
 
-$$Support(X,Y) = \frac{t_{(X,Y)}}{t_{all}}$$
 
-$$Confidence(X,Y) = \frac{Support(X,Y)}{Support(X)} $$
 
-$$Lift = \frac{Support(X,Y)}{Support(X) \times Support(Y)}$$
+### Market basket analysis
+
+Use of market basket analysis:
+
+Retail. In Retail, Market Basket Analysis can help determine what items are purchased together, purchased sequentially, and purchased by season. This can assist retailers to determine product placement and promotion optimization (for instance, combining product incentives). Does it make sense to sell soda and chips or soda and crackers?
+
+Telecommunications. In Telecommunications, where high churn rates continue to be a growing concern, Market Basket Analysis can be used to determine what services are being utilized and what packages customers are purchasing. They can use that knowledge to direct marketing efforts at customers who are more likely to follow the same path.
+For instance, Telecommunications these days is also offering TV and Internet. Creating bundles for purchases can be determined from an analysis of what customers purchase, thereby giving the company an idea of how to price the bundles. This analysis might also lead to determining the capacity requirements.
+
+Banks. In Financial (banking for instance), Market Basket Analysis can be used to analyze credit card purchases of customers to build profiles for fraud detection purposes and cross-selling opportunities.
+Insurance. In Insurance, Market Basket Analysis can be used to build profiles to detect medical insurance claim fraud. By building profiles of claims, you are able to then use the profiles to determine if more than 1 claim belongs to a particular claimee within a specified period of time.
+
+Medical. In Healthcare or Medical, Market Basket Analysis can be used for comorbid conditions and symptom analysis, with which a profile of illness can be better identified. It can also be used to reveal biologically relevant associations between different genes or between environmental effects and gene expression.
+
+* **Support:** fraction of all transactions that contain both $X$ and $Y$. This is a measure of how often a pair of items occur.
+
+$$Support(X,Y) = \frac{t_{(X,Y)}}{t_{(all)}}$$
+
+* **Confidence:** fraction of transactions that contain both $X$ and $Y$ divided by the number that only contain $X$. This a measure of how often the two items occur together.
+
+$$Confidence(X,Y) = \frac{Support(X,Y)}{Support(X)} = \frac{t_{(X,Y)}}{t_{(X)}}$$
+* **Lift:** This is a measure of how the confidence compares to the expected confidence, (i.e, how much confidence that $X$ will be purchased given that $Y$ was purchased). 
+
+$$Lift = \frac{Support(X,Y)}{Support(X) \times Support(Y)} = \frac{\frac{t_{(X,Y)}}{t_{(X)}}}{\frac{t_{(Y)}}{t_{(all)}}}$$
 
 $$Conviction = \frac{1 - Support(Y)}{1 - Confidence(X,Y)}$$
 
 $$Leverage = Support(X,Y) - Support(X)\times Support(Y)$$
+
 
 
 ### Logistics

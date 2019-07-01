@@ -1,10 +1,17 @@
 # GENERAL PRINCIPLES
 
-![Key components of a thriving business](images/keycomponents.png)
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/keybusinesscomponents} \end{center}
+
+As an introduction to the context suroundingt e-Business, this chapter will explore the nature, need and management of business processes and  components.
+
+\newpage
 
 ## Essentials of Business
 
-Business is a set of interactions in which goods and services are provided and compensation is rendered. Businesses become sustainable when the compensation rendered meets the short-term and long-term requirements of the business. Most business fail because of an inability to develop a network of processes and transactions to address a market demand that meets or exceeds their expenses. Ideally, a start-up should aim to seek fair compensation for goods and services rendered in the most effective and efficient manner.
+Business is a set of interactions in which goods and services are provided and compensation is rendered.
+In essence, businesses developing the means for acquiring marketable goods or servies that customers will purchase in sufficient qualities to make the endeavor worthwhile. Ideally, a start-up aims to seek fair compensation for goods and services rendered in the most effective and efficient manner.
+Businesses become sustainable when the compensation meets the short-term and long-term requirements of the business. Most business fail because of an inability to develop and maintain a market demand that leads to sales that meet or exceed their expenses. Balancing the demands and requirements of each component of business requires timely management decisions based on accurate information. As the speed and volume of businesses grow within the gloabl economy, rapid communication and acknowledgement of detailed information has given rise to many e-Business practices and applications designed to support the operation and growth of business. This book will attempt to explore the context and use of common e-Business techniques and applications. The following sections will help to describe the context of IT services within a modern large scale enterprize, particularly those operating in Thailand.
 
 
 \BeginKnitrBlock{rmdexercise}<div class="rmdexercise">**Exercise: The Nature of Business**
@@ -19,7 +26,7 @@ Discuss how the following premises would impact the nature, as well as the poten
 
 ### Business processes
 
-Individual businesses are always centered around a core set of goods and services which address the specific needs of clients creating a sense of value and desire. Good design and pre-market testing help to define the nature of the products and services. At the same time, controlling production and distribution costs make it possible to deliver goods and services at a suitable price point for customers. Careful supply chain and operations management develops a network of contracts and business transactions with suppliers and distributors ensures that products and services are delivered on time and on budget. 
+Individual businesses are generally centered around a core set of goods and services which address the specific needs of clients creating a sense of value and desire. Good design and pre-market testing help to define the nature of the products and services. At the same time, controlling production and distribution costs make it possible to deliver goods and services at a suitable price point for customers to consider purchase. Careful supply chain and operations management develops a network of contracts and business transactions with suppliers and distributors that ensures that the flow of materials, products and cash occur on time and on budget. 
 
 ![Key Business Processes](images/businessprocess.png)
 
@@ -27,9 +34,8 @@ Individual businesses are always centered around a core set of goods and service
 
 |   Principles |    Characteristics |
 |--------------|----------------|
-| (A) Access to market <br>\newline(B) Brand recognition<br>\newline (C) Customer pool<br>\newline(D) Investment capital<br>\newline(E) Resources<br>\newline(F) Market value |  ___ Consumer preference<br>\newline  ___ Supply of raw materials<br>\newline ___ Distinctive goods and services<br>\newline___ Investors and stock holders<br>\newline ___ Location and traffic<br>\newline___ Steady market demand |
+| (A) Access to market <br>\newline(B) Brand recognition<br>\newline (C) Customer pool<br>\newline(D) Investment capital<br>\newline(E) Resources<br>\newline(F) Market value |  ___ Consumer preference<br>\newline  ___ Supply of raw materials<br>\newline ___ Distinctive goods and services<br>\newline ___ Investors and stock holders<br>\newline ___ Location and traffic<br>\newline ___ Steady market demand |
 </div>\EndKnitrBlock{rmdexercise}
-
 
 ### Core Activities of a Business
 
@@ -64,7 +70,6 @@ Create a mindmap that illustrates the relationship between the following sets of
 </div>\EndKnitrBlock{rmdexercise}
 
 
-
 ## Understanding the role of IT in business
 
 As IT Departments become integrated into the business strategy, they provide tools, information and communication systems that can play a transformative role in the nature of the business. Enterprise Architecture tend to grow as IT Department move along these evolutionary steps. [@Hohpe2017a], [@Hohpe2017b]
@@ -95,7 +100,6 @@ Among IT Managers, there appears to be 2 major approaches to understanding the n
 Business managers have 4 main approaches to managing IT based on the main focus of the business administration.
 
 
-
 | **Focus** | **Role** | **Reports to** | **Common stragegy** | **Levers** |
 |---------:|:---------:|:---------------:|:----------------|:---------------:|
 | Cost of IT  |  Cost Center | CFO | Outsource IT |  Cost cutting |
@@ -111,9 +115,10 @@ IT Strategy provides a road map of where IT developments and operations are goin
 | Integration | Minimal Standards | Highly Standardized |
 |:-----:|:---------------------|:---------------|
 |High | **Coordination**       | **Unification** |
-|     |* Unique business units<br>* Examples: Merrill Lynch, Toyota<br>* Key IT capability:<br>&nbsp;&nbsp; - access to shared data<br>&nbsp;&nbsp; - standard technology interfaces | * Single business with global standards<br>* Examples: Delta Airlines, Pepsi<br>* Key IT capability:<br>&nbsp;&nbsp; - enterprise systems to reinforce<br> standards<br>&nbsp;&nbsp;- provide access to global data |
+|     |* Unique business units<br>\newline * Examples: Merrill Lynch, Toyota<br>\newline * Key IT capability:<br>\newline &nbsp;&nbsp; - access to shared data<br>\newline &nbsp;&nbsp; - standard technology interfaces | * Single business with global standards<br>\newline * Examples: Delta Airlines, Pepsi<br>\newline * Key IT capability:<br>\newline &nbsp;&nbsp; - enterprise systems to reinforce<br> standards<br>\newline &nbsp;&nbsp;- provide access to global data |
+|     |                       |                 |
 | Low | **Diversification**   | **Replication** |
-|     | * Independent business units<br> * different customers/expertise <br> * Examples: Johnson & Johnson, GE <br> * Key IT capability:<br>&nbsp;&nbsp; - provide economies of scale <br>&nbsp;&nbsp; - do not limit independence | * Independent but similar business units<br>* Example: Marriott, CEMEX<br>* Key IT capability:<br>&nbsp;&nbsp; - provide standard infrastructure and app<br>&nbsp;&nbsp; - maximize global efficiencies |
+|     | * Independent business units<br>\newline  * different customers/expertise <br>\newline  * Examples: Johnson & Johnson, GE <br> * Key IT capability:<br>\newline &nbsp;&nbsp; - provide economies of scale <br>\newline &nbsp;&nbsp; - do not limit independence | * Independent but similar business units<br>\newline * Example: Marriott, CEMEX<br>\newline * Key IT capability:<br>\newline &nbsp;&nbsp; - provide standard infrastructure and app<br>\newline &nbsp;&nbsp; - maximize global efficiencies |
 
 
 ### Software to facilitate business interactions
@@ -378,7 +383,7 @@ View this news clip about a new Seven Eleven outlet that opened in Pattaya with 
 
 In 2019, it is estimated that over 56% of the world's population has access to the internet. There are 26.6 billion devices and 4.39 billion people are connected to the internet. It is estimated that 3.48 billion social media users. Facebook alone has well over 2.36 billion users each month. Google answers 63,000 searches per second. This is creating unprecented levels of opportunity for marketing to huge markets world-wide. In the following graph, the number of users grows linearly while their revenues grow expotentally. [@Statista2019] 
 
-![](10-GeneralPrinciples_files/figure-epub3/unnamed-chunk-1-1.png)<!-- -->
+![](10-GeneralPrinciples_files/figure-latex/unnamed-chunk-2-1.pdf)<!-- --> 
 
 \BeginKnitrBlock{rmddiscussion}<div class="rmddiscussion">
 **The mobile phone market**
@@ -395,7 +400,7 @@ Review the statistics of the performance of leading mobile phone producers since
 
 As the following graph shows, the types of devices used to access the internet have also changed in the past decade.
 
-![](10-GeneralPrinciples_files/figure-epub3/unnamed-chunk-2-1.png)<!-- -->
+![](10-GeneralPrinciples_files/figure-latex/unnamed-chunk-3-1.pdf)<!-- --> 
 
 
 The trend has been to using mobile devices for shopping, and surfing for possibilities. There appears to be some resistance to using mobile devices to order online. 

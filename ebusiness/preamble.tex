@@ -2,7 +2,7 @@
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[margin=.75in, paperwidth=8.25in, paperheight=11in]{geometry}
+\usepackage[margin=1in, paperwidth=8.25in, paperheight=11in]{geometry}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -11,12 +11,12 @@
 \makeatother
 %%%%%%%%
 \floatstyle{ruled}
-\newfloat{exercise}{bthp}{loe}[chapter]
+\newfloat{exercise}{htbp}{loe}[chapter]
 \floatname{exercise}{Exercise}
 \floatstyle{boxed}
-\newfloat{extrastudy}{bthp}{los}[chapter]
+\newfloat{extrastudy}{htbp}{los}[chapter]
 \floatname{extrastudy}{Reading}
-\newfloat{discussion}{tbhp}{lot}[chapter]
+\newfloat{discussion}{htbp}{lot}[chapter]
 \floatname{discussion}{Discussion}
 \newenvironment{rmdexercise}{\begin{exercise}\hbox to \textwidth\bgroup\hss
       \begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\relax
@@ -41,4 +41,5 @@
 \newcommand{\taibf}{\fontspec[Scale=1.3]{[THSarabunNew Bold.ttf:script=thai]}}
 \newcommand{\tai}{\fontspec[Scale=1.3]{[THSarabunNew.ttf:script=thai]}}
 \XeTeXlinebreaklocale �th_TH�
+\parskip = 12pt plus 6pt
 %%%%%%%%%%%%%%%%

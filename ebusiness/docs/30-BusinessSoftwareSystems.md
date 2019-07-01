@@ -1,6 +1,11 @@
 # BUSINESS SOFTWARE SYSTEMS
 
-![Objectives of ERP Components](images/ebusiness.png)
+
+\begin{center}\includegraphics[width=0.9\linewidth]{images/ebusiness} \end{center}
+
+This chapter will explore the network of frameworks, systems and applications that comprize the fabric of e-Business. In this study, each software component will be introduced by its context, requirements and examples of current open-source solutions.
+
+\newpage   
 
 ## Online Store 
 
@@ -325,7 +330,11 @@ $$Lift = \frac{Support(X,Y)}{Support(X) \times Support(Y)}$$
 
 $$Conviction = \frac{1 - Support(Y)}{1 - Confidence(X,Y)}$$
 
-$$Leverage = Support(X,Y) - Support(X)\times Support(Y)$$
+$$\begin{equation}
+Leverage = Support(X,Y) - Support(X)\times Support(Y)  (\#eq:leverage)
+\end{equation}$$
+
+This is Equation  \@ref(eq:leverage)
 
 
 ### Logistics

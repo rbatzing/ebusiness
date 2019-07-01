@@ -124,13 +124,13 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-06-22}
+    \date{2019-06-25}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage[margin=.75in, paperwidth=8.25in, paperheight=11in]{geometry}
+\usepackage[margin=1in, paperwidth=8.25in, paperheight=11in]{geometry}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
@@ -139,12 +139,12 @@
 \makeatother
 %%%%%%%%
 \floatstyle{ruled}
-\newfloat{exercise}{bthp}{loe}[chapter]
+\newfloat{exercise}{htbp}{loe}[chapter]
 \floatname{exercise}{Exercise}
 \floatstyle{boxed}
-\newfloat{extrastudy}{bthp}{los}[chapter]
+\newfloat{extrastudy}{htbp}{los}[chapter]
 \floatname{extrastudy}{Reading}
-\newfloat{discussion}{tbhp}{lot}[chapter]
+\newfloat{discussion}{htbp}{lot}[chapter]
 \floatname{discussion}{Discussion}
 \newenvironment{rmdexercise}{\begin{exercise}\hbox to \textwidth\bgroup\hss
       \begin{minipage}[t]{1cm}\vbox to 0pt{\null\kern 5pt\relax
@@ -169,6 +169,7 @@
 \newcommand{\taibf}{\fontspec[Scale=1.3]{[THSarabunNew Bold.ttf:script=thai]}}
 \newcommand{\tai}{\fontspec[Scale=1.3]{[THSarabunNew.ttf:script=thai]}}
 \XeTeXlinebreaklocale �th_TH�
+\parskip = 12pt plus 6pt
 %%%%%%%%%%%%%%%%
 
 \let\BeginKnitrBlock\begin \let\EndKnitrBlock\end
@@ -176,38 +177,54 @@
 \maketitle
 
 \thispagestyle{empty}
-\vbox to \paperheight{\null\vss
+\vbox to \textheight{\null\vss
 $$\hbox to 3in{\hss\includegraphics[width=\paperwidth]{images/cover11.png}\hss}$$
 \vss}
 \newpage
-\thispagestyle{empty}
 \frontmatter
+\thispagestyle{empty}
 \let\maketitle\oldmaketitle
+\null
 \vfill
 \vfill
-\begin{center}
-\noindent\LARGE\textbf{e-Business}\parfillskip=0pt\par
-\bigskip
-\noindent\large\textbf{Robert P. Batzinger}\newline
-Instructor Emeritus\newline
-Payap University\newline
-Chiang Mai, Thailand\parfillskip=0pt\par
-\end{center}
+\hbox to \textwidth{\hss\vbox{\halign{\hfil #\hfil\cr
+\huge\textbf{e-Business}\cr
+\cr
+\cr
+\cr
+\large\textbf{Robert P. Batzinger}\cr
+\textit{Instructor Emeritus}\cr
+\cr
+\textbf{Computer Science Department}\cr
+\textbf{Faculty of Science}\cr
+\textbf{Payap University}\cr
+\textbf{Chiang Mai, Thailand}\cr}}\hss}
 \vfill
 \vfill
 \vfill
-\hbox to \textwidth{\hss\includegraphics[width=1in]{images/payaplogo.png}\hss}
+\hbox to \textwidth{\hss\includegraphics[width=1in]{images/payap.png}\hss}
+\medskip
+\hbox to \textwidth{\hss\large\textbf{\textit{Payap University Press}}\hss}
 \vfill
 \null
 \newpage
+\thispagestyle{empty}
+\null
 \vfill
 \begin{center}
 \noindent  Copyright \textcopyright\ 2019, Robert P. Batzinger. All rights reserved.\parfillskip=0pt\par
+\vskip 0.5in
+{\narrower\narrower
+\noindent This book is a work in progress and it is revised weekly.\\
+Your feedback and suggestions are invited and welcomed\\
+as they are important part of the revision process.\\
+Please send all inquiries and comments to \verb|robert_b@payap.ac.th|.\par}
 \end{center}
 \vfill
 \vfill
+\null
 \newpage
-\frontmatter
+\setcounter{page}{-1}
 
 {
 \setcounter{tocdepth}{1}
@@ -217,7 +234,7 @@ Chiang Mai, Thailand\parfillskip=0pt\par
 \chapter*{Book Jacket}\label{book-jacket}}
 \addcontentsline{toc}{chapter}{Book Jacket}
 
-\includegraphics[width=0.5\linewidth]{images/cover11}
+\includegraphics[width=0.25\linewidth]{images/cover11}
 
 \hypertarget{abstract}{%
 \section*{Abstract}\label{abstract}}
@@ -236,23 +253,29 @@ Robert Batzinger is an emeritus instructor in Computer Science at Payap Universi
 \chapter*{Front Matter}\label{front-matter}}
 \addcontentsline{toc}{chapter}{Front Matter}
 
-\includegraphics[width=0.9\linewidth]{images/door}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/door} \end{center}
+
+\newpage
 
 \hypertarget{dedication}{%
 \section*{Dedication}\label{dedication}}
 \addcontentsline{toc}{section}{Dedication}
 
 \begin{quote}
-Now to him who is able to do far more abundantly\newline than all that we ask or think, according \newline to the power at work within us. \newline -- Eph 3:20 (ESV)
+Now to him who is able to do far more abundantly\newline than all that we ask or think, according\newline to the power at work within us.\newline -- Eph 3:20 (ESV)\newline
 
-\tai ขอให้พระเกียรติมีแด่พระองค์ผู้ทรงสามารถทำทุกสิ่งได้ \newline มากยิ่งกว่าที่เราทูลขอหรือคิด โดยฤทธานุภาพ \newline ที่ทำกิจอยู่ภายในเรา \newline -- เอเฟซัส 3:20 (THSV11)
+\tai ขอให้พระเกียรติมีแด่พระองค์ผู้ทรงสามารถทำทุกสิ่งได้\newline มากยิ่งกว่าที่เราทูลขอหรือคิด โดยฤทธานุภาพ\newline ที่ทำกิจอยู่ภายในเรา\newline -- เอเฟซัส 3:20 (THSV11)\newline
 \end{quote}
+
+\newpage
 
 \hypertarget{acknowledgements}{%
 \section*{Acknowledgements}\label{acknowledgements}}
 \addcontentsline{toc}{section}{Acknowledgements}
 
 The development of this book would not have been possible without the feedback and suggestions of colleagues and students. While I acknowledge that I am responsible for any remaining errors in this book, my students, referees, and readers have contributed immensely to the development of this book. I would like to acknowledge the impact of Ms.~Phatnaree Srisomphan in helping to shape both the curriculum of this course and the nature of this book. I am also grateful for the support and encouragement of my wife Khajohn, especially in those long critical sessions when I was struggling to forge and edit the text of this manuscript.
+
+\newpage
 
 \hypertarget{colophon}{%
 \section*{Colophon}\label{colophon}}
@@ -262,8 +285,10 @@ The cover is a photograph of the Financial District from the Marina Bay in Singa
 
 While early drafts of this book were written in Leanpub Flavored Markdown, this book was developed in RStudio using the \textbf{bookdown} package \citep{R-bookdown} (which was built on top of R Markdown and \textbf{knitr} \citep{Xie2015}. It was edited in RStudio and later compiled and published online simultaneously as an HTML website, a printable document in PDF and electronic book EPUB format with only 3 clicks of the mouse.
 
-The cover and front matter photos were downloaded from \href{https://pixabay.com/images/search/singapore}{Pixabay}.
-The extra reading, discussion and exercise sidebar icons were created by \href{https://www.freepik.com}{Freepik} and used as per \href{https://creativecommons.org/licenses/by/3.0}{Creative Commons 3.0 License}.
+The cover, front matter, and Chapter 4 photos were downloaded from \href{https://pixabay.com/images/search/singapore}{Pixabay}.
+The extra reading, discussion and exercise sidebar icons were created by \href{https://www.freepik.com}{Freepik} and used as per \href{https://creativecommons.org/licenses/by/3.0}{Creative Commons 3.0 License}. Network and flow diagrams were created with yEd from yWorks. \citep{YED2018}
+
+\newpage
 
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
@@ -305,16 +330,18 @@ This book is the product of that course and started as a collection of class sli
 \hypertarget{general-principles}{%
 \chapter{GENERAL PRINCIPLES}\label{general-principles}}
 
-\begin{figure}
-\centering
-\includegraphics{images/keycomponents.png}
-\caption{Key components of a thriving business}
-\end{figure}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/keybusinesscomponents} \end{center}
+
+As an introduction to the context suroundingt e-Business, this chapter will explore the nature, need and management of business processes and components.
+
+\newpage
 
 \hypertarget{essentials-of-business}{%
 \section{Essentials of Business}\label{essentials-of-business}}
 
-Business is a set of interactions in which goods and services are provided and compensation is rendered. Businesses become sustainable when the compensation rendered meets the short-term and long-term requirements of the business. Most business fail because of an inability to develop a network of processes and transactions to address a market demand that meets or exceeds their expenses. Ideally, a start-up should aim to seek fair compensation for goods and services rendered in the most effective and efficient manner.
+Business is a set of interactions in which goods and services are provided and compensation is rendered.
+In essence, businesses developing the means for acquiring marketable goods or servies that customers will purchase in sufficient qualities to make the endeavor worthwhile. Ideally, a start-up aims to seek fair compensation for goods and services rendered in the most effective and efficient manner.
+Businesses become sustainable when the compensation meets the short-term and long-term requirements of the business. Most business fail because of an inability to develop and maintain a market demand that leads to sales that meet or exceed their expenses. Balancing the demands and requirements of each component of business requires timely management decisions based on accurate information. As the speed and volume of businesses grow within the gloabl economy, rapid communication and acknowledgement of detailed information has given rise to many e-Business practices and applications designed to support the operation and growth of business. This book will attempt to explore the context and use of common e-Business techniques and applications. The following sections will help to describe the context of IT services within a modern large scale enterprize, particularly those operating in Thailand.
 
 \BeginKnitrBlock{rmdexercise}
 \textbf{Exercise: The Nature of Business}
@@ -338,7 +365,7 @@ Discuss how the following premises would impact the nature, as well as the poten
 \hypertarget{business-processes}{%
 \subsection{Business processes}\label{business-processes}}
 
-Individual businesses are always centered around a core set of goods and services which address the specific needs of clients creating a sense of value and desire. Good design and pre-market testing help to define the nature of the products and services. At the same time, controlling production and distribution costs make it possible to deliver goods and services at a suitable price point for customers. Careful supply chain and operations management develops a network of contracts and business transactions with suppliers and distributors ensures that products and services are delivered on time and on budget.
+Individual businesses are generally centered around a core set of goods and services which address the specific needs of clients creating a sense of value and desire. Good design and pre-market testing help to define the nature of the products and services. At the same time, controlling production and distribution costs make it possible to deliver goods and services at a suitable price point for customers to consider purchase. Careful supply chain and operations management develops a network of contracts and business transactions with suppliers and distributors that ensures that the flow of materials, products and cash occur on time and on budget.
 
 \begin{figure}
 \centering
@@ -361,7 +388,7 @@ Characteristics\strut
 \begin{minipage}[t]{0.44\columnwidth}\raggedright
 (A) Access to market \newline(B) Brand recognition\newline (C) Customer pool\newline(D) Investment capital\newline(E) Resources\newline(F) Market value\strut
 \end{minipage} & \begin{minipage}[t]{0.50\columnwidth}\raggedright
-\_\_\_ Consumer preference\newline  \_\_\_ Supply of raw materials\newline \_\_\_ Distinctive goods and services\newline\_\_\_ Investors and stock holders\newline \_\_\_ Location and traffic\newline\_\_\_ Steady market demand\strut
+\_\_\_ Consumer preference\newline  \_\_\_ Supply of raw materials\newline \_\_\_ Distinctive goods and services\newline \_\_\_ Investors and stock holders\newline \_\_\_ Location and traffic\newline \_\_\_ Steady market demand\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
@@ -511,9 +538,16 @@ High\strut
 \begin{minipage}[t]{0.14\columnwidth}\centering
 \strut
 \end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-* Unique business units* Examples: Merrill Lynch, Toyota* Key IT capability:~~ - access to shared data~~ - standard technology interfaces\strut
+* Unique business units\newline * Examples: Merrill Lynch, Toyota\newline * Key IT capability:\newline ~~ - access to shared data\newline ~~ - standard technology interfaces\strut
 \end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-* Single business with global standards* Examples: Delta Airlines, Pepsi* Key IT capability:~~ - enterprise systems to reinforce standards~~- provide access to global data\strut
+* Single business with global standards\newline * Examples: Delta Airlines, Pepsi\newline * Key IT capability:\newline ~~ - enterprise systems to reinforce standards\newline ~~- provide access to global data\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.14\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.14\columnwidth}\centering
 Low\strut
@@ -525,9 +559,9 @@ Low\strut
 \begin{minipage}[t]{0.14\columnwidth}\centering
 \strut
 \end{minipage} & \begin{minipage}[t]{0.45\columnwidth}\raggedright
-* Independent business units * different customers/expertise * Examples: Johnson \& Johnson, GE * Key IT capability:~~ - provide economies of scale ~~ - do not limit independence\strut
+* Independent business units\newline  * different customers/expertise \newline  * Examples: Johnson \& Johnson, GE * Key IT capability:\newline ~~ - provide economies of scale \newline ~~ - do not limit independence\strut
 \end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
-* Independent but similar business units* Example: Marriott, CEMEX* Key IT capability:~~ - provide standard infrastructure and app~~ - maximize global efficiencies\strut
+* Independent but similar business units\newline * Example: Marriott, CEMEX\newline * Key IT capability:\newline ~~ - provide standard infrastructure and app\newline ~~ - maximize global efficiencies\strut
 \end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
@@ -968,7 +1002,7 @@ View this news clip about a new Seven Eleven outlet that opened in Pattaya with 
 
 In 2019, it is estimated that over 56\% of the world's population has access to the internet. There are 26.6 billion devices and 4.39 billion people are connected to the internet. It is estimated that 3.48 billion social media users. Facebook alone has well over 2.36 billion users each month. Google answers 63,000 searches per second. This is creating unprecented levels of opportunity for marketing to huge markets world-wide. In the following graph, the number of users grows linearly while their revenues grow expotentally. \citep{Statista2019}
 
-\includegraphics{10-GeneralPrinciples_files/figure-latex/unnamed-chunk-1-1.pdf}
+\includegraphics{10-GeneralPrinciples_files/figure-latex/unnamed-chunk-2-1.pdf}
 
 \BeginKnitrBlock{rmddiscussion}
 \textbf{The mobile phone market}
@@ -990,7 +1024,7 @@ Review the statistics of the performance of leading mobile phone producers since
 
 As the following graph shows, the types of devices used to access the internet have also changed in the past decade.
 
-\includegraphics{10-GeneralPrinciples_files/figure-latex/unnamed-chunk-2-1.pdf}
+\includegraphics{10-GeneralPrinciples_files/figure-latex/unnamed-chunk-3-1.pdf}
 
 The trend has been to using mobile devices for shopping, and surfing for possibilities. There appears to be some resistance to using mobile devices to order online.
 
@@ -1163,7 +1197,13 @@ Online shopping giant Amazon has recently merged with Target a traditional depar
 \hypertarget{business-software-models}{%
 \chapter{BUSINESS SOFTWARE MODELS}\label{business-software-models}}
 
-This chapter will explore some common approaches to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+\begin{figure}
+\includegraphics[width=1\linewidth]{images/jogetprocess} \caption{Leave approval using Joget}\label{fig:unnamed-chunk-1}
+\end{figure}
+
+This chapter will explore some common approaches used to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+
+\newpage
 
 \hypertarget{business-process-model-bpm}{%
 \section{Business Process Model (BPM)}\label{business-process-model-bpm}}
@@ -1792,11 +1832,11 @@ Examples follow this same pattern:
 \hypertarget{business-software-systems}{%
 \chapter{BUSINESS SOFTWARE SYSTEMS}\label{business-software-systems}}
 
-\begin{figure}
-\centering
-\includegraphics{images/ebusiness.png}
-\caption{Objectives of ERP Components}
-\end{figure}
+\begin{center}\includegraphics[width=0.9\linewidth]{images/ebusiness} \end{center}
+
+This chapter will explore the network of frameworks, systems and applications that comprize the fabric of e-Business. In this study, each software component will be introduced by its context, requirements and examples of current open-source solutions.
+
+\newpage
 
 \hypertarget{online-store}{%
 \section{Online Store}\label{online-store}}
@@ -2518,6 +2558,12 @@ The Gigantic Grocery Warehouses Built like Living Organisms \url{https://www.you
 \hypertarget{emerging-technologies}{%
 \chapter{EMERGING TECHNOLOGIES}\label{emerging-technologies}}
 
+\begin{center}\includegraphics[width=0.9\linewidth]{images/computer1280} \end{center}
+
+This chapter will explore emerging trends that are impacting the way e-Business is developing and practised.
+
+\newpage
+
 \hypertarget{business-intelligence-and-data-analytics}{%
 \section{Business Intelligence and Data Analytics}\label{business-intelligence-and-data-analytics}}
 
@@ -2559,7 +2605,7 @@ The Gigantic Grocery Warehouses Built like Living Organisms \url{https://www.you
 
 CryptoKitties is a ``blockchain game''. It involves collecting, trading, and breeding CryptoKitties with ``cattributes.'' These kitties are actually tokens stored on a blockchain. A CryptoKitty is a unique digital asset that is stored as a token stored on the Ethereum blockchain.\citep{TCT2018} Each CryptoKitty has a combination of cattributes that make it unique. These features come together to give each CryptoKitty a unique look. Some CryptoKitties have mewtations, which are rare cattributes. These CryptoKitties can be traded, sold, and purchased like any other digital asset. They can also be bred with another CryptoKitty to create a new kitty.
 
-On the surface, CryptoKitties is just a game that involves collecting digital cat pictures, breeding them to make new cat pictures, and trading cat pictures. The first CryptoKitty was born on December 2, 2017. Since then, a new Generation 0 cat has been born every fifteen minutes. In November 2018 (one year after the game launch), the last Generation 0 cat will be born. All new kitties will be produced through breeding after that point. As collectibles, they have rarity: each CryptoKitty is unique. The most expensive CryptoKitty ever purchased sold for \$110,707 to a willing buyer. People have spent over \$\$\$24 million on CryptoKitties, and the project has received \$12 million in venture capital funding. \citep{Hoffman2018}
+On the surface, CryptoKitties is just a game that involves collecting digital cat pictures, breeding them to make new cat pictures, and trading cat pictures. The first CryptoKitty was born on December 2, 2017. Since then, a new Generation 0 cat was born every fifteen minutes. In November 2018 (one year after the game launch), the last Generation 0 cat was born. All new kitties will be produced through breeding after that point. As collectibles, they have rarity: each CryptoKitty is unique. The most expensive CryptoKitty ever purchased sold for USD \$110,707 to a willing buyer. People have spent over USD \$24 million on CryptoKitties, and the project has received USD \$12 million in venture capital funding. \citep{Hoffman2018}
 \EndKnitrBlock{rmdextra}
 
 \begin{itemize}
@@ -2680,87 +2726,44 @@ Here are key reason given by digital nomads and their employers for working remo
 
 However, remote worker must still produce results on time and on budget. To do that they need to take time and project management seriously. Also it is important to maintain regular effective communications. Being off campus can make one feel forgotten or ignored if communication is not 2 way on a regular basis.
 
-\hypertarget{digital-intelligence-quotient}{%
-\section{Digital Intelligence Quotient}\label{digital-intelligence-quotient}}
+Digital nomads
 
-Technology has its dark side and resulting social changes are not always healthy.
+\hypertarget{sustainable-development}{%
+\section{Sustainable development}\label{sustainable-development}}
 
-\begin{itemize}
-\tightlist
-\item
-  \href{https://youtu.be/J7cYcesGLcY}{Dark side of technology}
-\item
-  \href{}{Agent for good}
-\end{itemize}
+The success of Google was built on the motto ``Don't be evil'' which was used in their corporate code of conduct. Although the parent company ``Alphabet'' took the motto ``Do the right thing'', both statements are an ascent to the idea that true success and growth is never meant to cause harm to other. This concept of inclusion is reflected across the full range of Alphabet products where developers are encouraged to embrace the corporate ethos to ``create - design - code - build for everyone''. In an era of growing corporate social responsibility (CSR), businesses are seeking to reach out and build their communities as part of their business activities.
 
-8 digital skills we must teach our children
+\hypertarget{united-nations-sustainable-development-goals}{%
+\subsection{United Nations Sustainable Development Goals}\label{united-nations-sustainable-development-goals}}
 
-\hypertarget{digital-intelligence-skills-}{%
-\subsection{\texorpdfstring{Digital intelligence skills / \taibf ทักษะความฉลาดทางดิจิทัล}{Digital intelligence skills / ทักษะความฉลาดทางดิจิทัล}}\label{digital-intelligence-skills-}}
+\begin{figure}
+\centering
+\includegraphics{images/sustainabledevelopgoals.png}
+\caption{UN Sustainable Development Goals}
+\end{figure}
 
-The world economic forum has suggested that the next generation will need to master the follow 8 skills: \citep{WEF2016}
+\hypertarget{world-fair-trade-organization}{%
+\subsection{World Fair Trade Organization}\label{world-fair-trade-organization}}
 
-\begin{itemize}
-\item
-  Digital identity: The ability to create and manage one's online identity and reputation. This includes an awareness of one's online persona and management of the short-term and long-term impact of one's online presence.
-\item
-  Digital use: The ability to use digital devices and media, including the mastery of control in order to achieve a healthy balance between life online and offline.
-\end{itemize}
-
-Digital safety: The ability to manage risks online (e.g.~cyberbullying, grooming, radicalization) as well as problematic content (e.g.~violence and obscenity), and to avoid and limit these risks.
-
-Digital security: The ability to detect cyber threats (e.g.~hacking, scams, malware), to understand best practices and to use suitable security tools for data protection.
-
-Digital emotional intelligence: The ability to be empathetic and build good relationships with others online.
-
-Digital communication: The ability to communicate and collaborate with others using digital technologies and media.
-
-Digital literacy: The ability to find, evaluate, utilize, share and create content as well as competency in computational thinking.
-
-Digital rights: The ability to understand and uphold personal and legal rights, including the rights to privacy, intellectual property, freedom of speech and protection from hate speech.
-
-DQ can broadly be broken down into three levels:
-
-Level 1: Digital citizenship
-
-The ability to use digital technology and media in safe, responsible and effective ways
-
-Level 2: Digital creativity
-
-The ability to become a part of the digital ecosystem by co-creating new content and turning ideas into reality by using digital tools
-
-Level 3: Digital entrepreneurship
-
-The ability to use digital media and technologies to solve global challenges or to create new opportunities
-
-Digital citizen identity: the ability to build and manage a healthy identity online and offline with integrity
-
-Screen time management: the ability to manage one's screen time, multitasking, and one's engagement in online games and social media with self-control
-
-Cyberbullying management: the ability to detect situations of cyberbullying and handle them wisely
-
-Cybersecurity management: the ability to protect one's data by creating strong passwords and to manage various cyberattacks
-
-Privacy management: the ability to handle with discretion all personal information shared online to protect one's and others' privacy
-
-Critical thinking: the ability to distinguish between true and false information, good and harmful content, and trustworthy and questionable contacts online
-
-Digital footprints: The ability to understand the nature of digital footprints and their real-life consequences and to manage them responsibly
-
-Digital empathy: the ability to show empathy towards one's own and others' needs and feelings online
+\begin{figure}
+\centering
+\includegraphics{images/WFTO-10-principles-900px.png}
+\caption{World Fair Trade Principles}
+\end{figure}
 
 Fair Trade
 
+1.\textbf{Creating Opportunities for Economically Disadvantaged Producers:}
+Poverty reduction through trade forms a key part of the organization's aims. The organization supports marginalized small producers, whether these are independent family businesses, or grouped in associations or co-operatives. It seeks to enable them to move from income insecurity and poverty to economic self-sufficiency and ownership. The organization has a plan of action to carry this out.
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \item
-  Principle One: Creating Opportunities for Economically Disadvantaged Producers
-  Poverty reduction through trade forms a key part of the organization's aims. The organization supports marginalized small producers, whether these are independent family businesses, or grouped in associations or co-operatives. It seeks to enable them to move from income insecurity and poverty to economic self-sufficiency and ownership. The organization has a plan of action to carry this out.
-\item
-  Principle Two: Transparency and Accountability
+  \textbf{Transparency and Accountability:}
   The organization is transparent in its management and commercial relations. It is accountable to all its stakeholders and respects the sensitivity and confidentiality of commercial information supplied. The organization finds appropriate, participatory ways to involve employees, members and producers in its decision-making processes. It ensures that relevant information is provided to all its trading partners. The communication channels are good and open at all levels of the supply chain.
 \item
-  Principle Three: Fair Trading Practices
+  \textbf{Fair Trading Practices:}
   The organization trades with concern for the social, economic and environmental well-being of marginalized small producers and does not maximize profit at their expense. It is responsible and professional in meeting its commitments in a timely manner. Suppliers respect contracts and deliver products on time and to the desired quality and specifications.
 \end{enumerate}
 
@@ -2778,10 +2781,10 @@ Fair Trade recognizes, promotes and protects the cultural identity and tradition
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
 \item
-  Principle Four: Payment of a Fair Price
+  \textbf{Payment of a Fair Price:}
   A fair price is one that has been mutually agreed by all through dialogue and participation, which provides fair pay to the producers and can also be sustained by the market. Where Fair Trade pricing structures exist, these are used as a minimum. Fair pay means provision of socially acceptable remuneration (in the local context) considered by producers themselves to be fair and which takes into account the principle of equal pay for equal work by women and men. Fair Trade marketing and importing organizations support capacity building as required to producers, to enable them to set a fair price.
 \item
-  Principle Five: Ensuring no Child Labour and Forced Labour
+  \textbf{Ensuring no Child Labour and Forced Labour:}
   The organization adheres to the UN Convention on the Rights of the Child, and national / local law on the employment of children. The organization ensures that there is no forced labour in its workforce and / or members or homeworkers.
 \end{enumerate}
 
@@ -2792,7 +2795,7 @@ Organizations who buy Fair Trade products from producer groups either directly o
 \setcounter{enumi}{5}
 \tightlist
 \item
-  Principle Six: Commitment to Non Discrimination, Gender Equity and Women's Economic Empowerment, and Freedom of Association
+  \textbf{Commitment to Non Discrimination, Gender Equity and Women's Economic Empowerment, and Freedom of Association:}
   The organization does not discriminate in hiring, remuneration, access to training, promotion, termination or retirement based on race, caste, national origin, religion, disability, gender, sexual orientation, union membership, political affiliation, HIV/AIDS status or age.
 \end{enumerate}
 
@@ -2805,7 +2808,7 @@ The organization respects the right of all employees to form and join trade unio
 \setcounter{enumi}{6}
 \tightlist
 \item
-  Principle Seven: Ensuring Good Working Conditions
+  \textbf{Ensuring Good Working Conditions:}
   The organization provides a safe and healthy working environment for employees and / or members. It complies, at a minimum, with national and local laws and ILO conventions on health and safety.
 \end{enumerate}
 
@@ -2818,7 +2821,7 @@ Fair Trade Organizations are aware of the health and safety conditions in the pr
 \setcounter{enumi}{7}
 \tightlist
 \item
-  Principle Eight: Providing Capacity Building
+  \textbf{Providing Capacity Building:}
   The organization seeks to increase positive developmental impacts for small, marginalized producers through Fair Trade.
 \end{enumerate}
 
@@ -2828,16 +2831,165 @@ The organization develops the skills and capabilities of its own employees or me
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{8}
 \item
-  Principle Nine: Promoting Fair Trade
+  \textbf{Promoting Fair Trade:}
   The organization raises awareness of the aim of Fair Trade and of the need for greater justice in world trade through Fair Trade. It advocates for the objectives and activities of Fair Trade according to the scope of the organization. The organization provides its customers with information about itself, the products it markets, and the producer organizations or members that make or harvest the products. Honest advertising and marketing techniques are always used.
 \item
-  Principle Ten: Respect for the Environment
+  \textbf{Respect for the Environment:}
   Organizations which produce Fair Trade products maximize the use of raw materials from sustainably managed sources in their ranges, buying locally when possible. They use production technologies that seek to reduce energy consumption and where possible use renewable energy technologies that minimize greenhouse gas emissions. They seek to minimize the impact of their waste stream on the environment. Fair Trade agricultural commodity producers minimize their environmental impacts, by using organic or low pesticide use production methods wherever possible.
 \end{enumerate}
 
 Buyers and importers of Fair Trade products give priority to buying products made from raw materials that originate from sustainably managed sources, and have the least overall impact on the environment.
 
 All organizations use recycled or easily biodegradable materials for packing to the extent possible, and goods are dispatched by sea wherever possible.
+
+\hypertarget{digital-intelligence-quotient}{%
+\subsection{Digital Intelligence Quotient}\label{digital-intelligence-quotient}}
+
+Technology has its dark side and resulting social changes are not always healthy.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://youtu.be/J7cYcesGLcY}{Dark side of technology}
+\end{itemize}
+
+\BeginKnitrBlock{rmdextra}
+\textbf{Electronic addictions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Internet addiction disorder:} condition where excessive exploration on the internet interferes with normal interaction with family and friends. This condition Often causes spouse to feel like a computer widow, especially if pornography is involved.
+\item
+  \textbf{Social media addiction:} condition where excessive self promtion on social media sites interferes with normal inteactions with family and friends.
+\item
+  \textbf{Gaming disorder:} condition where game play use reduces the amount of face-to-face interactions thereby interfering significantly with an individual's social and family interactions. Such individuals often find game environments far more rewarding and fulfilling than their situation.
+\item
+  \textbf{Nomophobia:} condition where an individual experiences anxiety due to the fear of not having access to a working mobile phone
+\item
+  \textbf{Over-connection syndrome:} condition where mobile phone use reduces the amount of face-to-face interactions thereby interfering significantly with an individual's social and family interactions.
+\item
+  \textbf{Hikikomori Syndrome:} condition in which the affected individuals refuse to leave their residence, isolating themselves away from society and family in a single room for a period exceeding six months. Often associated with excessive gaming and programming.
+\end{itemize}
+\EndKnitrBlock{rmdextra}
+
+\begin{itemize}
+\item
+  \href{https://youtu.be/po01VlNvCcQ}{Agent for good}
+\item
+  Collective intelligence
+\item
+  Support for life-long learning
+\item
+  Gallery of human creativity
+\item
+  Mobilization fornoble causes
+\item
+  Community building
+\item
+  Access to information
+\item
+  \href{https://youtu.be/dRl8EIhrQjQ}{Antisocial behaviors}
+\end{itemize}
+
+\hypertarget{digital-intelligence-skills-}{%
+\subsubsection{\texorpdfstring{Digital intelligence skills / \taibf ทักษะความฉลาดทางดิจิทัล}{Digital intelligence skills / ทักษะความฉลาดทางดิจิทัล}}\label{digital-intelligence-skills-}}
+
+8 digital skills we must teach our children
+
+The world economic forum has suggested that the next generation will need to master the follow 8 skills: \citep{Park2016a}
+
+\begin{itemize}
+\item
+  \textbf{Digital identity:} The ability to create and manage one's online identity and reputation. This includes an awareness of one's online persona and management of the short-term and long-term impact of one's online presence.
+\item
+  \textbf{Digital use:} The ability to use digital devices and media, including the mastery of control in order to achieve a healthy balance between life online and offline.
+\item
+  \textbf{Digital safety:} The ability to manage risks online (e.g.~cyberbullying, grooming, radicalization) as well as problematic content (e.g.~violence and obscenity), and to avoid and limit these risks.
+\item
+  \textbf{Digital security:} The ability to detect cyber threats (e.g.~hacking, scams, malware), to understand best practices and to use suitable security tools for data protection.
+\item
+  \textbf{Digital emotional intelligence:} The ability to be empathetic and build good relationships with others online.
+\item
+  \textbf{Digital communication:} The ability to communicate and collaborate with others using digital technologies and media.
+\item
+  \textbf{Digital literacy:} The ability to find, evaluate, utilize, share and create content as well as competency in computational thinking.
+\item
+  \textbf{Digital rights:} The ability to understand and uphold personal and legal rights, including the rights to privacy, intellectual property, freedom of speech and protection from hate speech.
+\end{itemize}
+
+\textbf{Three levels of Digital Intelligence Quotient:}
+
+\begin{itemize}
+\item
+  Level 1: \textbf{Digital citizenship:} The ability to use digital technology and media in safe, responsible and effective ways
+\item
+  Level 2: \textbf{Digital creativity:} The ability to become a part of the digital ecosystem by co-creating new content and turning ideas into reality by using digital tools
+\item
+  Level 3: \textbf{Digital entrepreneurship:} The ability to use digital media and technologies to solve global challenges or to create new opportunities
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics{images/DQthai.png}
+\caption{DQ Skills}
+\end{figure}
+
+\BeginKnitrBlock{rmdextra}
+\textbf{Understanding and understanding of a child trained as a Digital Citizen}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.28\columnwidth}\raggedright
+Area of skill\strut
+\end{minipage} & \begin{minipage}[b]{0.67\columnwidth}\raggedright
+Description\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Digital Citizen Identity}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to build and manage a healthy identity online and offline with integrity\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Screen-Time Management}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to manage one's screen time, multitasking, and one's engagement in online games and social media with self-control\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Cyberbullying Management}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to detect situations of cyberbullying and handle them wisely\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Cyber Security Management}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to protect one's data by creating strong passwords and to manage various cyberattacks\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Digital Empathy}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to show empathy towards one's own and others' needs and feelings online\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Digital Footprints}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+The ability to understand the nature of digital footprints and their real-life consequences and to manage them responsibly\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Critical Thinking}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to distinguish between true and false information, good and harmful content, and trustworthy and questionable contacts online\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.28\columnwidth}\raggedright
+\textbf{Privacy Management}\strut
+\end{minipage} & \begin{minipage}[t]{0.67\columnwidth}\raggedright
+the ability to handle with discretion all personal information shared online to protect one's and others' privacy\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+\EndKnitrBlock{rmdextra}
 
 \{backmatter\}
 

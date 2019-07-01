@@ -1,6 +1,13 @@
 # BUSINESS SOFTWARE MODELS
 
-This chapter will explore some common approaches to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+```{r, out.width='100%',echo=FALSE,fig.cap = "Leave approval using Joget"}
+knitr::include_graphics("images/jogetprocess.png")
+```
+
+
+This chapter will explore some common approaches used to model the network of interactions that occur for business processes. These models not only help to provide deeper understanding of the nature of a business process but can facilating the development of systems to collect and analyze the data associated with the process.
+
+\newpage
 
 ## Business Process Model (BPM)
 
